@@ -1,0 +1,12 @@
+**/node_modules/
+config.php
+*.mov
+*.mp3
+*.mp4
+*.m4v
+*.psd
+.DS_Store
+.ftpquota
+*.zip
+*.webm
+*_log

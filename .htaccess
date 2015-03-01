@@ -1,0 +1,25 @@
+
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteOptions MaxRedirects=10
+
+AddType video/mp4  mp4 m4v
+AddType audio/mp4  m4a
+AddType video/ogg  ogv
+AddType audio/ogg  ogg oga
+AddType video/webm webm
+
+# show php errors
+# php_flag display_startup_errors off
+# php_flag display_errors off
+# php_flag html_errors off
+
+# *Jeremy: Here are my own rewrite rules
+# this rule converts all uppercase type-in traffic to lowercase
+# RewriteMap  lc int:tolower
+# RewriteCond %{REQUEST_URI} [A-Z]
+# RewriteRule (.*) ${lc:$1} [R=301,L]
+# this rule takes urls ending with no extension and adds the ".php" extension
+RewriteRule ^(\w+)$ $1.php [L]
+RewriteRule ^video\.php videos.php [L]
