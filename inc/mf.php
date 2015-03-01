@@ -77,13 +77,7 @@ $highlightsJSON = json_decode(file_get_contents("inc/highlights.json"));
 	*********************/
 
 //	ARRAYS
-//	For configuring passwords, etc. for MySQL
-$config = array(
-	'host'				=>	'localhost',	//	alias for server508.webhostingpad.com
-	'username'			=>	'rhythmci_jeremy',
-	'password'			=>	'Gl0rify!',
-	'db'				=>	'rhythmci_db'
-	);
+require('config.php');
 
 ####	CONNECT TO THE DATABASE		######
 try {
