@@ -9,6 +9,7 @@ $videos = array(	//	VideoYear | Vimeo ID | Song | Artist
 	"2006|49273805|Somebody Like You|Keith Urban",
 	"2007|44958542|Accidentally in Love|Counting Crows",
 	"2008|45939800|The Boys are Back|High School Musical 3: Senior Year",
+	"2009|120920685|What Makes You Beautiful|One Direction",
 	"2010|44958543|Dare You to Move|Switchfoot",
 	"2011|46391498|We are Family|Chipmunks and Chipettes",
 	"2012|80163689|Holding Out for a Hero|Bonnie Tyler",

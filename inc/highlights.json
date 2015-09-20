@@ -206,6 +206,11 @@
 	},
 	{
 		"year": "2008",
+		"event": "Tony proves to be a master foam swordsman",
+		"significance": "2"
+	},
+	{
+		"year": "2008",
 		"event": "Jeremy begins working as a landlord renting out the old home (mistake)",
 		"significance": "2"
 	},
@@ -222,6 +227,11 @@
 	{
 		"year": "2009",
 		"event": "Jeremy begins working at American Income Life Insurance (mistake)",
+		"significance": "2"
+	},
+	{
+		"year": "2009",
+		"event": "Angel has her first dance recital at Miller-Marley",
 		"significance": "2"
 	},
 	{
@@ -251,7 +261,17 @@
 	},
 	{
 		"year": "2010",
+		"event": "Angel has her first supporting role as Young Cosette in Les Miserables",
+		"significance": "2"
+	},
+	{
+		"year": "2010",
 		"event": "\"Rhythm City\" makes its world premiere performance!",
+		"significance": "2"
+	},
+	{
+		"year": "2010",
+		"event": "Harmony learns to use/break the microwave and sets a juice bottle on fire",
 		"significance": "2"
 	},
 	{
@@ -291,8 +311,23 @@
 	},
 	{
 		"year": "2012",
+		"event": "Tony takes gymnastics classes",
+		"significance": "2"
+	},
+	{
+		"year": "2012",
 		"event": "Chase is born!",
 		"significance": "3"
+	},
+	{
+		"year": "2012",
+		"event": "Tony takes Karate classes",
+		"significance": "2"
+	},
+	{
+		"year": "2012",
+		"event": "Christine, Jeremy, and Chase are flown out to Oregon to be guests of honor at the west coast premiere of <em>Rhythm City</em>",
+		"significance": "2"
 	},
 	{
 		"year": "2012",
@@ -326,6 +361,11 @@
 	},
 	{
 		"year": "2013",
+		"event": "Jeremy creates \"Bad Bats\" video game",
+		"significance": "1"
+	},
+	{
+		"year": "2013",
 		"event": "Jeremy is hired on as a full-time employee at Solidify",
 		"significance": "2"
 	},
@@ -356,8 +396,18 @@
 	},
 	{
 		"year": "2014",
+		"event": "Christine visits twin brother John in Canada",
+		"significance": "1"
+	},
+	{
+		"year": "2014",
 		"event": "Charity discovers Pikmin on the Wii U (and asks to play it every day)",
 		"significance": "2"
+	},
+	{
+		"year": "2014",
+		"event": "Mike comes to stay in the basement",
+		"significance": "1"
 	},
 	{
 		"year": "2014",
@@ -366,7 +416,57 @@
 	},
 	{
 		"year": "2014",
+		"event": "Jeremy starts the first chess club at Broken Arrow Elementary (Angel and Tony join)",
+		"significance": "2"
+	},
+	{
+		"year": "2014",
+		"event": "Harmony takes a trip with Mimi and Grandpa to Iowa (this is a HUGE deal to her)",
+		"significance": "2"
+	},
+	{
+		"year": "2014",
+		"event": "Tony starts the Legend of Zelda game series",
+		"significance": "2"
+	},
+	{
+		"year": "2014",
+		"event": "Chase gets a Spider-man four-wheeler and drives all over the house",
+		"significance": "1"
+	},
+	{
+		"year": "2014",
+		"event": "Christine's grandmother Maxine Farthing (\"Gramma Gigi\") passes away",
+		"significance": "2"
+	},
+	{
+		"year": "2014",
 		"event": "Immeasurable Productions performs \"42nd Street\"",
 		"significance": "1"
+	},
+	{
+		"year": "2015",
+		"event": "Chase becomes the scissor bandit and opens random food packages with scissors",
+		"significance": "1"
+	},
+	{
+		"year": "2015",
+		"event": "Christine builds a stage in Harmony and Charity's room",
+		"significance": "2"
+	},
+	{
+		"year": "2015",
+		"event": "Angel chooses to come back to homeschool",
+		"significance": "1"
+	},
+	{
+		"year": "2015",
+		"event": "Tony begins public school",
+		"significance": "2"
+	},
+	{
+		"year": "2015",
+		"event": "Harmony participates in her first chess tournament (and wins a TROPHY!... for last place)",
+		"significance": "2"
 	}
 ]
