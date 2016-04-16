@@ -242,17 +242,17 @@
 	{
 		"year": "2010",
 		"event": "Jeremy begins freelancing as a web developer",
-		"significance": "3"
+		"significance": "1"
 	},
 	{
 		"year": "2010",
 		"event": "Jeremy begins participating in multiple clinical research studies",
-		"significance": "3"
+		"significance": "2"
 	},
 	{
 		"year": "2010",
 		"event": "Jeremy quits coaching chess",
-		"significance": "2"
+		"significance": "1"
 	},
 	{
 		"year": "2010",
@@ -298,6 +298,11 @@
 		"year": "2011",
 		"event": "Immeasurable Productions performs and films \"Rhythm City Junior\"",
 		"significance": "2"
+	},
+	{
+		"year": "2011",
+		"event": "Jeremy gets LASEK (not LASIK) eye surgery",
+		"significance": "1"
 	},
 	{
 		"year": "2011",
@@ -352,6 +357,11 @@
 	{
 		"year": "2013",
 		"event": "Charity builds a giant Keva blocks structure",
+		"significance": "1"
+	},
+	{
+		"year": "2013",
+		"event": "Angel gets baptized",
 		"significance": "1"
 	},
 	{
@@ -441,12 +451,27 @@
 	},
 	{
 		"year": "2014",
+		"event": "Jeremy leaves Walsworth to work as a Senior Software Developer at UnitedLex",
+		"significance": "1"
+	},
+	{
+		"year": "2014",
 		"event": "Immeasurable Productions performs \"42nd Street\"",
 		"significance": "1"
 	},
 	{
 		"year": "2015",
+		"event": "Jeremy leaves UnitedLex to work as a Senior Digital Technology Developer at Parnell",
+		"significance": "1"
+	},
+	{
+		"year": "2015",
 		"event": "Chase becomes the scissor bandit and opens random food packages with scissors",
+		"significance": "1"
+	},
+	{
+		"year": "2015",
+		"event": "Harmony gets baptized",
 		"significance": "1"
 	},
 	{
@@ -462,6 +487,21 @@
 	{
 		"year": "2015",
 		"event": "Tony begins public school",
+		"significance": "2"
+	},
+	{
+		"year": "2015",
+		"event": "Christine's brother John gets married to Melanie",
+		"significance": "2"
+	},
+	{
+		"year": "2015",
+		"event": "Angel starts her bi-weekly YouTube channel: DeerAngel",
+		"significance": "3"
+	},
+	{
+		"year": "2015",
+		"event": "Jeremy and Davey create an immersive escape game called \"The Game Escape\"",
 		"significance": "2"
 	},
 	{

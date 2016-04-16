@@ -13,7 +13,8 @@ $videos = array(	//	VideoYear | Vimeo ID | Song | Artist
 	"2010|44958543|Dare You to Move|Switchfoot",
 	"2011|46391498|We are Family|Chipmunks and Chipettes",
 	"2012|80163689|Holding Out for a Hero|Bonnie Tyler",
-	"2013|105498026|Everything is Awesome|Tegan and Sara"
+	"2013|105498026|Everything is Awesome|Tegan and Sara",
+	"2014|149347021|Let It Go|Demi Levato"
 );
 rsort($videos);
 $numVids = count($videos);
