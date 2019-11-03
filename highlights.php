@@ -4,13 +4,23 @@ require_once('inc/mf.php');
 
 $year = 0;
 $highlightsList = "";
-foreach(array_reverse($highlightsJSON) as $hl) {
-	if($year !== $hl->year) {
-		$highlightsList .= "<li class='year'>$hl->year</li>\n";
-		$year = $hl->year;
-	}
-	$highlightsList .= "<li class='event sig_" . $hl->significance . "'>$hl->event</li>\n";
+$groupedHlArray = array();
+
+foreach($highlightsJSON as $hl) {
+	$groupedHlArray[$hl->year][] = $hl;
 }
+
+foreach(array_reverse($groupedHlArray, true) as $hlYear => $hlYearGroup) {
+	$highlightsList .= "<li class='year'>$hlYear</li>\n";
+	$year = $hlYear;
+
+	shuffle($hlYearGroup);
+
+	foreach($hlYearGroup as $hl) {
+		$highlightsList .= "<li class='event sig_" . $hl->significance . "'>$hl->event</li>\n";
+	}
+}
+
 $highlightsList = "
 	<ul>
 		$highlightsList

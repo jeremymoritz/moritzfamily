@@ -1,5 +1,5 @@
 <?php	//	kids quotes
-$title = "Quotes from the Kids! Angel, Tony, Harmony, Charity, and Chase";
+$title = "Quotes from the Kids! Angel, Tony, Harmony, Charity, Chase, and Symphony";
 require_once('inc/mf.php');
 
 if(apiSnag('order') == 'ASC') {
@@ -70,7 +70,7 @@ if($quotes) {
 			}
 		}
 
-		$q->quote = str_replace("\n", "<br>", trim($q->quote));
+		$q->quote = str_replace(array("\r\n", "\n", "\r"), "<br>", trim($q->quote));
 
 		$ages_arr = array();
 		$pics_arr = array();
@@ -106,7 +106,7 @@ if($quotes) {
 }
 
 	// embolden names when they speak
-$embolden_names = array("Jeremy","Daddy","Dad","Christine","Mommy","Mom","Angel","Tony","Harmony","Charity","Chase","Davey","Mindy","Robbie","Grandpa","Mimi","Andrew");
+$embolden_names = array("Jeremy","Daddy","Dad","Christine","Mommy","Mom","Angel","Tony","Harmony","Charity","Chase","Symphony","Davey","Mindy","Robbie","Grandpa","Mimi","Andrew");
 foreach($embolden_names as $name) {
 	$quote_section = preg_replace("/(<p>|<br>)(" . $name . ")/", '<p><strong>$2</strong>', $quote_section);
 }

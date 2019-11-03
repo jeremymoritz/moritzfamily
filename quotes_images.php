@@ -1,16 +1,17 @@
 <?php	//	kids quotes
-$title = "Quotes from the Kids! Angel, Tony, Harmony, Charity, and Chase";
+$title = "Quotes from the Kids! Angel, Tony, Harmony, Charity, Chase, and Symphony";
 require_once('inc/mf.php');
 
-$sql = "
-	SELECT
-		id,
-		date,
-		quote,
-		rating
-	FROM quo_quotes
-	WHERE rating > 1
-	ORDER BY date ASC";
+$sql = "SELECT " .
+		"id, " .
+		"date, " .
+		"quote, " .
+		"rating " .
+	"FROM quo_quotes " .
+	// "WHERE rating > 1 " .
+	"ORDER BY date ASC " .
+	// "LIMIT 10 " .
+	";";
 $sth = $dbh->prepare($sql);
 $sth->execute();
 
@@ -18,13 +19,8 @@ $quotes = sthFetchObjects($sth);	//	fetch all of the quotes and put them in $quo
 
 if($quotes) {
 	//	pagination
-	$numPerPage = isset($_GET['num']) ? $_GET['num'] : 20;	//	quotes per page (default 40) //	change this to 9999
-	$curPage = 1;	//	current page of quotes
-
-	//	query string variables (add to query string to ensure nothing is lost)
-	$qn = "numPerPage=$numPerPage";
-	$qc = "curPage=$curPage";
-	$qo = "order=$order";
+	$numPerPage = apiGet('num', 20);	//	quotes per page (default 20) //	change this to 9999
+	$curPage = apiGet('page', 1);	//	current page of quotes
 
 	$star = "<img src='img/singleredstar.gif' alt='*'>";	//	image of star
 
@@ -57,8 +53,8 @@ if($quotes) {
 
 		$quote_section .= "
 			<section class='quote color" . $q->rating . "'>"
-				// . $star_corner
 				. $pics
+				. $star_corner
 				. "<section><p>" . $q->quote . "<br>"
 				. "<em>&nbsp;&nbsp;&nbsp;&nbsp;~" . date('F Y', strtotime($q->date)) . " " . $ages . "</em></p></section>
 				<div class='clear'></div>
@@ -69,28 +65,10 @@ if($quotes) {
 }
 
 	// embolden names when they speak
-$embolden_names = array("Jeremy","Daddy","Dad","Christine","Mommy","Mom","Angel","Tony","Harmony","Charity","Chase","Davey","Mindy","Robbie","Grandpa","Mimi","Andrew","Grandmary","Stacy","Clint");
+$embolden_names = array("Jeremy","Daddy","Dad","Christine","Mommy","Mom","Angel","Tony","Harmony","Charity","Chase","Symphony","Davey","Mindy","Robbie","Grandpa","Mimi","Andrew","Grandmary","Stacy","Clint");
 foreach($embolden_names as $name) {
 	$quote_section = preg_replace("/(<p>|<br>)(" . $name . ")/", '<p><strong>$2</strong>', $quote_section);
 }
-
-	//	select number of quotes per page
-$numPerPageOptions = array(10,20,40,80,'all');
-$selectNumPerPage = "
-	<select name='numPerPage' onchange='javascript:submit()'>\n";
-$numPerPage = $numPerPage >= 999 ? 'all' : $numPerPage;
-foreach ($numPerPageOptions as $val) {
-	$selectNumPerPage .= "<option value='$val'" . ($numPerPage == $val ? " selected='selected'" : "") . ">$val</option>\n";
-}
-$selectNumPerPage .= "
-	</select>";
-
-	//	select order
-$selectOrder = "
-	<select name='order' onchange='javascript:submit()'>
-		<option value='$order' selected='selected'>$order_spelled</option>
-		<option value='$rev_order'>$rev_order_spelled</option>
-	</select>";
 ?>
 
 
@@ -98,8 +76,8 @@ $selectOrder = "
 <html lang='en'>
 <head>
 	<meta charset='UTF-8'>
-	<meta name='description' content='The Moritz Family: Jeremy & Christine, Angel, Tony, Harmony, Charity, and Chase'>
-	<meta name='keywords' content='Moritz, Family, Jeremy, Christine, Angel, Tony, Harmony, Charity, Chase'>
+	<meta name='description' content='The Moritz Family: Jeremy & Christine, Angel, Tony, Harmony, Charity, Chase, and Symphony'>
+	<meta name='keywords' content='Moritz, Family, Jeremy, Christine, Angel, Tony, Harmony, Charity, Chase, Symphony'>
 	<title>QUOTES-Images</title>
 	<link rel='shortcut icon' href='favicon.ico'>
 	<link rel='stylesheet' type='text/css' href='inc/mf.css'>
@@ -116,7 +94,8 @@ $selectOrder = "
 	<script src='inc/mf.js'></script>
 	<script>
 		$('.quote').textfill({
-			innerTag: 'section'
+			innerTag: 'section',
+			maxFontPixels: 32
 		});
 	</script>
 </body>

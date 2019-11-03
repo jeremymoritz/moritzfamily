@@ -7,15 +7,16 @@ $maxPreviewQs = 3;	//	number of preview questions to show in questionnaire
 
 	//	KIDS SECTION
 foreach($jsonKids as $kid) {
-	$latestQuestionnaire = end($kid->questionnaires);
+	$lowercaseKidName = strtolower($kid->name);
+	$latestQuestionnaire = end($questionnairesJSON->$lowercaseKidName);
 	$curAge = getAge(strtotime($kid->birthday));
 	$qAge = getAge(strtotime($kid->birthday),strtotime($latestQuestionnaire->qDate));	//	age when these questions were asked
 	$ageToShow = ltrim($qAge,0) == 0 ? 0 : ltrim($qAge,0);	//	trim leading zeros unless the baby is 0
-	
+
 	$questionnaire = "
 		<article>
 			<h3>$kid->name's Q &amp; A (at $ageToShow years old)...</h3>";
-	
+
 	shuffle($latestQuestionnaire->questions);
 	$cntPreviewQs = 0;
 	foreach($latestQuestionnaire->questions as $thisQ) {
@@ -23,17 +24,17 @@ foreach($jsonKids as $kid) {
 			$questionnaire .= "
 				<h4>{$thisQ->question}</h4>
 				<blockquote>{$thisQ->answer}</blockquote>\n";
-			
+
 			if(++$cntPreviewQs == $maxPreviewQs) {
 				break;
 			}
 		}
 	}
-	
+
 	$questionnaire .= "
-			<h3><a href='questionnaire.php?#$kid->name'>More Questions...</a></h3>
+			<h3><a href='questionnaire.php?yr=" . date('Y', strtotime($latestQuestionnaire->qDate)) . "#$kid->name'>More Questions...</a></h3>
 		</article>";
-	
+
 	$infoSection = "
 		<section class='infoSection kids'>
 			<h1>Pictures and Information about $kid->name</h1>
@@ -48,11 +49,11 @@ foreach($jsonKids as $kid) {
 		if($i == $curAge && !file_exists("img/family/$srcFilename")) {	//	if no recent pic has been uploaded, use the old pic
 			break;
 		}
-		
+
 		$thumbPicSrc = "img/family/thumbs/$srcFilename";
 		$fullPicSrc = "img/family/$srcFilename";
 		$titleAlt = "{$kid->name}, age $i";
-		
+
 		if($i != $curAge && file_exists($thumbPicSrc)) {
 			$infoSection .= "<div><img src='$thumbPicSrc' alt='$titleAlt' class='enlarge' title='$titleAlt'><br>Age $i</div>";
 		}
@@ -77,7 +78,7 @@ foreach($jsonKids as $kid) {
 	//	GROWN-UPS SECTION
 foreach($jsonAdults as $adult) {
 	$curAge = getAge(strtotime($adult->birthday));
-	
+
 	$infoSection = "
 		<section class='infoSection adults'>
 			<h1>Pictures and Information about $adult->name</h1>
@@ -92,11 +93,11 @@ foreach($jsonAdults as $adult) {
 		if($i == $curAge && !file_exists("img/family/$srcFilename")) {	//	if no recent pic has been uploaded, use the old pic
 			break;
 		}
-		
+
 		$thumbPicSrc = "img/family/thumbs/$srcFilename";
 		$fullPicSrc = "img/family/$srcFilename";
 		$titleAlt = "$adult->name, age $i";
-		
+
 		if($i != $curAge && file_exists($thumbPicSrc)) {
 			$infoSection .= "
 				<div>

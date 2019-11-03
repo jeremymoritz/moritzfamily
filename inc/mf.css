@@ -1,198 +1,774 @@
 /* MoritzFamily.org Stylesheet For All Pages */
 
 /*html5 display rule (for older browsers to display these html5 tags as block level elements)*/
-address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display:block}
+address,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
 
 /* setting initial margins and paddings to zero for [almost] all elements (doesn't include form elements) */
-a, abbr, acronym, address, article, aside, b, blockquote, body, br, canvas, caption, dd, details, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, img, label, legend, li, link, menu, nav, ol, p, pre, section, small, span, strong, summary table, td, th, tr, u, ul {margin:0; padding:0; border:0}
-
-	/* STYLE CLASSES (ALL PAGES) */
-.clear {clear:both}
-.hidden {display:none}
-.left {float:left}
-.right {float:right}
-.enlarge {cursor:pointer}
-.overlarge {display:none; position:absolute}
-.overlarge img {border:3px solid #00c; border-radius:10px}
-.hider {float:right; clear:right}
-.hider:hover {cursor:pointer}
-
-
-	/* BASIC TEMPLATE */
-body {background:url('/img/collage_bg.jpg') repeat #888; background-position:top center; color:#000; font-size:11pt; text-align:center; font-family:arial,sans-serif; margin:auto}
-p {text-align:left}
-h1 {display:none}
-h2 {font-size:200%; color:#000; text-align:center}
-h3 {font-size:130%; text-align:left; color:#88f}
-a {color:#55f}
-a:hover {color:#f80;text-decoration:none}
-ol, ul {text-align:left}
-
-	/* MULTIPLE PAGES */
-nav.mainNav {font-size:90%; background:url('/img/wb_grad.png') repeat-x #000; font-weight:bold}
-nav.mainNav h2 {display:none}
-nav.mainNav table {width:100%; border-collapse:collapse; height:30px}
-nav.mainNav table td {border:1px solid #88f; width:12.5%}
-nav.mainNav img {vertical-align:middle;max-height:15px}
-nav.mainNav a {text-decoration:none}
-nav.mainNav a:hover {color:#ff0}
-footer {background:url('../img/wb_grad.png') repeat-x #000; width:100%; height:30px; border:1px solid #88f; color:#fff; text-align:right; padding-top:10px}
-footer a {margin:5px 10px}
-
-#content {width:1000px; margin:auto}
-section.main {margin:auto; width:100%; background:url('/img/white-trans-1000_bg.png') repeat-y}
-
-	/* INDEX */
-#index #coverPic {border:10px solid; border-top-color:#061; border-right-color:#4bb; border-bottom-color:#89f; border-left-color:#166; margin-bottom:20px}
-#index ul {margin:10px auto 0; text-align:center}
-#index ul li {margin:10px auto 0}
-#index ul a {text-decoration:none}
-
-	/* QUOTES */
-#quotes #inner {width:80%; text-align:left; min-height:200px; margin:auto; padding:5px 0}
-#quotes nav {margin-left:10px}
-#quotes nav img {margin:0 5px; position:relative; top:6px}
-#quotes a {color:#00f}
-#quotes a:hover {color:#f80}
-#quotes h3 {color:#000; margin:5px 10px}
-#quotes h4 {font-weight:normal; margin:5px 10px; font-size:80%}
-#quotes #title {position:relative;bottom:25px}
-#quotes em {font-size:90%;color:#333}
-#quotes #inner section {margin:.5em; border:2px solid #ccc; border-radius:10px; padding:.5em; clear:right}
-#quotes .legend1, #quotes .legend2, #quotes .legend3 {border:2px solid #ccc}
-#quotes .color3, #quotes .legend3 {background-color:#afa}
-#quotes .color2, #quotes .legend2 {background-color:#aaf}
-#quotes .color1, #quotes .legend1 {background-color:#aaa}
-#quotes fieldset {width:180px; float:right; font-size:80%; margin:5px 10px 10px; border:1px solid #000}
-#quotes fieldset table td {padding:0 5px}
-#quotes fieldset div {width:10px; height:10px; display:inline; float:left; clear:left; margin:0 5px; padding:0}
-#quotes .star_corner {border:0; float:right; margin:0 5px}
-#quotes aside.thumbs {float:right; clear:right}
-#quotes aside.thumbs img {max-height:60px; max-width:70px; border:2px solid #ccc; border-radius:7px}
-
-	/* MISSION */
-#mission section {width:70%; margin:auto; padding:10px 0}
-#mission p {margin:10px 0}
-#mission ol {margin:10px 0}
-#mission ol li {margin:10px 40px}
-
-	/* FUN */
-#fun table {margin:auto; width:80%}
-#fun table img {width:300px; height:400px}
-
-	/* TERRIFIC & KITTEN */
-#terrific, #kitten {padding:10px 0 20px}
-#terrific #lmttable {text-align:center;margin:auto}
-#terrific img {border:0px}
-#terrific .btn {vertical-align:bottom;width:100px}
-#terrific .btn img {cursor:pointer}
-
-#kitten #kittentable {text-align:center;margin:auto}
-#kitten img {border:0px}
-#kitten .btn {vertical-align:bottom;width:100px}
-#kitten .btn img {cursor:hand;cursor:pointer}
-#kitten #book {width:400px;border:3px solid #000;background-color:#fff}
-#kitten #book img {margin:0px}
-#kitten #book div {height:225px;background-color:#fff;vertical-align:middle; display:none;margin:0px}
-#kitten #book div p {margin:10px;text-align:left}
-#kitten #book div p.smaller {font-size:95%}
-#kitten #book div #thend {font-size:200%;font-weight:bold;text-align:center}
-
-#warning {font-size:150%;color:#f66}
-#backbtn {display:none}
-
-	/* WORK */
-#work section {width:90%; margin:auto}
-#work table td {vertical-align:top; width: 33%;}
-#work a {font-size:150%;text-decoration:none}
-#work a:hover {text-decoration:underline}
-#work img {width:250px; height:175px; border:3px solid #00c; border-radius:20px}
-#work img:hover {border-color:#f80; border-radius:0px}
-
-	/* ABOUT */
-#about {min-height:2800px}
-#about #familySection {width:80%; margin:auto}
-#about #familySection table {margin-top:20px}
-#about #familySection h2 {text-align:left}
-#about #familySection h3 {font-size:100%; margin-bottom:10px}
-#about #familySection img {border:3px solid #00c; border-radius:10px}
-#about #familySection .thumbs div {float:left; margin:1px; font-size:60%}
-#about #familySection img.enlarge {max-height:80px}
-#about #familySection table td.thumbs {width:300px; vertical-align:top}
-#about #familySection table td.currentPic {vertical-align:top}
-#about #familySection table td.currentPic img {height:300px; vertical-align:top}
-#about #familySection table td.verbiage {vertical-align:top; padding-left:20px}
-#about .verbiage article {font-size:80%; text-align:left}
-#about .verbiage article blockquote {color:#c00; margin-bottom:10px}
-#about #familySection .adults .thumbs {width:560px}
-#about #familySection .adults .verbiage {padding:0}
-
-	/* QUESTIONNAIRE */
-#questionnaire {padding-bottom:10px}
-#questionnaire .questions {width:80%; margin:auto; padding-top:30px}
-#questionnaire .questions h2 {display:none}
-#questionnaire .questions h3 {margin-bottom:20px; text-decoration:underline; font-size:150%; color:#00f}
-#questionnaire aside {float:right; text-align:center; margin-left:20px}
-#questionnaire aside img {height:300px; border:3px solid #00c; border-radius:10px}
-#questionnaire article {text-align:left}
-#questionnaire article blockquote {color:#c00; margin:5px 0 10px 20px}
-#questionnaire hr {clear:both}
-
-	/* VIDEOS */
-#videos section {margin:auto}
-#videos section p {text-align:center}
-#videos section video {border:1px solid #000; border-radius:10px}
-#videos #vidTable {margin:auto}
-#videos #vidTable td {padding:10px}
-#videos #vidTable .vidTitle {background:#eee; margin:5px auto; padding:2px 0; text-align:center; border:1px solid #000; border-radius:10px; width:400px; line-height:18px}
-#videos #vidTable .vidTitle aside {float:right}
-#videos #vidTable .vidTitle aside img.enlarge {max-height:50px; border:1px solid #000; margin:0 2px; border-radius:5px}
-#videos #vidTable div.overlarge img {border:3px solid #00c; border-radius:10px}
-#videos #vidTable .vidTitle h3 {margin:20px 10px 0; font-size:300%; color:#55a; position: absolute; text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 0 2px #000, -3px 0 2px #000, 0 3px 2px #000, 0 -3px 2px #000}
-#videos #vidTable .vidTitle p {text-align:left; margin-left:10px; clear:right}
-
-	/* HIGHLIGHTS */
-#highlights h3 {text-align: center}
-#highlights section ul {margin: auto; width: 70%}
-#highlights section ul li.year {list-style-type: none; text-align: center; border: 1px solid #aaf; background: #ddf; width: 50%; margin: 20px auto 10px; border-radius: 20px; font-weight: bold;}
-#highlights section ul li.event {list-style-type: square}
-#highlights section ul li.sig_3 {font-weight: bold;}
-#highlights section ul li.sig_2 {font-style: italic;}
-#highlights section ul li.sig_1 {font-size: small; color: #666}
-
-	/* QUOTES_IMAGES */
-#quotes_images_body {background: #fff;}
-#quotes_images .quote {
-	width: 7in;
-	height: 4in;
-	border-radius: 15px;
-	padding: 15px;
-	margin: 40px 20px;
-	page-break-after: always;
-	border: 2px solid #000;
-	box-shadow: inset 0 0 20px #000, inset 0 0 2px #000, inset 0 0 7px #000, inset 0 0 13px #000, 0 0 5px #000 !important;
+a,
+abbr,
+acronym,
+address,
+article,
+aside,
+b,
+blockquote,
+body,
+br,
+canvas,
+caption,
+dd,
+details,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+img,
+label,
+legend,
+li,
+link,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+small,
+span,
+strong,
+summary table,
+td,
+th,
+tr,
+u,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-#quotes_images #inner {width:80%; text-align:left; min-height:200px; margin:auto; padding:5px 0}
-#quotes_images nav {margin-left:10px}
-#quotes_images nav img {margin:0 5px; position:relative; top:6px}
-#quotes_images a {color:#00f}
-#quotes_images a:hover {color:#f80}
-#quotes_images h3 {color:#000; margin:5px 10px}
-#quotes_images h4 {font-weight:normal; margin:5px 10px; font-size:80%}
-#quotes_images #title {position:relative;bottom:25px}
-#quotes_images em {font-size:90%;color:#333}
-#quotes_images #inner section {margin:.5em; border:2px solid #ccc; border-radius:10px; padding:.5em; clear:right}
-#quotes_images .legend1, #quotes_images .legend2, #quotes_images .legend3 {border:2px solid #ccc}
-#quotes_images .color3, #quotes_images .legend3 {background-color:#afa !important;}
-#quotes_images .color2, #quotes_images .legend2 {background-color:#aaf !important;}
-#quotes_images .color1, #quotes_images .legend1 {background-color:#aaa}
-#quotes_images fieldset {width:180px; float:right; font-size:80%; margin:5px 10px 10px; border:1px solid #000}
-#quotes_images fieldset table td {padding:0 5px}
-#quotes_images fieldset div {width:10px; height:10px; display:inline; float:left; clear:left; margin:0 5px; padding:0}
-#quotes_images .star_corner {border:0; float:right; margin:0 5px}
-#quotes_images aside.thumbs {float:right; clear:right}
-#quotes_images aside.thumbs img {max-height:100px; max-width:75px; border:2px solid #ccc; border-radius:7px}
+
+/* STYLE CLASSES (ALL PAGES) */
+.clear {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.enlarge {
+  cursor: pointer;
+}
+.overlarge {
+  display: none;
+  position: absolute;
+}
+.overlarge img {
+  border: 3px solid #00c;
+  border-radius: 10px;
+}
+.hider {
+  float: right;
+  clear: right;
+}
+.hider:hover {
+  cursor: pointer;
+}
+
+/* BASIC TEMPLATE */
+body {
+  background: url('/img/collage_bg.jpg') repeat #888;
+  background-position: top center;
+  color: #000;
+  font-size: 11pt;
+  text-align: center;
+  font-family: arial, sans-serif;
+  margin: auto;
+}
+p {
+  text-align: left;
+}
+h1 {
+  display: none;
+}
+h2 {
+  font-size: 200%;
+  color: #000;
+  text-align: center;
+}
+h3 {
+  font-size: 130%;
+  text-align: left;
+  color: #88f;
+}
+a {
+  color: #55f;
+}
+a:hover {
+  color: #f80;
+  text-decoration: none;
+}
+ol,
+ul {
+  text-align: left;
+}
+
+/* MULTIPLE PAGES */
+nav.mainNav {
+  font-size: 90%;
+  background: url('/img/wb_grad.png') repeat-x #000;
+  font-weight: bold;
+}
+nav.mainNav h2 {
+  display: none;
+}
+nav.mainNav table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 30px;
+}
+nav.mainNav table td {
+  border: 1px solid #88f;
+  width: 12.5%;
+}
+nav.mainNav img {
+  vertical-align: middle;
+  max-height: 15px;
+}
+nav.mainNav a {
+  text-decoration: none;
+}
+nav.mainNav a:hover {
+  color: #ff0;
+}
+footer {
+  background: url('../img/wb_grad.png') repeat-x #000;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #88f;
+  color: #fff;
+  text-align: right;
+  padding-top: 10px;
+}
+footer a {
+  margin: 5px 10px;
+}
+
+#content {
+  width: 1000px;
+  margin: auto;
+}
+section.main {
+  margin: auto;
+  width: 100%;
+  background: url('/img/white-trans-1000_bg.png') repeat-y;
+}
+
+/* INDEX */
+#index #cover-pic-wrapper {
+  position: relative;
+  width: 620px;
+  height: 470px;
+  margin: 10px auto 0;
+  padding-bottom: 20px;
+}
+#index .cover-pic {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  max-height: 450px;
+  border: 10px solid;
+  border-top-color: #061;
+  border-right-color: #4bb;
+  border-bottom-color: #89f;
+  border-left-color: #166;
+  transition: 0.5s;
+  opacity: 1;
+}
+#index .cover-pic.transparent {
+  opacity: 0;
+}
+
+#index ul {
+  margin: 10px auto 0;
+  text-align: center;
+}
+#index ul li {
+  margin: 10px auto 0;
+}
+#index ul a {
+  text-decoration: none;
+}
+
+/* QUOTES */
+#quotes #inner {
+  width: 80%;
+  text-align: left;
+  min-height: 200px;
+  margin: auto;
+  padding: 5px 0;
+}
+#quotes nav {
+  margin-left: 10px;
+}
+#quotes nav img {
+  margin: 0 5px;
+  position: relative;
+  top: 6px;
+}
+#quotes a {
+  color: #00f;
+}
+#quotes a:hover {
+  color: #f80;
+}
+#quotes h3 {
+  color: #000;
+  margin: 5px 10px;
+}
+#quotes h4 {
+  font-weight: normal;
+  margin: 5px 10px;
+  font-size: 80%;
+}
+#quotes #title {
+  position: relative;
+  bottom: 25px;
+}
+#quotes em {
+  font-size: 90%;
+  color: #333;
+}
+#quotes #inner section {
+  margin: 0.5em;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 0.5em;
+  clear: right;
+}
+#quotes .legend1,
+#quotes .legend2,
+#quotes .legend3 {
+  border: 2px solid #ccc;
+}
+#quotes .color3,
+#quotes .legend3 {
+  background-color: #afa;
+}
+#quotes .color2,
+#quotes .legend2 {
+  background-color: #aaf;
+}
+#quotes .color1,
+#quotes .legend1 {
+  background-color: #aaa;
+}
+#quotes fieldset {
+  width: 180px;
+  float: right;
+  font-size: 80%;
+  margin: 5px 10px 10px;
+  border: 1px solid #000;
+}
+#quotes fieldset table td {
+  padding: 0 5px;
+}
+#quotes fieldset div {
+  width: 10px;
+  height: 10px;
+  display: inline;
+  float: left;
+  clear: left;
+  margin: 0 5px;
+  padding: 0;
+}
+#quotes .star_corner {
+  border: 0;
+  float: right;
+  margin: 0 5px;
+}
+#quotes aside.thumbs {
+  float: right;
+  clear: right;
+}
+#quotes aside.thumbs img {
+  max-height: 60px;
+  max-width: 70px;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+}
+
+/* MISSION */
+#mission section {
+  width: 70%;
+  margin: auto;
+  padding: 10px 0;
+}
+#mission p {
+  margin: 10px 0;
+}
+#mission ol {
+  margin: 10px 0;
+}
+#mission ol li {
+  margin: 10px 40px;
+}
+
+/* FUN */
+#fun table {
+  margin: auto;
+  width: 80%;
+}
+#fun table img {
+  width: 300px;
+  height: 400px;
+}
+
+/* TERRIFIC & KITTEN */
+#terrific,
+#kitten {
+  padding: 10px 0 20px;
+}
+#terrific #lmttable {
+  text-align: center;
+  margin: auto;
+}
+#terrific img {
+  border: 0px;
+}
+#terrific .btn {
+  vertical-align: bottom;
+  width: 100px;
+}
+#terrific .btn img {
+  cursor: pointer;
+}
+
+#kitten #kittentable {
+  text-align: center;
+  margin: auto;
+}
+#kitten img {
+  border: 0px;
+}
+#kitten .btn {
+  vertical-align: bottom;
+  width: 100px;
+}
+#kitten .btn img {
+  cursor: hand;
+  cursor: pointer;
+}
+#kitten #book {
+  width: 400px;
+  border: 3px solid #000;
+  background-color: #fff;
+}
+#kitten #book img {
+  margin: 0px;
+}
+#kitten #book div {
+  height: 225px;
+  background-color: #fff;
+  vertical-align: middle;
+  display: none;
+  margin: 0px;
+}
+#kitten #book div p {
+  margin: 10px;
+  text-align: left;
+}
+#kitten #book div p.smaller {
+  font-size: 95%;
+}
+#kitten #book div #thend {
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#warning {
+  font-size: 150%;
+  color: #f66;
+}
+#backbtn {
+  display: none;
+}
+
+/* WORK */
+#work section {
+  width: 90%;
+  margin: auto;
+}
+#work table td {
+  vertical-align: top;
+  width: 33%;
+}
+#work a {
+  font-size: 150%;
+  text-decoration: none;
+}
+#work a:hover {
+  text-decoration: underline;
+}
+#work img {
+  width: 250px;
+  height: 175px;
+  border: 3px solid #00c;
+  border-radius: 20px;
+}
+#work img:hover {
+  border-color: #f80;
+  border-radius: 0px;
+}
+
+/* ABOUT */
+#about {
+  min-height: 2800px;
+}
+#about #familySection {
+  width: 80%;
+  margin: auto;
+}
+#about #familySection table {
+  margin-top: 20px;
+}
+#about #familySection h2 {
+  text-align: left;
+}
+#about #familySection h3 {
+  font-size: 100%;
+  margin-bottom: 10px;
+}
+#about #familySection img {
+  border: 3px solid #00c;
+  border-radius: 10px;
+}
+#about #familySection .thumbs div {
+  float: left;
+  margin: 1px;
+  font-size: 60%;
+}
+#about #familySection img.enlarge {
+  max-height: 80px;
+}
+#about #familySection table td.thumbs {
+  width: 300px;
+  vertical-align: top;
+}
+#about #familySection table td.currentPic {
+  vertical-align: top;
+}
+#about #familySection table td.currentPic img {
+  height: 300px;
+  vertical-align: top;
+}
+#about #familySection table td.verbiage {
+  vertical-align: top;
+  padding-left: 20px;
+}
+#about .verbiage article {
+  font-size: 80%;
+  text-align: left;
+}
+#about .verbiage article blockquote {
+  color: #c00;
+  margin-bottom: 10px;
+}
+#about #familySection .adults .thumbs {
+  width: 560px;
+}
+#about #familySection .adults .verbiage {
+  padding: 0;
+}
+
+/* QUESTIONNAIRE */
+#questionnaire {
+  padding-bottom: 10px;
+}
+#questionnaire .questions {
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+#questionnaire .questions h2 {
+  display: none;
+}
+#questionnaire .questions h3 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-size: 150%;
+  color: #00f;
+}
+#questionnaire aside {
+  float: right;
+  text-align: center;
+  margin-left: 20px;
+}
+#questionnaire aside img {
+  height: 300px;
+  border: 3px solid #00c;
+  border-radius: 10px;
+}
+#questionnaire article {
+  text-align: left;
+}
+#questionnaire article blockquote {
+  color: #c00;
+  margin: 5px 0 10px 20px;
+}
+#questionnaire .other-questionnaires {
+  display: inline-block;
+  font-weight: bold;
+}
+#questionnaire .other-questionnaires li {
+  list-style-type: none;
+  display: inline-block;
+}
+#questionnaire .other-questionnaires li + li {
+  margin-left: 20px;
+}
+#questionnaire .other-questionnaires li + li:before {
+  content: '|';
+}
+#questionnaire .other-questionnaires li + li a {
+  margin-left: 18px;
+}
+#questionnaire hr {
+  clear: both;
+}
+
+/* VIDEOS */
+#videos section {
+  margin: auto;
+}
+#videos section p {
+  text-align: center;
+}
+#videos section video {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+#videos #vidTable {
+  margin: auto;
+}
+#videos #vidTable td {
+  padding: 10px;
+}
+#videos #vidTable .vidTitle {
+  background: #eee;
+  margin: 5px auto;
+  padding: 2px 0;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 400px;
+  line-height: 18px;
+}
+#videos #vidTable .vidTitle aside {
+  float: right;
+}
+#videos #vidTable .vidTitle aside img.enlarge {
+  max-height: 50px;
+  border: 1px solid #000;
+  margin: 0 2px;
+  border-radius: 5px;
+}
+#videos #vidTable div.overlarge img {
+  border: 3px solid #00c;
+  border-radius: 10px;
+}
+#videos #vidTable .vidTitle h3 {
+  margin: 20px 10px 0;
+  font-size: 300%;
+  color: #55a;
+  position: absolute;
+  text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff, 2px 0 0 #fff,
+    -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000,
+    -3px 3px 0 #000, 3px 0 2px #000, -3px 0 2px #000, 0 3px 2px #000, 0 -3px 2px #000;
+}
+#videos #vidTable .vidTitle p {
+  text-align: left;
+  margin-left: 10px;
+  clear: right;
+}
+
+/* HIGHLIGHTS */
+#highlights h3 {
+  text-align: center;
+}
+#highlights section ul {
+  margin: auto;
+  width: 70%;
+}
+#highlights section ul li.year {
+  list-style-type: none;
+  text-align: center;
+  border: 1px solid #aaf;
+  background: #ddf;
+  width: 50%;
+  margin: 20px auto 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+#highlights section ul li.event {
+  list-style-type: square;
+}
+#highlights section ul li.sig_3 {
+  font-weight: bold;
+}
+#highlights section ul li.sig_2 {
+  font-style: italic;
+}
+#highlights section ul li.sig_1 {
+  font-size: small;
+  color: #666;
+}
+
+/* QUOTES_IMAGES */
+#quotes_images_body {
+  background: #fff;
+}
+#quotes_images .quote {
+  width: 7in;
+  height: 4in;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 40px 20px;
+  page-break-after: always;
+  border: 2px solid #000;
+  box-shadow: inset 0 0 20px #000, inset 0 0 2px #000, inset 0 0 7px #000, inset 0 0 13px #000,
+    0 0 5px #000 !important;
+}
+#quotes_images #inner {
+  width: 80%;
+  text-align: left;
+  min-height: 200px;
+  margin: auto;
+  padding: 5px 0;
+}
+#quotes_images nav {
+  margin-left: 10px;
+}
+#quotes_images nav img {
+  margin: 0 5px;
+  position: relative;
+  top: 6px;
+}
+#quotes_images a {
+  color: #00f;
+}
+#quotes_images a:hover {
+  color: #f80;
+}
+#quotes_images h3 {
+  color: #000;
+  margin: 5px 10px;
+}
+#quotes_images h4 {
+  font-weight: normal;
+  margin: 5px 10px;
+  font-size: 80%;
+}
+#quotes_images #title {
+  position: relative;
+  bottom: 25px;
+}
+#quotes_images em {
+  font-size: 90%;
+  color: #333;
+}
+#quotes_images section {
+  max-height: 600px;
+}
+#quotes_images .legend1,
+#quotes_images .legend2,
+#quotes_images .legend3 {
+  border: 2px solid #ccc;
+}
+#quotes_images .color3,
+#quotes_images .legend3 {
+  background-color: #afa !important;
+}
+#quotes_images .color2,
+#quotes_images .legend2 {
+  background-color: #aaf !important;
+}
+#quotes_images .color1,
+#quotes_images .legend1 {
+  background-color: #aaa !important;
+}
+#quotes_images fieldset {
+  width: 180px;
+  float: right;
+  font-size: 80%;
+  margin: 5px 10px 10px;
+  border: 1px solid #000;
+}
+#quotes_images fieldset table td {
+  padding: 0 5px;
+}
+#quotes_images fieldset div {
+  width: 10px;
+  height: 10px;
+  display: inline;
+  float: left;
+  clear: left;
+  margin: 0 5px;
+  padding: 0;
+}
+#quotes_images .star_corner {
+  border: 0;
+  float: right;
+  margin: 5px 0 5px 5px;
+  clear: right;
+}
+#quotes_images aside.thumbs {
+  float: right;
+  clear: right;
+}
+#quotes_images aside.thumbs img {
+  max-height: 100px;
+  max-width: 75px;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+}
 
 /*** MoritzFamily.org ***/
-
-

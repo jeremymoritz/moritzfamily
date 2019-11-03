@@ -1,512 +1,817 @@
 [
 	{
-		"year": "1981",
+		"year": 1981,
 		"event": "Christine is born!",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "1981",
+		"year": 1981,
 		"event": "Jeremy is born!",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "1986",
+		"year": 1986,
 		"event": "Christine starts homeschool and Jeremy starts Maranatha Christian school",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "1993",
+		"year": 1993,
 		"event": "Christine starts cheerleading",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "1993",
+		"year": 1993,
 		"event": "Jeremy performs in his first musical",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "1999",
+		"year": 1999,
 		"event": "Jeremy begins writing the musical \"Rhythm City\"",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "1999",
+		"year": 1999,
 		"event": "Jeremy directs and choreographs his first musical \"Schoolhouse Rock Live!\"",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2000",
+		"year": 2000,
 		"event": "Christine and Jeremy meet online!",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2001",
+		"year": 2001,
 		"event": "Jeremy starts work as a server at Red Rock Canyon Grill",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2001",
+		"year": 2001,
 		"event": "Christine and Jeremy get married!",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2001",
+		"year": 2001,
 		"event": "Christine and Jeremy honeymoon in Florida for a week and a cruise to Caribbean",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2002",
+		"year": 2002,
 		"event": "Jeremy learns to play chess",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2002",
+		"year": 2002,
 		"event": "Christine and Jeremy go on a mission trip to Mexico with SoulTeam Missions",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2002",
+		"year": 2002,
 		"event": "Christine starts work at Applebee's",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2002",
+		"year": 2002,
 		"event": "Christine lands a job as a server at Red Rock Canyon Grill (with Jeremy)",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2002",
+		"year": 2002,
 		"event": "Christine and Jeremy move into their first apartment in Wichita: Cross Creek Apartments",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2002",
+		"year": 2002,
 		"event": "Christine begins coaching cheerleaders for Word of Life School",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2002",
+		"year": 2002,
 		"event": "Christine begins teaching piano lessons",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2003",
+		"year": 2003,
 		"event": "Jeremy graduates from Wichita State University with a BFA degree in Musical Theater",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2003",
+		"year": 2003,
 		"event": "Jeremy and Christine produce/direct/perform in Jeremy's Senior Concert at WSU",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2003",
+		"year": 2003,
 		"event": "Jeremy and Christine move to Minnesota to begin a 47-week tour as directors for Prairie Fire Children's Theater",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2003",
+		"year": 2003,
 		"event": "Jeremy and Christine take a snowboarding trip to Colorado",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2003",
+		"year": 2003,
 		"event": "Christine begins writing accompaniment for \"Rhythm City\"",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2004",
+		"year": 2004,
 		"event": "Jeremy and Christine leave Praire Fire Children's Theater and move to Shawnee, KS",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2004",
+		"year": 2004,
 		"event": "Jeremy starts working at Cities Unlimited as Director of Marketing",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2004",
+		"year": 2004,
 		"event": "Angel is born!",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2005",
+		"year": 2005,
 		"event": "Jeremy learns to write HTML and program in PHP",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2005",
+		"year": 2005,
 		"event": "Jeremy and Christine perform together in West Side Story at The Theatre in the Park",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2005",
+		"year": 2005,
 		"event": "Angel crawls to cell phones",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2005",
+		"year": 2005,
 		"event": "Jeremy, Christine, and sister Mindy direct, music direct, and choreograph \"Honk! Jr.\" for Indian Woods M.S.",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2006",
+		"year": 2006,
 		"event": "Tony is born!",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2006",
+		"year": 2006,
 		"event": "Jeremy and Christine open life insurance policies",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2006",
+		"year": 2006,
 		"event": "Jeremy, Christine, and sister Mindy direct, music direct, and choreograph The Jungle Book\" for CYT",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2006",
+		"year": 2006,
 		"event": "Jeremy begins teaching chess classes and coaching competitive chess students",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2006",
+		"year": 2006,
 		"event": "Jeremy is promoted to CEO of Cities Unlimited",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2006",
+		"year": 2006,
 		"event": "Angel has her first snow day",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2007",
+		"year": 2007,
 		"event": "Tony inspires the renaming of KFC to \"Badguy's Chicken\"",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2007",
+		"year": 2007,
 		"event": "Angel dresses as Dorothy for Halloween",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2007",
+		"year": 2007,
 		"event": "Jeremy and Christine go on a cruise to Western Caribbean (again)",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2007",
+		"year": 2007,
 		"event": "Jeremy studies fight choreography and performs in an all-fighting stunt show",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2008",
+		"year": 2008,
 		"event": "The family moves to a new house",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2008",
+		"year": 2008,
 		"event": "Tony proves to be a master foam swordsman",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2008",
+		"year": 2008,
 		"event": "Jeremy begins working as a landlord renting out the old home (mistake)",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2008",
+		"year": 2008,
 		"event": "Angel begins dance classes at Miller-Marley",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2009",
+		"year": 2009,
 		"event": "Harmony is born!",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2009",
+		"year": 2009,
 		"event": "Jeremy begins working at American Income Life Insurance (mistake)",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2009",
+		"year": 2009,
 		"event": "Angel has her first dance recital at Miller-Marley",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2009",
+		"year": 2009,
 		"event": "Jeremy quits working at American Income Life",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2010",
+		"year": 2010,
 		"event": "Jeremy begins freelancing as a web developer",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2010",
+		"year": 2010,
 		"event": "Jeremy begins participating in multiple clinical research studies",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2010",
+		"year": 2010,
 		"event": "Jeremy quits coaching chess",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2010",
+		"year": 2010,
 		"event": "Charity is born!",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2010",
+		"year": 2010,
 		"event": "Angel has her first supporting role as Young Cosette in Les Miserables",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2010",
+		"year": 2010,
 		"event": "\"Rhythm City\" makes its world premiere performance!",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2010",
+		"year": 2010,
 		"event": "Harmony learns to use/break the microwave and sets a juice bottle on fire",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2010",
+		"year": 2010,
 		"event": "Angel begins homeschool",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2011",
+		"year": 2011,
 		"event": "Jeremy and Christine create \"Rhythm City Junior\" to market to middle schools",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2011",
+		"year": 2011,
 		"event": "Jeremy creates a new production company: Immeasurable Productions",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2011",
+		"year": 2011,
 		"event": "Tony begins homeschool",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2011",
+		"year": 2011,
 		"event": "Immeasurable Productions performs and films \"Rhythm City Junior\"",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2011",
+		"year": 2011,
 		"event": "Jeremy gets LASEK (not LASIK) eye surgery",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2011",
+		"year": 2011,
 		"event": "\"Rhythm City\" is performed by multiple schools around the country",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2011",
+		"year": 2011,
 		"event": "Christine begins teaching piano lessons at Blues to Bach",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2012",
+		"year": 2012,
 		"event": "Tony takes gymnastics classes",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2012",
+		"year": 2012,
 		"event": "Chase is born!",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2012",
+		"year": 2012,
 		"event": "Tony takes Karate classes",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2012",
+		"year": 2012,
 		"event": "Christine, Jeremy, and Chase are flown out to Oregon to be guests of honor at the west coast premiere of <em>Rhythm City</em>",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2012",
+		"year": 2012,
 		"event": "Immeasurable Productions performs \"Footloose\"",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2012",
+		"year": 2012,
 		"event": "Jeremy begins work as a full-time software engineer contractor at Solidify Software",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2013",
+		"year": 2013,
 		"event": "Tony and Angel learn to ride bikes",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2013",
+		"year": 2013,
 		"event": "Angel earns her first computer (by learning to write HTML, CSS, use email, Photoshop, MS Word, Excel, write programs in Scratch, create her own website, and type 30wpm)",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2013",
+		"year": 2013,
 		"event": "Charity builds a giant Keva blocks structure",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2013",
+		"year": 2013,
 		"event": "Angel gets baptized",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2013",
+		"year": 2013,
 		"event": "Angel and Tony participate in their first chess tournament",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2013",
+		"year": 2013,
 		"event": "Jeremy creates \"Bad Bats\" video game",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2013",
+		"year": 2013,
 		"event": "Jeremy is hired on as a full-time employee at Solidify",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2013",
+		"year": 2013,
 		"event": "Immeasurable Productions performs \"Bye Bye Birdie\"",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2013",
+		"year": 2013,
 		"event": "Harmony learns to whistle (and invents the wildly popular new game \"Whistle Zombie Grave\")",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2013",
+		"year": 2013,
 		"event": "Chase becomes the #1 contributor to the high playcount of Youtube's \"The Balloon Song\"",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Angel begins her first year of public school (in 4th grade)",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Jeremy begins work as a software engineer for Walsworth Publishing Company",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Christine visits twin brother John in Canada",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Charity discovers Pikmin on the Wii U (and asks to play it every day)",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Mike comes to stay in the basement",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Angel plays Molly in CYT's musical \"Annie\"",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Jeremy starts the first chess club at Broken Arrow Elementary (Angel and Tony join)",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Harmony takes a trip with Mimi and Grandpa to Iowa (this is a HUGE deal to her)",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Tony starts the Legend of Zelda game series",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Chase gets a Spider-man four-wheeler and drives all over the house",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Christine's grandmother Maxine Farthing (\"Gramma Gigi\") passes away",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Jeremy leaves Walsworth to work as a Senior Software Developer at UnitedLex",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2014",
+		"year": 2014,
 		"event": "Immeasurable Productions performs \"42nd Street\"",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2015",
+		"year": 2015,
 		"event": "Jeremy leaves UnitedLex to work as a Senior Digital Technology Developer at Parnell",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2015",
+		"year": 2015,
 		"event": "Chase becomes the scissor bandit and opens random food packages with scissors",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2015",
+		"year": 2015,
 		"event": "Harmony gets baptized",
-		"significance": "1"
+		"significance": 2
 	},
 	{
-		"year": "2015",
+		"year": 2015,
 		"event": "Christine builds a stage in Harmony and Charity's room",
-		"significance": "2"
+		"significance": 1
 	},
 	{
-		"year": "2015",
+		"year": 2015,
 		"event": "Angel chooses to come back to homeschool",
-		"significance": "1"
+		"significance": 1
 	},
 	{
-		"year": "2015",
+		"year": 2015,
 		"event": "Tony begins public school",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2015",
+		"year": 2015,
 		"event": "Christine's brother John gets married to Melanie",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2015",
+		"year": 2015,
 		"event": "Angel starts her bi-weekly YouTube channel: DeerAngel",
-		"significance": "3"
+		"significance": 3
 	},
 	{
-		"year": "2015",
+		"year": 2015,
 		"event": "Jeremy and Davey create an immersive escape game called \"The Game Escape\"",
-		"significance": "2"
+		"significance": 2
 	},
 	{
-		"year": "2015",
+		"year": 2015,
+		"event": "Tony chooses to come back to homeschool",
+		"significance": 2
+	},
+	{
+		"year": 2015,
 		"event": "Harmony participates in her first chess tournament (and wins a TROPHY!... for last place)",
-		"significance": "2"
+		"significance": 2
+	},
+	{
+		"year": 2015,
+		"event": "Christine leaves Blues to Bach to become a full-time stay-at-home mother and homeschool teacher",
+		"significance": 1
+	},
+	{
+		"year": 2016,
+		"event": "Tony begins drum lessons",
+		"significance": 1
+	},
+	{
+		"year": 2016,
+		"event": "Jeremy leaves Parnell to work as a Senior Software Engineer at National Association of Insurance Commissioners (NAIC)",
+		"significance": 1
+	},
+	{
+		"year": 2016,
+		"event": "Christine's Sister Stacy and her husband Clint welcome their first baby Winnie",
+		"significance": 3
+	},
+	{
+		"year": 2016,
+		"event": "Tony gets baptized",
+		"significance": 2
+	},
+	{
+		"year": 2016,
+		"event": "Angel's YouTube channel DeerAngel celebrates 20th video and over 50 subscribers!",
+		"significance": 1
+	},
+	{
+		"year": 2016,
+		"event": "Jeremy's brother Davey and his wife Megan welcome their first baby Erick",
+		"significance": 3
+	},
+	{
+		"year": 2016,
+		"event": "Jeremy and Tony go on a ski trip with Grandpa Rob and Uncle Andrew",
+		"significance": 2
+	},
+	{
+		"year": 2016,
+		"event": "Charity starts gymnastics classes",
+		"significance": 1
+	},
+	{
+		"year": 2016,
+		"event": "Tony and Angel get their first experience of summer camp",
+		"significance": 1
+	},
+	{
+		"year": 2016,
+		"event": "Christine's brother John and his wife Mel welcome their first baby Julia",
+		"significance": 3
+	},
+	{
+		"year": 2016,
+		"event": "Chase creates his 25th level on Super Mario Maker",
+		"significance": 1
+	},
+	{
+		"year": 2016,
+		"event": "Tony legitimately beats his dad in a competitive game of Table Tennis with no handicaps",
+		"significance": 2
+	},
+	{
+		"year": 2016,
+		"event": "Angel gets braces",
+		"significance": 1
+	},
+	{
+		"year": 2016,
+		"event": "Christine and Jeremy discover they're pregnant again (sadly this ended in a miscarriage)",
+		"significance": 2
+	},
+	{
+		"year": 2016,
+		"event": "Tony earns his first computer (by learning to write HTML, CSS, use email, Google Docs, and type 30wpm)",
+		"significance": 1
+	},
+	{
+		"year": 2016,
+		"event": "Christine travels to Canada for her sister-in-law Melanie's baby shower",
+		"significance": 1
+	},
+	{
+		"year": 2016,
+		"event": "Harmony celebrates \"Moving Day\" (moving into Angel's room) with cupcakes and a party",
+		"significance": 1
+	},
+	{
+		"year": 2017,
+		"event": "Grandpa Rob buys a theater: \"Dramatic Impact Theater and Event Center (DITEC)\"",
+		"significance": 3
+	},
+	{
+		"year": 2017,
+		"event": "Harmony gets baptized",
+		"significance": 2
+	},
+	{
+		"year": 2017,
+		"event": "Charity, Chase, Angel, and Harmony participate in a camp production of \"Seussical the Musical\"",
+		"significance": 1
+	},
+	{
+		"year": 2017,
+		"event": "Chase starts gymnastics classes",
+		"significance": 1
+	},
+	{
+		"year": 2017,
+		"event": "Jeremy and Christine attend the Angular Developer Conference in Salt Lake City",
+		"significance": 1
+	},
+	{
+		"year": 2017,
+		"event": "Angel writes several original songs and accompanies herself on guitar on piano",
+		"significance": 1
+	},
+	{
+		"year": 2017,
+		"event": "The family buys an 8-passenger van",
+		"significance": 1
+	},
+	{
+		"year": 2017,
+		"event": "Angel goes gluten-free",
+		"significance": 2
+	},
+	{
+		"year": 2017,
+		"event": "Jeremy and Christine visit the Creation Museum and Ark encounter in Kentucky",
+		"significance": 1
+	},
+	{
+		"year": 2017,
+		"event": "Robbie and Norie get married!",
+		"significance": 3
+	},
+	{
+		"year": 2017,
+		"event": "Harmony and Charity travel to Tulsa to visit their second cousin Haven",
+		"significance": 1
+	},
+	{
+		"year": 2017,
+		"event": "Family visits Great Wolf Lodge during a staycation",
+		"significance": 1
+	},
+	{
+		"year": 2017,
+		"event": "Jeremy breaks his left index finger in a sports injury",
+		"significance": 2
+	},
+	{
+		"year": 2017,
+		"event": "Jeremy and Christine begin writing and illustrating their first book \"Code for Kids\" (later renamed \"Code for Teens\")",
+		"significance": 2
+	},
+	{
+		"year": 2017,
+		"event": "Chase learns from his siblings how to do addition, subtraction, basic multiplication, division, and writing his name",
+		"significance": 2
+	},
+	{
+		"year": 2017,
+		"event": "Angel turns 13",
+		"significance": 1
+	},
+	{
+		"year": 2017,
+		"event": "Christine completes over 25 construction and remodeling projects around the house",
+		"significance": 2
+	},
+	{
+		"year": 2017,
+		"event": "Symphony is born!",
+		"significance": 3
+	},
+	{
+		"year": 2017,
+		"event": "Tony takes 1st place two months in a row at Google's CoderDojo",
+		"significance": 2
+	},
+	{
+		"year": 2018,
+		"event": "Christine's Sister Stacy and her husband Clint welcome their second baby Felix",
+		"significance": 3
+	},
+	{
+		"year": 2018,
+		"event": "Harmony takes 1st place (out of 50 attendees and 20 entries) at Google's CoderDojo",
+		"significance": 2
+	},
+	{
+		"year": 2018,
+		"event": "Harmony begins violin lessons",
+		"significance": 1
+	},
+	{
+		"year": 2018,
+		"event": "Tony can solve Rubik's Cube in under 1 minute",
+		"significance": 2
+	},
+	{
+		"year": 2018,
+		"event": "Charity plays Young Eponine in the musical \"Les Miserables\" (a.k.a. \"Les Charitables\")",
+		"significance": 2
+	},
+	{
+		"year": 2018,
+		"event": "Symphony says her first word: \"Dada\"",
+		"significance": 2
+	},
+	{
+		"year": 2018,
+		"event": "Harmony goes on her first cruise to celebrate her 10th birthday",
+		"significance": 3
+	},
+	{
+		"year": 2018,
+		"event": "Jeremy, Tony, and Harmony shoot thousands of zombies in Black Ops 3",
+		"significance": 1
+	},
+	{
+		"year": 2018,
+		"event": "Harmony goes gluten free",
+		"significance": 1
+	},
+	{
+		"year": 2018,
+		"event": "Chase and Charity beats the game \"Kirby Star Allies\"",
+		"significance": 1
+	},
+	{
+		"year": 2018,
+		"event": "Tony creates a video game called \"Punchout\" and it receives over 10,000 views on Scratch",
+		"significance": 3
+	},
+	{
+		"year": 2018,
+		"event": "Chase and Tony unlock all of the playable characters in Super Smash Bros. Ultimate",
+		"significance": 1
+	},
+	{
+		"year": 2018,
+		"event": "Charity beats the game \"Super Mario Odyssey\"",
+		"significance": 2
+	},
+	{
+		"year": 2018,
+		"event": "Jeremy's Success Vision Online webapp debuts in production",
+		"significance": 1
+	},
+	{
+		"year": 2018,
+		"event": "New City Church moves to a new building",
+		"significance": 2
+	},
+	{
+		"year": 2018,
+		"event": "Jeremy and Christine's new book Code for Teens is released nationwide",
+		"significance": 3
+	},
+	{
+		"year": 2018,
+		"event": "Chase learns to swim",
+		"significance": 1
+	},
+	{
+		"year": 2018,
+		"event": "Angel begins school at Christ Preperatory Academy",
+		"significance": 2
+	},
+	{
+		"year": 2018,
+		"event": "Symphony learns to walk",
+		"significance": 1
+	},
+	{
+		"year": 2019,
+		"event": "Angel joins the worship team at church",
+		"significance": 2
+	},
+	{
+		"year": 2019,
+		"event": "The whole Moritz family lives in a hotel for a week while getting floors redone",
+		"significance": 2
+	},
+	{
+		"year": 2019,
+		"event": "Angel gets her learner's permit and begins learning to drive",
+		"significance": 2
+	},
+	{
+		"year": 2019,
+		"event": "Jeremy's Success Vision Online webapp is in use in 7 retail stores nationwide",
+		"significance": 3
 	}
 ]

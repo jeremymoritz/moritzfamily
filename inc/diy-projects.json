@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Self-Closing Door Hinges",
+        "date": "2019-02-05",
+        "location": "Master Bedroom and Master Bathroom Doors",
+        "crafters": [
+            "Christine"
+        ],
+        "hours": "1",
+        "cost": "20",
+        "description": "These spring loaded door hinges are now causing our doors to close automatically! It is a great way to keep the baby out of our bathroom when she is wandering around!",
+        "images": [
+            "door-hinges-image.jpg"
+        ]
+    },
+    {
+        "name": "Bathroom Towel Rack",
+        "date": "2013-06-12",
+        "location": "Master Bathroom",
+        "crafters": [
+            "Christine"
+        ],
+        "hours": "3",
+        "cost": "50",
+        "description": "This was one of my earlier projects. The sanding\/staining took a while because I put on 5 coats of poly to make it as water\/steam proof as possible. I found the hooks at World Market.",
+        "images": [
+            "2DAF1AB6-6017-4BE7-BA15-D268D0B24AE6.jpeg",
+            "6A7644D0-14A5-4DFC-97C9-35F89525B484.jpeg"
+        ]
+    }
+]

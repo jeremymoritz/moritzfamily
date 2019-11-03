@@ -26,7 +26,7 @@ require_once('inc/mf.php');
 			<p>This is our family's mission.  We will keep this statement in plain view with the understanding that, although we may often stray from the path we intend to follow, this Mission Statement will serve as a reminder and a standard to which we will continually return.</p>
 			<p>Renewed and updated January 1, <?=date('Y');?>.</p>
 			<p>~The Moritz Family<br>
-				Jeremy &amp; Christine, Angel, Tony, Harmony, Charity and Chase</p>
+				Jeremy &amp; Christine, Angel, Tony, Harmony, Charity, Chase, and Symphony</p>
 		</section>
 	</section>
 <?=$footer;?>

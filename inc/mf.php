@@ -1,6 +1,7 @@
 <?php
 ob_start();	//	starts output buffer (allows for setting php headers after declaring output, without errors)
 putenv("TZ=US/Central");	//	Sets the timezone to be Central
+date_default_timezone_set('America/Chicago');
 
 //	VARIABLES
 $developerMode = filter_input(INPUT_GET, 'dev') ? true : false;	//	Developer mode (for debugging and early testing stuff)
@@ -9,16 +10,26 @@ $thisPageBaseName = pathinfo($_SERVER['PHP_SELF']);
 $thisPageBaseName = $thisPageBaseName['filename'];
 
 //	these variables allow me to set differences for individual pages (note: if further changes are needed, define $header variable on page)
-$title = isset($title) ? $title : "The Moritz Family: Jeremy &amp; Christine, Angel, Tony, Harmony, Charity, and Chase";	//	title of page
+$title = isset($title) ? $title : "The Moritz Family: Jeremy &amp; Christine, Angel, Tony, Harmony, Charity, Chase, and Symphony";	//	title of page
 $head_content = isset($head_content) ? $head_content : "";	//	additional head content
+$googleAnalytics = "
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src='https://www.googletagmanager.com/gtag/js?id=UA-109265101-1'></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-109265101-1');
+	</script>";
 
 $header = "
 	<!DOCTYPE html>
 	<html lang='en'>
 	<head>
 		<meta charset='UTF-8'>
-		<meta name='description' content='The Moritz Family: Jeremy and Christine, Angel, Tony, Harmony, Charity, and Chase'>
-		<meta name='keywords' content='Moritz, Family, Jeremy, Christine, Angel, Tony, Harmony, Charity, Chase'>
+		<meta name='description' content='The Moritz Family: Jeremy and Christine, Angel, Tony, Harmony, Charity, Chase, and Symphony'>
+		<meta name='keywords' content='Moritz, Family, Jeremy, Christine, Angel, Tony, Harmony, Charity, Chase, Symphony'>
 		<title>$title</title>
 		<link rel='shortcut icon' href='favicon.ico'>
 		<link rel='stylesheet' type='text/css' href='inc/mf.css'>
@@ -27,8 +38,10 @@ $header = "
 			<script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
 		<![endif]-->
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js'></script>
 		<script src='inc/mf.js'></script>
 		$head_content
+		$googleAnalytics
 	</head>";
 
 $topper = "
@@ -36,7 +49,7 @@ $topper = "
 		<h1>The Moritz Family</h1>
 	</header>
 	<section id='content'>
-		<h1>Moritz Family: Jeremy &amp; Christine, Angel, Tony, Harmony, Charity, and Chase</h1>";
+		<h1>Moritz Family: Jeremy &amp; Christine, Angel, Tony, Harmony, Charity, Chase, and Symphony</h1>";
 
 $topnav = "
 	<nav class='mainNav'>
@@ -66,10 +79,20 @@ $footer = "
 
 //	Ages section to tell how old the kids are at the time of this quote
 $familyJSON = json_decode(file_get_contents("inc/family.json"));
+$questionnairesJSON = json_decode(file_get_contents("inc/questionnaires.json"));
 $jsonAdults = $familyJSON->adults;
 $jsonKids = $familyJSON->kids;
 $highlightsJSON = json_decode(file_get_contents("inc/highlights.json"));
-
+$choresJson = json_decode(file_get_contents("inc/chores.json"));
+$symphonyEventsJson = json_decode(file_get_contents("inc/symphony-events.json"));
+$diyProjectsPath = './inc/diy-projects.json';
+$diyProjectsJson = json_decode(file_get_contents($diyProjectsPath));
+$localhostAddresses = array(
+	'127.0.0.1',
+	'localhost',
+	'::1'
+);
+$isLocalhost = in_array($_SERVER['REMOTE_ADDR'], $localhostAddresses);
 
 
 	/*********************
@@ -81,9 +104,15 @@ require('config.php');
 
 ####	CONNECT TO THE DATABASE		######
 try {
-	$dbh = new PDO('mysql:host=' . $config['host'] . ';dbname=' . $config['db'], $config['username'], $config['password'], array(PDO::ATTR_PERSISTENT => true));
+	// only do the persistent connection if this is remote server (avoid the "MySQL Server has gone away" message)
+	$dbh = new PDO(
+		'mysql:host=' . $config['host'] . ';dbname=' . $config['db'],
+		$config['username'],
+		$config['password'],
+		$isLocalhost ? null : array(PDO::ATTR_PERSISTENT => true)
+	);
 } catch (PDOException $e) {
-	die($e->getMessage() . "\n Please contact us to tell us about this error... jeremy@jeremyandchristine.com");
+	die($e->getMessage() . "\n Please contact us to tell us about this error... jeremy@jeremymoritz.com");
 }
 
 #takes a pdo statement handle and returns an array of row objects
@@ -184,4 +213,72 @@ function isValidEmail ($email) {
 function disguiseMail($mail) {
 	return str_replace('@','&#64;',str_replace('o','&#111;',$mail));
 }
+
+
+/**
+	* (NOT PREFERRED!  USE phpConsoleLog below instead for simpler results!)
+	*
+	* Logs messages/variables/data to browser console from within php
+	*
+	* @param $name: message to be shown for optional data/vars
+	* @param $data: variable (scalar/mixed) arrays/objects, etc to be logged
+	* @param $jsEval: whether to apply JS eval() to arrays/objects
+	*
+	* @return none
+	* @author Sarfraz
+	*
+	* HOW TO USE:
+	* <?php
+	*   logConsole($variableToLog);
+	* ?>
+	*/
+function logConsole($name, $data = null, $jsEval = false) {
+	if (! $name) return false;
+
+	$isevaled = false;
+	$type = ($data || gettype($data)) ? 'Type: ' . gettype($data) : '';
+
+	if ($jsEval && (is_array($data) || is_object($data))) {
+		$data = 'eval(' . preg_replace('#[\s\r\n\t\0\x0B]+#', '', json_encode($data)) . ')';
+		$isevaled = true;
+	} else {
+		$data = json_encode($data);
+	}
+
+	# sanitalize
+	$data = $data ? $data : '';
+	$search_array = array("#'#", '#""#', "#''#", "#\n#", "#\r\n#");
+	$replace_array = array('"', '', '', '\\n', '\\n');
+	$data = preg_replace($search_array,  $replace_array, $data);
+	$data = ltrim(rtrim($data, '"'), '"');
+	$data = $isevaled ? $data : ($data[0] === "'") ? $data : "'" . $data . "'";
+
+	$js = <<<JSCODE
+\n<script>
+console.log('$name');
+console.log('------------------------------------------');
+console.log('$type');
+console.log($data);
+console.log('\\n');
+</script>
+JSCODE;
+
+	echo $js;
+} // end logConsole
+
+
+/**
+	* THIS IS THE PREFERRED WAY TO WRITE MESSAGES TO THE JS CONSOLE!
+	*/
+//	write to the console with PHP
+//	example use:
+//		phpConsoleLog(json_encode($myObj));	//	log an object
+function phpConsoleLog($data) {
+	$displayData = is_array($data) ? implode(',', $data) : $data;
+	$displayData = str_replace(array("\r\n", "\r", "\n"), "", $displayData);
+
+	echo "<script>console.log('phpConsoleLog: " . $displayData . "');</script>";
+}
+
+// logConsole('test', $highlightsJSON);
 ?>
