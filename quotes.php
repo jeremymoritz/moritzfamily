@@ -2,7 +2,7 @@
 $title = "Quotes from the Kids! Angel, Tony, Harmony, Charity, Chase, and Symphony";
 require_once('inc/mf.php');
 
-if(apiSnag('order') == 'ASC') {
+if (apiSnag('order') == 'ASC') {
 	$order = 'ASC';
 	$order_spelled = 'ascending';
 	$rev_order = 'DESC';
@@ -13,6 +13,16 @@ if(apiSnag('order') == 'ASC') {
 	$rev_order = 'ASC';
 	$rev_order_spelled = 'ascending';
 }
+
+$searchText = apiSnag('search');
+$whereClause = '';
+
+if ($searchText) {
+	$searchText = trim($searchText);
+	$searchText = "%{$searchText}%";
+	$whereClause = 'WHERE quote LIKE :search_text';
+}
+
 $sql = "
 	SELECT
 		id,
@@ -20,10 +30,15 @@ $sql = "
 		quote,
 		rating
 	FROM quo_quotes
+	$whereClause
 	ORDER BY date $order";
 $sth = $dbh->prepare($sql);
-$sth->execute();
 
+if ($searchText) {
+	$sth->bindParam(':search_text', $searchText, PDO::PARAM_STR);
+}
+
+$sth->execute();
 $quotes = sthFetchObjects($sth);	//	fetch all of the quotes and put them in $quotes array of objects
 
 if($quotes) {
@@ -57,6 +72,7 @@ if($quotes) {
 	$firstquote_3star = false;	//	this is used to force the first quote to be a 3 star
 
 	$quote_section = $pagination;	//	initiate section with pagination
+	$quote_section_id = 'display-quotes'; // used for ajax
 	$j = 0;	// count iterations
 	foreach($quotes as $q) {
 		$j++;
@@ -106,7 +122,27 @@ if($quotes) {
 }
 
 	// embolden names when they speak
-$embolden_names = array("Jeremy","Daddy","Dad","Christine","Mommy","Mom","Angel","Tony","Harmony","Charity","Chase","Symphony","Davey","Mindy","Robbie","Grandpa","Mimi","Andrew");
+$embolden_names = array(
+	'Jeremy',
+	'Daddy',
+	'Dad',
+	'Christine',
+	'Mommy',
+	'Mom',
+	'Angel',
+	'Tony',
+	'Harmony',
+	'Charity',
+	'Chase',
+	'Symphony',
+	'Davey',
+	'Mindy',
+	'Robbie',
+	'Grandpa',
+	'Mimi',
+	'Andrew',
+	'Uncle Robbie'
+);
 foreach($embolden_names as $name) {
 	$quote_section = preg_replace("/(<p>|<br>)(" . $name . ")/", '<p><strong>$2</strong>', $quote_section);
 }
@@ -161,13 +197,36 @@ $selectOrder = "
 				</script>
 			</fieldset>
 			<h3>Quotes From The Kids!</h3>
+			<form class="m-2">
+				<label>Search:</label>
+				<input type="search" onkeyup="filterQuotes(event)" placeholder="Type a name or quote text.">
+			</form>
 			<form action='?<?=$_SERVER['PHP_SELF'];?>' method='get'>
 				<h4>Currently showing <?=$selectNumPerPage;?> quotes in <?=$selectOrder;?> order by date.</h4>
 				<input type='hidden' name='curPage' value='<?=$curPage;?>'>
 			</form>
-			<?=$quote_section;?>
+			<div id="<?= $quote_section_id ?>">
+				<?=$quote_section;?>
+			</div>
 		</section>
 	</section>
+	<script>
+		function filterQuotes(evt) {
+			const searchText = evt.target.value.trim();
+			const minLengthToSearch = 3;
+
+			if (searchText.length >= minLengthToSearch) {
+				$.ajax({
+	        url : `<?= $_SERVER['PHP_SELF']; ?>?search=${searchText}`,
+	        type: 'GET',
+	        success: function(data){
+	          const filteredDisplayQuotes = $(data).find('#<?= $quote_section_id ?>');
+	          $('#<?= $quote_section_id ?>').replaceWith(filteredDisplayQuotes);
+	        }
+		    });
+			}
+		}
+	</script>
 <?=$footer;?>
 </body>
 </html>
