@@ -1,0 +1,105 @@
+    "questions": [
+
+CHASE
+
+
+    {
+      "rating": ,
+      "question": "What do you look forward to when you wake up?",
+      "answer": "Usually get breakfast?"
+    },
+    {
+      "rating": ,
+      "question": "How do you show people you care?",
+      "answer": "I don't... really do that."
+    },
+    {
+      "rating": ,
+      "question": "What is something about you that you think I might not know?",
+      "answer": "How there's some kid shows that I like to watch that we watched a long time ago... like Sheriff Kelly's Wild West and PJ Masks."
+    },
+    {
+      "rating": ,
+      "question": "What are the three best things about being you?",
+      "answer": "1. I like how i like to talk about so many different games i watched or played. 2. Playing in my room. 3. Playing video games, watching video games, and watching videos."
+    },
+    {
+      "rating": ,
+      "question": "What do you like best--and what do you like least--about your dad?",
+      "answer": "Best: I like how he gives me hugs and kisses and plays video games with me.  Least: About how he gives me extra chores."
+    },
+    {
+      "rating": ,
+      "question": "What do you like best--and what do you like least--about your mom?",
+      "answer": "Best: I like how she gives me hugs and kisses and gives me presents and things on my birthdays.  Least: She gives me extra chores."
+    },
+    {
+      "rating": ,
+      "question": "How would you design a treehouse?",
+      "answer": "Umm... I dunno... hmmm... Well it would have a really good and pretty wide tree.  A ladder.  that goes up to like this wood that's in like a tree and there's this wood thing and there's like a ladder that you can climb up to that spot.  and in it there's like this main house thing with like these walls and windows and curtains and doors and things i can play with up there.  And it's painted with different colors to make it look beautiful and cool up there."
+    },
+    {
+      "rating": ,
+      "question": "If you were a teacher and could teach your students anything at all, what would you teach them?",
+      "answer": "I don't know, math?"
+    },
+    {
+      "rating": ,
+      "question": "If you could time-travel, where and when would you go?",
+      "answer": "I would time travel to a place with time machines and a lot of cool things."
+    },
+    {
+      "rating": 3,
+      "question": "What makes you feel thankful?",
+      "answer": "About how I have a house of really loving people who can let me make my own Christmas lists and birthday lists so that they'll know what I want for Christmases to get some really cool things... and birthdays."
+    },
+    {
+      "rating": 2,
+      "question": "If you had three wishes, what would they be?",
+      "answer": "One would be for never-ending wishes that come true.  Two would be that I don't have to do extra chores and I have easier days on my chores and work.  And Three would be to have a mansion."
+    },
+    {
+      "rating": ,
+      "question": "What is the hardest thing about being a child?",
+      "answer": "Doing all my chores and homework."
+    },
+    {
+      "rating": ,
+      "question": "If you could have one superpower, what would it be and why?",
+      "answer": "I would have the power of time traveling so that I could time travel to back when there were dinosaurs and see some really different things and then to time travel to the future to get some really awesome cool things and to check out what it's like to be in the future."
+    },
+    {
+      "rating": ,
+      "question": "If you could be anyone in the world for a day, who would it be and why?",
+      "answer": "It would be... someone who could time travel... someone with a time traveling machine."
+    },
+    {
+      "rating": ,
+      "question": "If you wrote a book, what would it be about?",
+      "answer": "Maybe something about my family or something?  I don't know."
+    },
+    {
+      "rating": ,
+      "question": "If you made a cave in the woods, what would be inside it?",
+      "answer": "A cave that would be kind of like a really big house with a lot of really good decorations and using wood to keep all of the walls up an to paint it different things and have a lot of shelves and like a house as it."
+    },
+    {
+      "rating": 3,
+      "question": "What are interesting or unusual things about your friends?",
+      "answer": "A lot of them are able to come to my house and we're able to go to their house and try things that we don't have at each other's houses.  Like Alesandro, we have a lot of Switch games that he doesn't have that he really likes... well more like one.  Probably just like Kirby Star Allies only."
+    },
+    {
+      "rating": ,
+      "question": "What do you want to be when you grow up?",
+      "answer": "Maybe a game creator?"
+    },
+    {
+      "rating": ,
+      "question": "What's a memory that makes you happy?",
+      "answer": "Probably the times when we went to Grandmary and Grandpa's house and Aunt Stacy and Uncle Clint's house to try out their swingsets.  It was really fun."
+    },
+    {
+      "rating": ,
+      "question": "What advice would you give your parents?",
+      "answer": "Don't give me as big extra chores."
+    }

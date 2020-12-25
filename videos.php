@@ -19,7 +19,8 @@ $videos = array(	//	VideoYear | YouTube ID | Song | Artist | Height
 	"2015|cip_E18SXc0|Uptown Funk|Mark Ronson|225",
 	"2016|CVE3MitHRtM|Shake It Off|Taylor Swift|225",
 	"2017|H6twFn4tmpY|Can't Stop the Feeling|Justin Timberlake|225",
-	"2018|XUQ9c_shJ7w|Good To Be Alive (Hallelujah)|Andy Grammer|225"
+	"2018|XUQ9c_shJ7w|Good To Be Alive (Hallelujah)|Andy Grammer|225",
+	"2019|FAT1O-KLEDA|Happy|Pharrell  Williams|225"
 );
 
 // $videosWithVimeoIds = array(	//	VideoYear | Vimeo ID (THIS IS NOT USED ANYMORE!!)
@@ -119,9 +120,8 @@ $vids .= "
 			<hgroup>
 				<h2>Montage Videos of our Family over the Years</h2>
 			</hgroup>
-			<p>(Editing by Jeremy and David Moritz)</p>
+			<p>(Video Editing by Jeremy, Christine, and David Moritz)</p>
 			<?=$vids;?>
-			<h2>More Videos Coming Soon!</h2>
 		</section>
 	</section>
 <?=$footer;?>

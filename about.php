@@ -43,7 +43,7 @@ foreach($jsonKids as $kid) {
 					<td class='thumbs'>
 						<h2 class='hidden'>Past photos of $kid->name</h2>\n";
 	for($i = 0; $i <= $curAge; $i++) {
-		$tempAge = str_pad($i,2,0,STR_PAD_LEFT);
+		$tempAge = str_pad($i, 2, 0, STR_PAD_LEFT);
 		$srcFilename = strtolower($kid->name) . "-" . $tempAge . ".jpg";	//	pad left with zeros to 2 places
 
 		if($i == $curAge && !file_exists("img/family/$srcFilename")) {	//	if no recent pic has been uploaded, use the old pic
@@ -58,7 +58,7 @@ foreach($jsonKids as $kid) {
 			$infoSection .= "<div><img src='$thumbPicSrc' alt='$titleAlt' class='enlarge' title='$titleAlt'><br>Age $i</div>";
 		}
 	}
-	$ageToShow = ltrim($curAge,0) == 0 ? 0 : ltrim($curAge,0);	//	trim leading zeros unless the baby is 0
+	$ageToShow = ltrim($curAge, 0) == 0 ? 0 : ltrim($curAge, 0);	//	trim leading zeros unless the baby is 0
 	$infoSection .= "</td>
 					<td class='currentPic'>
 						<h2 class='hidden'>$titleAlt</h2>
@@ -129,7 +129,7 @@ $familySection = "
 
 ?>
 <?=$header;?>
-<body>
+<body class="about-page">
 <?=$topper;?>
 	<?=$topnav;?>
 	<section class='main' id='about'>

@@ -82,8 +82,12 @@ $lastKid = end($jsonKids);
 foreach($jsonKids as $kid) {
 	$curAge = getAge(strtotime($kid->birthday));
 
-	$srcFilename = strtolower($kid->name) . "-" . str_pad($curAge,2,0,STR_PAD_LEFT); //	pad left with zeros to 2 places
-	// $fullPicSrc = "img/family/$srcFilename";
+	$srcFilename = strtolower($kid->name) . "-" . str_pad($curAge, 2, 0, STR_PAD_LEFT); //	pad left with zeros to 2 places
+	// $fullPicSrc = "img/family/$srcFilename.jpg";
+
+	if (!file_exists("img/family/$srcFilename.jpg")) { // if file doesn't exist, use last year's pic
+		$srcFilename = strtolower($kid->name) . "-" . str_pad($curAge - 1, 2, 0, STR_PAD_LEFT);
+	}
 
 	echo "{$kid->name}: '$srcFilename'";	//	adding these names to the javascript array
 	if ($kid != $lastKid) {

@@ -1,0 +1,105 @@
+    "questions": [
+
+      Harmony
+
+
+    {
+      "rating": ,
+      "question": "What do you look forward to when you wake up?",
+      "answer": "Getting to sleep again at night."
+    },
+    {
+      "rating": ,
+      "question": "How do you show people you care?",
+      "answer": "Give them gifts."
+    },
+    {
+      "rating": ,
+      "question": "What is something about you that you think I might not know?",
+      "answer": "I used to eat packing peanuts.  Because they tasted delicious. (Dad: how old were you?).  Eight."
+    },
+    {
+      "rating": ,
+      "question": "What are the three best things about being you?",
+      "answer": "Parents are loaded.  I have a bunch of siblings that i get along with.  And I like being a bookworm."
+    },
+    {
+      "rating": ,
+      "question": "What do you like best--and what do you like least--about your dad?",
+      "answer": "Best: It's fun to talk about political stuff.  Least: He doesn't get how much I love my book characters and will just let me suffer while something happens to them."
+    },
+    {
+      "rating": ,
+      "question": "What do you like best--and what do you like least--about your mom?",
+      "answer": "This makes me feel mean because she takes care of us every day.  I mean i know you earn money, Dad, but she cleans the house!  And is a teacher.  And makes food etc.  She even does it while she's sick."
+    },
+    {
+      "rating": ,
+      "question": "How would you design a treehouse?",
+      "answer": "As a toolshed with a ladder."
+    },
+    {
+      "rating": ,
+      "question": "If you were a teacher and could teach your students anything at all, what would you teach them?",
+      "answer": "Finances."
+    },
+    {
+      "rating": 3,
+      "question": "If you could time-travel, where and when would you go?",
+      "answer": "(After looking something up on the computer...) 1889 Germany."
+    },
+    {
+      "rating": ,
+      "question": "What makes you feel thankful?",
+      "answer": "Food."
+    },
+    {
+      "rating": ,
+      "question": "If you had three wishes, what would they be?",
+      "answer": "Can they be anything?...(Dad: I suppose)... Hmm... I would want a million dollars, a good business, and a good husband.  That's it."
+    },
+    {
+      "rating": ,
+      "question": "What is the hardest thing about being a pre-teen?",
+      "answer": "I can't go to McDonald's whenever I want."
+    },
+    {
+      "rating": ,
+      "question": "If you could have one superpower, what would it be and why?",
+      "answer": "Flying.  Because then i could just look down on people.  And if people tried to grab me, i could always fly higher."
+    },
+    {
+      "rating": 3,
+      "question": "If you could be anyone in the world for a day, who would it be and why?",
+      "answer": "I would be Biden.  I would admit to all the crimes I did and then throw myself in jail."
+    },
+    {
+      "rating": ,
+      "question": "If you wrote a book, what would it be about?",
+      "answer": "Eh... Angels and devils, I guess."
+    },
+    {
+      "rating": ,
+      "question": "If you made a cave in the woods, what would be inside it?",
+      "answer": "First, it would be covered in carpets and wallpaper.  It would have a working bathroom and working sink.  It would have a swimming pool, a purple bed, a mini-fridge, and a giant library.  And a full kitchen."
+    },
+    {
+      "rating": ,
+      "question": "What are interesting or unusual things about your friends?",
+      "answer": "All of them are loud.  All are touchy (not in the emotional way)."
+    },
+    {
+      "rating": ,
+      "question": "What do you want to be when you grow up?",
+      "answer": "Missionary... cuz I already will be."
+    },
+    {
+      "rating": ,
+      "question": "What's a memory that makes you happy?",
+      "answer": "When everybody on the cruise ship could recognize me as 'The Dice Girl' from a magic show on the cruise."
+    },
+    {
+      "rating": ,
+      "question": "What advice would you give your parents?",
+      "answer": "Read my books.  They are good!"
+    }
