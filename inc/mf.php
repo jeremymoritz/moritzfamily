@@ -37,7 +37,7 @@ $header = "
 		<meta name='keywords' content='Moritz, Family, Jeremy, Christine, Angel, Tony, Harmony, Charity, Chase, Symphony'>
 		<title>$title</title>
 		<link rel='shortcut icon' href='favicon.ico'>
-		<link rel='stylesheet' href='/inc/bootstrap-5.1.3-dist/css/bootstrap.css'>
+		<link rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.css'>
 		<link rel='stylesheet' href='/node_modules/bootstrap-icons/font/bootstrap-icons.css'>
 		<link rel='stylesheet' href='inc/mf.css'>
 		<script
@@ -77,7 +77,7 @@ $topnav = "<nav class='mainNav'>
 $footer = "
 		<footer>Website Created by <a href='http://www.JeremyMoritz.com'>Jeremy Moritz</a></footer>
 	</section>
-	<script src='/inc/bootstrap-5.1.3-dist/js/bootstrap.bundle.js'></script>";
+	<script src='/node_modules/bootstrap/dist/js/bootstrap.bundle.js'></script>";
 
 /*********************
 *   Load JSON File   *
