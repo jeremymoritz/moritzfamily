@@ -37,7 +37,9 @@ $header = "
 		<meta name='keywords' content='Moritz, Family, Jeremy, Christine, Angel, Tony, Harmony, Charity, Chase, Symphony'>
 		<title>$title</title>
 		<link rel='shortcut icon' href='favicon.ico'>
-		<link rel='stylesheet' type='text/css' href='inc/mf.css'>
+		<link rel='stylesheet' href='/inc/bootstrap-5.1.3-dist/css/bootstrap.css'>
+		<link rel='stylesheet' href='/node_modules/bootstrap-icons/font/bootstrap-icons.css'>
+		<link rel='stylesheet' href='inc/mf.css'>
 		<script
 			crossorigin='anonymous'
 			integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
@@ -56,8 +58,7 @@ $topper = "
 	<section id='content'>
 		<h1>Moritz Family: Jeremy &amp; Christine, Angel, Tony, Harmony, Charity, Chase, and Symphony</h1>";
 
-$topnav = "
-	<nav class='mainNav'>
+$topnav = "<nav class='mainNav'>
 		<h2>Site Navigation</h2>
 		<table>
 			<tr>
@@ -75,12 +76,12 @@ $topnav = "
 
 $footer = "
 		<footer>Website Created by <a href='http://www.JeremyMoritz.com'>Jeremy Moritz</a></footer>
-	</section>";
+	</section>
+	<script src='/inc/bootstrap-5.1.3-dist/js/bootstrap.bundle.js'></script>";
 
-
-	/*********************
-	*   Load JSON File   *
-	*********************/
+/*********************
+*   Load JSON File   *
+*********************/
 
 //	Ages section to tell how old the kids are at the time of this quote
 $familyJSON = json_decode(file_get_contents("inc/family.json"));
