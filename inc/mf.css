@@ -1,5 +1,12 @@
 /* MoritzFamily.org Stylesheet For All Pages */
 
+/** Google WebFonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap'); */
+@font-face {
+  font-family: 'Comforter Brush';
+  src: url('/inc/fonts/Comforter_Brush/ComforterBrush-Regular.ttf');
+}
+
 /*html5 display rule (for older browsers to display these html5 tags as block level elements)*/
 address,
 article,
@@ -399,6 +406,10 @@ section#content {
 }
 
 /* MISSION */
+#mission h2 {
+  font-family: 'Comforter Brush', cursive;
+  font-size: 3rem;
+}
 #mission section {
   width: 70%;
   margin: auto;
