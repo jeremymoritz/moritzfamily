@@ -77,6 +77,11 @@ ul {
   border: 0;
 }
 
+body,
+html {
+  height: 100%;
+}
+
 /* STYLE CLASSES (ALL PAGES) */
 .clear {
   clear: both;
@@ -84,10 +89,12 @@ ul {
 .hidden {
   display: none;
 }
-.left, .float-left {
+.left,
+.float-left {
   float: left;
 }
-.right, .float-right {
+.right,
+.float-right {
   float: right;
 }
 .enlarge {
@@ -108,17 +115,16 @@ ul {
 .hider:hover {
   cursor: pointer;
 }
-.m-2 {margin: 0.5rem;}
 
 /* BASIC TEMPLATE */
 body {
-  background: url('/img/collage_bg.jpg') repeat #888;
   background-position: top center;
+  background: url('/img/collage_bg.jpg') repeat #888;
   color: #000;
-  font-size: 11pt;
-  text-align: center;
   font-family: arial, sans-serif;
+  font-size: 11pt;
   margin: auto;
+  text-align: center;
 }
 p {
   text-align: left;
@@ -149,6 +155,24 @@ ul {
 }
 
 /* MULTIPLE PAGES */
+.navbar-brand {
+  position: relative;
+}
+.navbar-brand span {
+  padding: 0 0.8rem;
+  letter-spacing: 0.1ch;
+}
+.navbar-brand span:before {
+  border-radius: 1000px;
+  border: 2px solid #fff;
+  content: '';
+  display: block;
+  height: 2rem;
+  position: absolute;
+  width: 5.4rem;
+  left: 0;
+  top: 0.25rem;
+}
 nav.mainNav {
   font-size: 90%;
   background: url('/img/wb_grad.png') repeat-x #000;
@@ -189,23 +213,31 @@ footer a {
   margin: 5px 10px;
 }
 
-#content {
-  width: 1000px;
-  margin: auto;
-}
 section.main {
+  background-image: url('/img/white-trans-1000_bg.png');
+  background-repeat: repeat-y;
+  background-size: contain;
+  flex-grow: 1;
   margin: auto;
   width: 100%;
-  background: url('/img/white-trans-1000_bg.png') repeat-y;
+}
+section#content {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100% - 3.5rem);
 }
 
 /* INDEX */
+#index #logo {
+  margin: 1rem auto;
+}
 #index #cover-pic-wrapper {
-  position: relative;
-  width: 620px;
-  height: 470px;
   margin: 10px auto 0;
+  max-width: 600px;
   padding-bottom: 20px;
+  position: relative;
 }
 #index .cover-pic {
   border-bottom-color: #89f;
@@ -218,7 +250,6 @@ section.main {
   margin-left: auto;
   margin-right: auto;
   max-height: 450px;
-  max-width: 600px;
   opacity: 1;
   position: absolute;
   right: 0;
@@ -230,14 +261,15 @@ section.main {
 #index #cover-pic-caption {
   background: #fff;
   border-radius: 8px 8px 0 0;
-  bottom: 30px;
   box-shadow: -0px -3px 5px #0005;
   color: #333;
-  margin: auto;
+  font-size: 1rem;
+  margin: -19px auto 0;
   padding: 5px 8px 5px 10px;
   position: absolute;
   right: calc(50% - 75px);
   text-align: center;
+  top: 400px;
   width: 150px;
 }
 
@@ -250,6 +282,14 @@ section.main {
 }
 #index ul a {
   text-decoration: none;
+}
+
+#index .mid-page-nav {
+  margin: 450px auto 2rem;
+}
+#index .mid-page-nav .list-group-item-action:hover {
+  background-color: #55f;
+  color: #fff;
 }
 
 /* QUOTES */
