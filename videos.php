@@ -20,7 +20,8 @@ $videos = array(	//	VideoYear | YouTube ID | Song | Artist | Height
 	"2016|CVE3MitHRtM|Shake It Off|Taylor Swift|225",
 	"2017|H6twFn4tmpY|Can't Stop the Feeling|Justin Timberlake|225",
 	"2018|XUQ9c_shJ7w|Good To Be Alive (Hallelujah)|Andy Grammer|225",
-	"2019|FAT1O-KLEDA|Happy|Pharrell  Williams|225"
+	"2019|FAT1O-KLEDA|Happy|Pharrell Williams|225",
+	"2020|23NKC_PZbbc|Help|The Beatles|225",
 );
 
 // $videosWithVimeoIds = array(	//	VideoYear | Vimeo ID (THIS IS NOT USED ANYMORE!!)

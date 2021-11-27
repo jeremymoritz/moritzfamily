@@ -26,7 +26,7 @@ if (is_dir($selfies_dir)) {
 					$date_str = explode('_', end($selfies))[0];
 					$selfie_date = date_create($date_str . '-01');
 
-					echo date_format($selfie_date, 'M Y');
+					echo date_format($selfie_date, 'F Y');
 				?>
 			</h3>
 		</div>
@@ -45,6 +45,7 @@ if (is_dir($selfies_dir)) {
 			setInterval(() => {
 				picChangeBoolean = !picChangeBoolean;	//	to toggle 0 or 1
 				selfieIndex = selfieCounter++ % selfies.length;
+
 				if (!selfieIndex) {
 					selfies = _.shuffle(selfies);
 				}

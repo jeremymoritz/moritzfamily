@@ -10,3 +10,4 @@ config.php
 *.zip
 *.webm
 *_log
+**/large/**
