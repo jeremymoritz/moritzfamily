@@ -188,7 +188,7 @@ function compare_dates($date1, $date2) {
 			if($block['name'] == 'year' && $amount >= 3) { break; }	//	if 3 years old, stop counting months
 		}
 	}
-	return ($date2 > $date1 ? '' : '-') . implode(' ',$result) . ' old';
+	return ($date2 > $date1 ? '' : '-') . implode(' ', $result) . ' old';
 }
 
 	//	return the age in years if given a birthday and (optionally) another date (also may optionally pad it to a certain length like 2)

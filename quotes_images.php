@@ -41,8 +41,8 @@ if($quotes) {
 				$pics_arr[] = "<img src='img/family/thumbs/" . strtolower($kid->name) . "-" . getAge($kid->birthday, strtotime($q->date)) . ".jpg' alt='{$kid->name} (" . getAge($kid->birthday, strtotime($q->date), 1) . ")' class='thumbs'>";
 			}
 		}
-		$ages = '[' . implode($ages_arr,', ') . ']';
-		$pics = "<aside class='thumbs'>" . implode($pics_arr,' ') . "</aside>";
+		$ages = '[' . implode(', ', $ages_arr) . ']';
+		$pics = "<aside class='thumbs'>" . implode(' ', $pics_arr) . "</aside>";
 
 			//	star corner shows number of star rating in top right corner
 		$star_corner = "<div class='star_corner'>";
