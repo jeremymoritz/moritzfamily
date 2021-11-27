@@ -5,15 +5,15 @@ require_once('inc/mf.php');
 ?>
 <?=$header;?>
 <body>
+<?=$topnav;?>
 <?=$topper;?>
-	<?=$topnav;?>
 	<section class='main' id='kitten'>
 		<h1><?=$title;?></h1>
 		<section>
 			<h2>The Kitten Catastrophe<br>(A Picturebook Melodrama)</h2>
 			<noscript>
 				<p id='warning'>WARNING: JavaScript must be enabled on your browser to view this story!
-					Your browser is currently not configured to display JavaScript.  Please 
+					Your browser is currently not configured to display JavaScript.  Please
 					<a href='http://jeremyandchristine.com/_old/_oldpages/kitten-old.php'>Click Here</a> to view the story in another format.</p>
 			</noscript>
 			<table id='kittentable'>

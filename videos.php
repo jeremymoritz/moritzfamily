@@ -113,8 +113,8 @@ $vids .= "
 
 <?=$header;?>
 <body>
+<?=$topnav;?>
 <?=$topper;?>
-	<?=$topnav;?>
 	<section class='main' id='videos'>
 		<h1><?=$title;?></h1>
 		<section>

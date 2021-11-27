@@ -167,8 +167,8 @@ $selectOrder = "
 ?>
 <?=$header;?>
 <body>
+<?=$topnav;?>
 <?=$topper;?>
-	<?=$topnav;?>
 	<section class='main' id='quotes'>
 		<h1>The Moritz Family</h1>
 		<section id='inner'>

@@ -29,13 +29,13 @@ $highlightsList = "
 ?>
 <?=$header;?>
 <body>
+<?=$topnav;?>
 <?=$topper;?>
-	<?=$topnav;?>
 	<section class='main' id='<?=$thisPageBaseName;?>'>
 		<h1><?=$title;?></h1>
 		<section>
 			<h2>The Highlight Reel</h2>
-			<h3>Some of Each Year's Notable Events in the Moritz Household</h3>
+			<h3 class="m-auto w-75">Some of Each Year's Notable Events in the Moritz Household</h3>
 			<?=$highlightsList;?>
 		</section>
 	</section>

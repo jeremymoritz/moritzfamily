@@ -219,6 +219,7 @@ section.main {
   background-size: contain;
   flex-grow: 1;
   margin: auto;
+  padding-top: 1rem;
   width: 100%;
 }
 section#content {
@@ -231,7 +232,7 @@ section#content {
 
 /* INDEX */
 #index #logo {
-  margin: 1rem auto;
+  margin: 0 auto 1rem;
 }
 #index #cover-pic-wrapper {
   margin: 10px auto 0;

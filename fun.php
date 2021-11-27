@@ -4,8 +4,8 @@ require_once('inc/mf.php');
 ?>
 <?=$header;?>
 <body>
+<?=$topnav;?>
 <?=$topper;?>
-	<?=$topnav;?>
 	<section class='main' id='fun'>
 		<h1><?=$title;?></h1>
 		<section>

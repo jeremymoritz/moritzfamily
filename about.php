@@ -130,8 +130,8 @@ $familySection = "
 ?>
 <?=$header;?>
 <body class="about-page">
+<?=$topnav;?>
 <?=$topper;?>
-	<?=$topnav;?>
 	<section class='main' id='about'>
 		<h1><?=$title;?></h1>
 		<section>

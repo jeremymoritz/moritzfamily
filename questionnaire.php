@@ -92,8 +92,8 @@ $questionsHTML = implode(' ', $allQs);
 ?>
 <?=$header;?>
 <body>
+<?=$topnav;?>
 <?=$topper;?>
-	<?=$topnav;?>
 	<section class='main' id='questionnaire'>
 		<h1>The Moritz Kids Questionnaire</h1>
 		<h2>Questionnaire Date: <?=date('l, F jS, Y', strtotime($chosenQuestionnaire->qDate));?></h2>
