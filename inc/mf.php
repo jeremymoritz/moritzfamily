@@ -4,10 +4,15 @@ putenv("TZ=US/Central");	//	Sets the timezone to be Central
 date_default_timezone_set('America/Chicago');
 
 //	VARIABLES
-$developerMode = filter_input(INPUT_GET, 'dev') ? true : false;	//	Developer mode (for debugging and early testing stuff)
-$thisPage = $_SERVER['PHP_SELF'] . (strlen($_SERVER['QUERY_STRING']) ? "?" . $_SERVER['QUERY_STRING'] : "");	//		returns current page + query string (e.g. "mypage.php?ugly=true")
-$thisPageBaseName = pathinfo($_SERVER['PHP_SELF']);
-$thisPageBaseName = $thisPageBaseName['filename'];
+$developerMode = (bool) filter_input(INPUT_GET, 'dev');	//	Developer mode (for debugging and early testing stuff)
+$thisPage = $_SERVER['PHP_SELF'];
+
+if (isset($_SERVER['QUERY_STRING']) && strlen($_SERVER['QUERY_STRING'])) {
+	$thisPage .= "?" . $_SERVER['QUERY_STRING'];
+}	//	return current page + query string (e.g. "mypage.php?ugly=true")
+
+$thisPagePathInfo = pathinfo($_SERVER['PHP_SELF']);
+$thisPageBaseName = $thisPagePathInfo['filename'];
 
 //	these variables allow me to set differences for individual pages (note: if further changes are needed, define $header variable on page)
 $title = isset($title) ? $title : "The Moritz Family: Jeremy &amp; Christine, Angel, Tony, Harmony, Charity, Chase, and Symphony";	//	title of page
@@ -33,11 +38,11 @@ $header = "
 		<title>$title</title>
 		<link rel='shortcut icon' href='favicon.ico'>
 		<link rel='stylesheet' type='text/css' href='inc/mf.css'>
-		<!--[if lt IE 9]>
-			<link rel='stylesheet' href='inc/ie8.css'>
-			<script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
-		<![endif]-->
-		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+		<script
+			crossorigin='anonymous'
+			integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
+			src='https://code.jquery.com/jquery-3.6.0.min.js'
+		></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js'></script>
 		<script src='inc/mf.js'></script>
 		$head_content
@@ -74,7 +79,7 @@ $footer = "
 
 
 	/*********************
-	*	Load JSON File	*
+	*   Load JSON File   *
 	*********************/
 
 //	Ages section to tell how old the kids are at the time of this quote
