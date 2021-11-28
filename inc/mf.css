@@ -540,10 +540,6 @@ fieldset .btn.btn-success:after {
   width: 90%;
   margin: auto;
 }
-#work table td {
-  vertical-align: top;
-  width: 33%;
-}
 #work a {
   font-size: 150%;
   text-decoration: none;
