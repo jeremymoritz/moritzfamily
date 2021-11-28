@@ -7,30 +7,38 @@ require_once('inc/mf.php');
 <body>
 <?=$topnav;?>
 <?=$topper;?>
-  <section class='main' id='kitten'>
+  <section class='main px-3 px-md-4' id='kitten'>
     <h1><?=$title;?></h1>
     <section>
-      <h2>The Kitten Catastrophe<br>(A Picturebook Melodrama)</h2>
-      <noscript>
-        <p id='warning'>WARNING: JavaScript must be enabled on your browser to view this story!
-          Your browser is currently not configured to display JavaScript.  Please
-          <a href='http://jeremyandchristine.com/_old/_oldpages/kitten-old.php'>Click Here</a> to view the story in another format.</p>
-      </noscript>
-      <table id='kittentable'>
-        <tr>
-          <td class='btn'><img onclick='javascript:goBack()' src='img/lmt/backbtn.gif' alt='Back' id='backbtn' class='mouseover'></td>
-          <td id='book'>
-            <img src='img/kitten/kitten1.jpg' alt='1' id='kittenpage' />
-            <?php
-              require('inc/kittentext.php');
-              foreach($kittenText as $page => $text) {
-                echo("<div id='text{$page}'>{$text}</div>\n");
-              }
-            ?>
-          </td>
-          <td class='btn'><img onclick='javascript:goFwd()' src='img/lmt/fwdbtn.gif' alt='Forward' id='fwdbtn' class='mouseover'></td>
-        </tr>
-      </table>
+      <h2>The Kitten Catastrophe</h2>
+      <h3 class="text-center">(A Picturebook Melodrama)</h3>
+      <div id='kittentable'>
+        <button
+          class="btn btn-primary"
+          id='backbtn'
+          onclick='javascript:goBack()'
+        ><i class="bi-arrow-left"></i></button>
+        <button
+          class="btn btn-primary"
+          id='fwdbtn'
+          onclick='javascript:goFwd()'
+        ><i class="bi-arrow-right"></i></button>
+        <div class="my-2" id="book">
+          <img
+            src='img/kitten/kitten1.jpg'
+            alt='1'
+            id='kittenpage'
+            class="img-fluid"
+          >
+          <?php
+            require('inc/kittentext.php');
+            foreach($kittenText as $page => $text) {
+              echo("<div id='text{$page}'>{$text}</div>\n");
+            }
+          ?>
+        </div>
+      </div>
+
     </section>
   </section>
 <?=$footer;?>

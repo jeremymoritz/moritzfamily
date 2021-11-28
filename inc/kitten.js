@@ -1,4 +1,4 @@
-/*	JAVASCRIPT FOR PAGE CATASTROPHE STORY!	*/
+/*	JAVASCRIPT FOR PAGE KITTEN CATASTROPHE STORY!	*/
 
 function goFwd() {
   var totalpages = 25;
@@ -25,6 +25,7 @@ function goFwd() {
     fwdbtn.style.display = 'none';
   }
 }
+
 function goBack() {
   var page = document.getElementById('kittenpage');
   var fwdbtn = document.getElementById('fwdbtn');
