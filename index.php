@@ -52,8 +52,10 @@ if (is_dir($selfies_dir)) {
     </div>
 
     <div class="mid-page-nav row">
-      <div class="list-group col-sm-6 col-md-4 col-lg-3 m-auto">
-        <?= $nav_links_html['list-group']; ?>
+      <div class="col-sm-6 col-md-4 col-lg-3 m-auto">
+        <div class="list-group">
+          <?= $nav_links_html['list-group']; ?>
+        </div>
       </div>
     </div>
 
