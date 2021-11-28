@@ -8,14 +8,32 @@ require_once('inc/mf.php');
 <?=$topper;?>
   <section class='main' id='fun'>
     <h1><?=$title;?></h1>
-    <section>
-      <h2><img src='img/fun_stuff.png' alt='Fun Stuff'></h2>
-      <table>
-        <tr>
-          <td>Little Miss Terrific<br><a href='terrific.php'><img src='img/lmt_cover.jpg' alt='Little Miss Terrific'></a>
-          <td>The Kitten Catastrophe<br><a href='kitten.php'><img src='img/kitten_cover.jpg' alt='The Kitten Catastrophe'></a>
-        </tr>
-      </table>
+    <section class="px-3 px-lg-4">
+      <h2>Fun Stuff</h2>
+      <div class="row">
+        <div class="col-md-6 my-2 p-2">
+          <a
+            class="m-auto text-center"
+            href='terrific.php'
+          ><h3 class="text-center">Little Miss Terrific</h3>
+          <img
+            class="img-fluid"
+            src='img/lmt_cover.jpg'
+            alt='Little Miss Terrific'
+          ></a>
+        </div>
+        <div class="col-md-6 my-2 p-2">
+          <a
+            class="m-auto text-center"
+            href='kitten.php'
+          ><h3 class="text-center">The Kitten Catastrophe</h3>
+          <img
+            class="img-fluid"
+            src='img/kitten_cover.jpg'
+            alt='The Kitten Catastrophe'
+          ></a>
+        </div>
+      </div>
     </section>
   </section>
 <?=$footer;?>
