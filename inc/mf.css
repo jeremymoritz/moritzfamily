@@ -457,24 +457,6 @@ fieldset .btn.btn-success:after {
 /* FUN */
 
 /* TERRIFIC & KITTEN */
-#terrific,
-#kitten {
-  padding: 10px 0 20px;
-}
-#terrific #lmttable {
-  text-align: center;
-  margin: auto;
-}
-#terrific img {
-  border: 0px;
-}
-#terrific .btn {
-  vertical-align: bottom;
-  width: 100px;
-}
-#terrific .btn img {
-  cursor: pointer;
-}
 
 #kitten #kittentable {
   text-align: center;
