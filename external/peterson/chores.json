@@ -1,58 +1,130 @@
 [
-	{"size": 1, "task": "Rake/shovel 10 minutes-whatever is needed", "frequency": 3},
-	{"size": 1, "task": "Pick up 20 sticks outside and put in firewood stacks", "frequency": 3},
-	{"size": 1, "task": "Wipe off all foor knobs inside/outisde of rooms and house", "frequency": 1},
-	{"size": 1, "task": "Dust off game cabinet", "frequency": 1},
-	{"size": 1, "task": "Write out three things you are thankful/blessed by", "frequency": 1},
-	{"size": 1, "task": "Move 10 dishes from/to the dishwasher", "frequency": 3},
-	{"size": 1, "task": "Clean bathroom sink and cabinet front downstairs", "frequency": 1},
-	{"size": 1, "task": "Clean bathroom sink and cabinet front upstairs", "frequency": 2},
-	{"size": 1, "task": "Clean bathroom sink and cabinet front garage", "frequency": 2},
-	{"size": 1, "task": "Clean a toilet", "frequency": 1},
-	{"size": 1, "task": "Wipe the kitchen table", "frequency": 1},
-	{"size": 1, "task": "Sweep the kitchen", "frequency": 1},
-	{"size": 1, "task": "Tell each family member something you love about them", "frequency": 3},
-	{"size": 1, "task": "Write out verse-Psalm 95:1-5", "frequency": 1},
-	{"size": 1, "task": "Write out Ephesians 5:1-4", "frequency": 3},
-	{"size": 1, "task": "Donate 5 of your own items", "frequency": 1},
+  {
+    "size": 1,
+    "task": "Rake/shovel 10 minutes-whatever is needed",
+    "frequency": 3
+  },
+  {
+    "size": 1,
+    "task": "Pick up 20 sticks outside and put in firewood stacks",
+    "frequency": 3
+  },
+  {
+    "size": 1,
+    "task": "Wipe off all foor knobs inside/outisde of rooms and house",
+    "frequency": 1
+  },
+  { "size": 1, "task": "Dust off game cabinet", "frequency": 1 },
+  {
+    "size": 1,
+    "task": "Write out three things you are thankful/blessed by",
+    "frequency": 1
+  },
+  {
+    "size": 1,
+    "task": "Move 10 dishes from/to the dishwasher",
+    "frequency": 3
+  },
+  {
+    "size": 1,
+    "task": "Clean bathroom sink and cabinet front downstairs",
+    "frequency": 1
+  },
+  {
+    "size": 1,
+    "task": "Clean bathroom sink and cabinet front upstairs",
+    "frequency": 2
+  },
+  {
+    "size": 1,
+    "task": "Clean bathroom sink and cabinet front garage",
+    "frequency": 2
+  },
+  { "size": 1, "task": "Clean a toilet", "frequency": 1 },
+  { "size": 1, "task": "Wipe the kitchen table", "frequency": 1 },
+  { "size": 1, "task": "Sweep the kitchen", "frequency": 1 },
+  {
+    "size": 1,
+    "task": "Tell each family member something you love about them",
+    "frequency": 3
+  },
+  { "size": 1, "task": "Write out verse-Psalm 95:1-5", "frequency": 1 },
+  { "size": 1, "task": "Write out Ephesians 5:1-4", "frequency": 3 },
+  { "size": 1, "task": "Donate 5 of your own items", "frequency": 1 },
 
-	{"size": 2, "task": "Reorganize couches, check covers for stains", "frequency": 1},
-	{"size": 2, "task": "Sweep or shovel driveway-whichever season it pertains to", "frequency": 3},
-	{"size": 2, "task": "Dust Computer Desk-put everything back", "frequency": 1},
-	{"size": 2, "task": "Vacuum the stairs", "frequency": 2},
-	{"size": 2, "task": "Sweep bathroom floor", "frequency": 1},
-	{"size": 2, "task": "Vacuum living room", "frequency": 1},
-	{"size": 2, "task": "Clean garage bathroom", "frequency": 1},
-	{"size": 2, "task": "Put away sibling's laundry", "frequency": 1},
-	{"size": 2, "task": "Pick up trash in the backyard", "frequency": 1},
-	{"size": 2, "task": "Clean out and reorganize 1 bathroom cabinet", "frequency": 1},
-	{"size": 2, "task": "Rake/shovel 25 minutes-whatever is needed", "frequency": 1},
-	{"size": 2, "task": "Wipe the kitchen cabinet doors", "frequency": 1},
-	{"size": 2, "task": "Write an encouraging note to a sibling (Mom’s Choice)", "frequency": 3},
-	{"size": 2, "task": "Clean all trash cans inside", "frequency": 1},
-	{"size": 2, "task": "Clean all door windows", "frequency": 1},
-	{"size": 2, "task": "Vacuum the laundry room", "frequency": 1},
-	{"size": 2, "task": "Clean bathroom mirrors", "frequency": 1},
-	{"size": 2, "task": "Clean shutters, star and front table", "frequency": 3},
-	{"size": 2, "task": "Clean the microwave", "frequency": 1},
-	{"size": 2, "task": "Clean bedroom mirrors", "frequency": 1},
-	{"size": 2, "task": "Donate 10 of your own items", "frequency": 1},
+  {
+    "size": 2,
+    "task": "Reorganize couches, check covers for stains",
+    "frequency": 1
+  },
+  {
+    "size": 2,
+    "task": "Sweep or shovel driveway-whichever season it pertains to",
+    "frequency": 3
+  },
+  {
+    "size": 2,
+    "task": "Dust Computer Desk-put everything back",
+    "frequency": 1
+  },
+  { "size": 2, "task": "Vacuum the stairs", "frequency": 2 },
+  { "size": 2, "task": "Sweep bathroom floor", "frequency": 1 },
+  { "size": 2, "task": "Vacuum living room", "frequency": 1 },
+  { "size": 2, "task": "Clean garage bathroom", "frequency": 1 },
+  { "size": 2, "task": "Put away sibling's laundry", "frequency": 1 },
+  { "size": 2, "task": "Pick up trash in the backyard", "frequency": 1 },
+  {
+    "size": 2,
+    "task": "Clean out and reorganize 1 bathroom cabinet",
+    "frequency": 1
+  },
+  {
+    "size": 2,
+    "task": "Rake/shovel 25 minutes-whatever is needed",
+    "frequency": 1
+  },
+  { "size": 2, "task": "Wipe the kitchen cabinet doors", "frequency": 1 },
+  {
+    "size": 2,
+    "task": "Write an encouraging note to a sibling (Mom’s Choice)",
+    "frequency": 3
+  },
+  { "size": 2, "task": "Clean all trash cans inside", "frequency": 1 },
+  { "size": 2, "task": "Clean all door windows", "frequency": 1 },
+  { "size": 2, "task": "Vacuum the laundry room", "frequency": 1 },
+  { "size": 2, "task": "Clean bathroom mirrors", "frequency": 1 },
+  { "size": 2, "task": "Clean shutters, star and front table", "frequency": 3 },
+  { "size": 2, "task": "Clean the microwave", "frequency": 1 },
+  { "size": 2, "task": "Clean bedroom mirrors", "frequency": 1 },
+  { "size": 2, "task": "Donate 10 of your own items", "frequency": 1 },
 
-	{"size": 3, "task": "Clean the Dining Room", "frequency": 1},
-	{"size": 3, "task": "Sweep the Garage", "frequency": 1},
-	{"size": 3, "task": "Write out Psalm 34:1-19", "frequency": 1},
-	{"size": 3, "task": "Vacuum the Upstairs bedrooms", "frequency": 1},
-	{"size": 3, "task": "Clean out refrigerator", "frequency": 1},
-	{"size": 3, "task": "Mop all tile floors", "frequency": 1},
-	{"size": 3, "task": "Scrub out all three toilets", "frequency": 2},
-	{"size": 3, "task": "Rake/shovel 40 minutes-whatever is needed", "frequency": 2},
-	{"size": 3, "task": "Clean basement Kitchenette", "frequency": 1},
-	{"size": 3, "task": "Clean basement fridge (including wipe down shelves)", "frequency": 1},
-	{"size": 3, "task": "Clean all the toilets", "frequency": 1},
-	{"size": 3, "task": "Wipe 3 groups of windows (Mom’s choice)", "frequency": 1},
-	{"size": 3, "task": "Clean out the car and truck", "frequency": 1},
-	{"size": 3, "task": "Organize cubby in Dining Room", "frequency": 1},
-	{"size": 3, "task": "Do 2 mediums", "frequency": 1},
-	{"size": 3, "task": "Sweep and vaccum garage", "frequency": 1},
-	{"size": 3, "task": "Donate 15 of your own items", "frequency": 1}
+  { "size": 3, "task": "Clean the Dining Room", "frequency": 1 },
+  { "size": 3, "task": "Sweep the Garage", "frequency": 1 },
+  { "size": 3, "task": "Write out Psalm 34:1-19", "frequency": 1 },
+  { "size": 3, "task": "Vacuum the Upstairs bedrooms", "frequency": 1 },
+  { "size": 3, "task": "Clean out refrigerator", "frequency": 1 },
+  { "size": 3, "task": "Mop all tile floors", "frequency": 1 },
+  { "size": 3, "task": "Scrub out all three toilets", "frequency": 2 },
+  {
+    "size": 3,
+    "task": "Rake/shovel 40 minutes-whatever is needed",
+    "frequency": 2
+  },
+  { "size": 3, "task": "Clean basement Kitchenette", "frequency": 1 },
+  {
+    "size": 3,
+    "task": "Clean basement fridge (including wipe down shelves)",
+    "frequency": 1
+  },
+  { "size": 3, "task": "Clean all the toilets", "frequency": 1 },
+  {
+    "size": 3,
+    "task": "Wipe 3 groups of windows (Mom’s choice)",
+    "frequency": 1
+  },
+  { "size": 3, "task": "Clean out the car and truck", "frequency": 1 },
+  { "size": 3, "task": "Organize cubby in Dining Room", "frequency": 1 },
+  { "size": 3, "task": "Do 2 mediums", "frequency": 1 },
+  { "size": 3, "task": "Sweep and vaccum garage", "frequency": 1 },
+  { "size": 3, "task": "Donate 15 of your own items", "frequency": 1 }
 ]

@@ -1,46 +1,46 @@
 {
-	"adults": [
-		{
-			"name": "Jeremy",
-			"fullName": "Jeremy Gabriel Moritz",
-			"birthday": "1981-06-30"
-		},
-		{
-			"name": "Christine",
-			"fullName": "Christine Marie Moritz",
-			"birthday": "1981-03-17"
-		}
-	],
-	"kids": [
-		{
-			"name": "Angel",
-			"fullName": "Angela Brianne Moritz",
-			"birthday": "2004-09-18"
-		},
-		{
-			"name": "Tony",
-			"fullName": "Anthony Jacob Moritz",
-			"birthday": "2006-01-02"
-		},
-		{
-			"name": "Harmony",
-			"fullName": "Harmony Grace Moritz",
-			"birthday": "2009-02-09"
-		},
-		{
-			"name": "Charity",
-			"fullName": "Charity Jewel Moritz",
-			"birthday": "2010-06-10"
-		},
-		{
-			"name": "Chase",
-			"fullName": "Chase Alexander Moritz",
-			"birthday": "2012-07-20"
-		},
-		{
-			"name": "Symphony",
-			"fullName": "Symphony Joy Moritz",
-			"birthday": "2017-11-27"
-		}
-	]
+  "adults": [
+    {
+      "name": "Jeremy",
+      "fullName": "Jeremy Gabriel Moritz",
+      "birthday": "1981-06-30"
+    },
+    {
+      "name": "Christine",
+      "fullName": "Christine Marie Moritz",
+      "birthday": "1981-03-17"
+    }
+  ],
+  "kids": [
+    {
+      "name": "Angel",
+      "fullName": "Angela Brianne Moritz",
+      "birthday": "2004-09-18"
+    },
+    {
+      "name": "Tony",
+      "fullName": "Anthony Jacob Moritz",
+      "birthday": "2006-01-02"
+    },
+    {
+      "name": "Harmony",
+      "fullName": "Harmony Grace Moritz",
+      "birthday": "2009-02-09"
+    },
+    {
+      "name": "Charity",
+      "fullName": "Charity Jewel Moritz",
+      "birthday": "2010-06-10"
+    },
+    {
+      "name": "Chase",
+      "fullName": "Chase Alexander Moritz",
+      "birthday": "2012-07-20"
+    },
+    {
+      "name": "Symphony",
+      "fullName": "Symphony Joy Moritz",
+      "birthday": "2017-11-27"
+    }
+  ]
 }
