@@ -58,14 +58,20 @@ $(function () {
     if (getPath(this).indexOf('thumbs/') != -1) {
       //	if this is a thumbnail, look in main folder for image
       var bigId = getBasicName(this); //	id of new image is same as basename of image (just in different folder)
-      var bigSrc = getPath(this).replace('thumbs/', '') + bigId + '.' + getExt(this); //	src of big image is similar to regular
+      var bigSrc =
+        getPath(this).replace('thumbs/', '') + bigId + '.' + getExt(this); //	src of big image is similar to regular
       //alert(bigSrc);
     } else {
       var bigId = getBasicName(this) + '_large'; //	id of new image is basename of image + "_large"
       var bigSrc = getPath(this) + bigId + '.' + getExt(this); //	src of big image is similar to regular
     }
+
     $(document.body).append(
-      "<div class='overlarge' id='" + bigId + "'><img src='" + bigSrc + "' alt=''></div>"
+      "<div class='overlarge' id='" +
+        bigId +
+        "'><img alt src='" +
+        bigSrc +
+        "'></div>"
     ); //	create a new div with the image in it and append it as a sibling
     var bigImage = $('#' + bigId); //	we are creating a jQuery reference to the div element even though we don't know its id
 
@@ -78,6 +84,15 @@ $(function () {
           .css('left', offset.left)
           .slideDown(300); //	set position and slide big image down
         $thisImage.fadeTo(600, 0.3); //	fade small image down to 30% opacity
+
+        // Also update the picture in the modal
+        const modalLargePic = document.querySelector(
+          '#enlarged-pic-modal img#large-pic'
+        );
+
+        if (modalLargePic) {
+          modalLargePic.src = bigSrc;
+        }
       },
       function () {
         //	on mouseout

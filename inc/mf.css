@@ -236,6 +236,10 @@ section#content {
   justify-content: space-between;
   min-height: calc(100% - 3.5rem);
 }
+h2 {
+  font-family: 'Comforter Brush', cursive;
+  font-size: 3rem;
+}
 
 /* INDEX */
 #index #logo {
@@ -406,10 +410,6 @@ section#content {
 }
 
 /* MISSION */
-#mission h2 {
-  font-family: 'Comforter Brush', cursive;
-  font-size: 3rem;
-}
 #mission section {
   width: 70%;
   margin: auto;
@@ -538,14 +538,53 @@ section#content {
   padding-bottom: 350px; /* needed for enlarging pics at bottom of screen */
 }
 #about {
+  background-color: #fff;
   min-height: 2800px;
+  padding: 1rem 0.5rem 12rem;
 }
-#about #familySection {
-  width: 80%;
-  margin: auto;
+#about .family-grid {
+  display: grid;
+  grid-gap: 1rem;
 }
-#about #familySection table {
-  margin-top: 20px;
+#about #large-pic {
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #666;
+}
+
+@media (min-width: 992px) {
+  #about .kids .family-grid {
+    grid-template-columns: 3fr 2fr 2fr;
+  }
+  #about .kids .family-grid .currentPic {
+    order: 2;
+  }
+  #about .kids .family-grid .verbiage {
+    order: 3;
+  }
+  #about .kids .family-grid .thumbs {
+    order: 1;
+  }
+
+  #about .adults .family-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+  #about .adults .family-grid .currentPic {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  #about .adults .family-grid .currentPic img {
+    order: 2;
+  }
+  #about .adults .family-grid .thumbs {
+    order: 1;
+  }
+}
+
+#about #familySection .thumbs div {
+  float: left;
+  margin: 1px;
+  font-size: 60%;
 }
 #about #familySection h2 {
   text-align: left;
@@ -554,32 +593,15 @@ section#content {
   font-size: 100%;
   margin-bottom: 10px;
 }
+#about #familySection h4 {
+  font-size: 1rem;
+}
 #about #familySection img {
   border: 3px solid #00c;
   border-radius: 10px;
 }
-#about #familySection .thumbs div {
-  float: left;
-  margin: 1px;
-  font-size: 60%;
-}
 #about #familySection img.enlarge {
   max-height: 80px;
-}
-#about #familySection table td.thumbs {
-  width: 300px;
-  vertical-align: top;
-}
-#about #familySection table td.currentPic {
-  vertical-align: top;
-}
-#about #familySection table td.currentPic img {
-  height: 300px;
-  vertical-align: top;
-}
-#about #familySection table td.verbiage {
-  vertical-align: top;
-  padding-left: 20px;
 }
 #about .verbiage article {
   font-size: 80%;
@@ -588,12 +610,6 @@ section#content {
 #about .verbiage article blockquote {
   color: #c00;
   margin-bottom: 10px;
-}
-#about #familySection .adults .thumbs {
-  width: 560px;
-}
-#about #familySection .adults .verbiage {
-  padding: 0;
 }
 
 /* QUESTIONNAIRE */
@@ -697,9 +713,10 @@ section#content {
   font-size: 300%;
   color: #55a;
   position: absolute;
-  text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff, 2px 0 0 #fff,
-    -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000,
-    -3px 3px 0 #000, 3px 0 2px #000, -3px 0 2px #000, 0 3px 2px #000, 0 -3px 2px #000;
+  text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px -2px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+    3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 0 2px #000, -3px 0 2px #000, 0 3px 2px #000, 0 -3px 2px #000;
 }
 #videos #vidTable .vidTitle p {
   text-align: left;
@@ -751,8 +768,8 @@ section#content {
   margin: 40px 20px;
   page-break-after: always;
   border: 2px solid #000;
-  box-shadow: inset 0 0 20px #000, inset 0 0 2px #000, inset 0 0 7px #000, inset 0 0 13px #000,
-    0 0 5px #000 !important;
+  box-shadow: inset 0 0 20px #000, inset 0 0 2px #000, inset 0 0 7px #000,
+    inset 0 0 13px #000, 0 0 5px #000 !important;
 }
 #quotes_images #inner {
   width: 80%;
