@@ -179,33 +179,33 @@ $familySection = "
       <h2>The Moritz Family</h2>
       <?=$familySection;?>
     </section>
-
-    <div
-      aria-hidden="true"
-      class="modal fade"
-      id="enlarged-pic-modal"
-      tabindex="-1"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="btn-close float-end"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-            <div class="clearfix"></div>
-            <img alt id="large-pic" class="img-fluid" src>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 <?=$footer;?>
+
+<div
+  aria-hidden="true"
+  class="modal fade"
+  id="enlarged-pic-modal"
+  tabindex="-1"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button
+          type="button"
+          class="btn-close float-end"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <div class="clearfix"></div>
+        <img alt id="large-pic" class="img-fluid" src>
+      </div>
+    </div>
+  </div>
+</div>
 <style>
   /** Include this here to only apply this style on THIS page. */
-  @media (max-width: 991px) {
+  @media (max-width: 991px) { /* less than large (< lg) */
     .overlarge {
       display: none !important;
     }

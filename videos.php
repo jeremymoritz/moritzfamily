@@ -48,7 +48,7 @@ $vidHeight = 300;
 $countVids = 0; // counter
 $columns = 2;
 $vids = "
-  <table id='vidTable'>";
+  <div class='mx-3 mx-md-4 vid-grid'>";
 
 foreach($videos as $video) {
   // for some reason, ie9 is the only browser that seems to have a problem with video tag
@@ -63,7 +63,14 @@ foreach($videos as $video) {
       $thumbPicSrc = "img/family/thumbs/$srcFilename";
       $titleAlt = "{$familyMember->name}, age $ageAtYearEnd";
 
-      $thumbSection .= file_exists($thumbPicSrc) ? "<img src='$thumbPicSrc' alt='$titleAlt' class='enlarge' title='$titleAlt'>" : "";
+      $thumbSection .= file_exists($thumbPicSrc) ? "<img
+        alt='$titleAlt'
+        class='enlarge'
+        data-bs-target='#enlarged-pic-modal'
+        data-bs-toggle='modal'
+        src='$thumbPicSrc'
+        title='$titleAlt'
+      >" : "";
     }
   }
   $thumbSection = "<aside>$thumbSection</aside>";
@@ -75,9 +82,8 @@ foreach($videos as $video) {
     $posterPath = " poster='vid/poster-$yr.png'";
   }
 
-  $vids .= (++$countVids % $columns != 0 ? "<tr>" : "") . "
-    <td" . (($countVids == $numVids) && ($countVids % $columns != 0) ? " colspan='$columns'" : "") . ">
-      <div class='vidTitle'>
+  $vids .= "<div class='video-card'>
+      <div class='vid-title'>
         $thumbSection
         <h3>" . ($yr == 2005 ? "2004-" : "") . "$yr</h3><br>
         <p>\"$song\" ~ <em>$artist</em></p>
@@ -85,30 +91,47 @@ foreach($videos as $video) {
       <!--<video width='$vidWidth' height='$vidHeight' controls='controls'$posterPath>
         <source src='vid/moritz-montage-$yr.mp4' type='video/mp4' />-->
         <!--Fallback to YouTube-->
-        <iframe width='$vidWidth' height='$vidHeight' src='https://www.youtube.com/embed/$videoId' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
+        <iframe
+          allow='autoplay; encrypted-media'
+          allowfullscreen
+          class='mx-auto'
+          frameborder='0'
+          height='$vidHeight'
+          src='https://www.youtube.com/embed/$videoId'
+          width='$vidWidth'
+        ></iframe>
         <!--<a href='vid/moritz-montage-$yr.mp4'>Click to Watch $yr Video Montage</a>-->
       <!--</video>-->
-    </td>" . (($countVids % $columns == 0) || ($countVids == $numVids) ? "</tr>" : "");
+    </div>";
 }
+
 $vids .= "
-    <tr>
-      <td colspan='2'>
-        <div class='vidTitle'>
-          <h2 style='font-size:100%'>Jeremy &amp; Christine Wedding Slideshow 2001</h2>
-        </div>
-        <video width='$vidWidth' height='$vidHeight' controls='controls' poster='img/poster-wedding_slideshow.jpg'>
-          <source src='vid/moritz-wedding-slideshow-2001.mp4' type='video/mp4' />
+  </div>
+  <div class='vid-grid wedding-video'>
+    <div class='video-card'>
+      <div class='vid-title'>
+        <h4 style='font-size:100%'>Jeremy &amp; Christine Wedding Slideshow 2001</h4>
+      </div>
+      <video width='$vidWidth' height='$vidHeight' controls='controls' poster='img/poster-wedding_slideshow.jpg'>
+        <source src='vid/moritz-wedding-slideshow-2001.mp4' type='video/mp4' />
 
-          <!--Fallback to YouTube-->
-          <iframe src='moritz-wedding-slideshow-2001' width='$vidWidth' height='$vidHeight' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
+        <!--Fallback to YouTube-->
+        <iframe
+          allow='autoplay; encrypted-media'
+          allowfullscreen
+          class='mx-auto'
+          frameborder='0'
+          height='$vidHeight'
+          src='moritz-wedding-slideshow-2001'
+          width='$vidWidth'
+        ></iframe>
 
-          <!--Fallback to Vimeo-->
-          <!--<iframe src='http://player.vimeo.com/video/47068724?title=0&amp;byline=0&amp;portrait=0' width='$vidWidth' height='$vidHeight'></iframe>-->
-          <!--<a href='vid/moritz-wedding-slideshow-2001.mp4'>Click to Watch the Jeremy &amp; Christine Wedding Slideshow</a>-->
-        </video>
-      </td>
-    </tr>
-  </table>";
+        <!--Fallback to Vimeo-->
+        <!--<iframe src='http://player.vimeo.com/video/47068724?title=0&amp;byline=0&amp;portrait=0' width='$vidWidth' height='$vidHeight'></iframe>-->
+        <!--<a href='vid/moritz-wedding-slideshow-2001.mp4'>Click to Watch the Jeremy &amp; Christine Wedding Slideshow</a>-->
+      </video>
+    </div>
+  </div>";
 ?>
 
 <?=$header;?>
@@ -127,5 +150,35 @@ $vids .= "
     </section>
   </section>
 <?=$footer;?>
+
+<div
+  aria-hidden="true"
+  class="modal fade"
+  id="enlarged-pic-modal"
+  tabindex="-1"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button
+          type="button"
+          class="btn-close float-end"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <div class="clearfix"></div>
+        <img alt id="large-pic" class="img-fluid" src>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  /** Include this here to only apply this style on THIS page. */
+  @media (max-width: 991px) { /* less than large (< lg) */
+    .overlarge {
+      display: none !important;
+    }
+  }
+</style>
 </body>
 </html>

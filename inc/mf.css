@@ -580,6 +580,7 @@ fieldset .btn.btn-success:after {
   box-shadow: 5px 5px 5px #666;
 }
 
+/* large (lg) */
 @media (min-width: 992px) {
   #about .kids .family-grid {
     grid-template-columns: 3fr 2fr 2fr;
@@ -708,37 +709,35 @@ fieldset .btn.btn-success:after {
   border: 1px solid #000;
   border-radius: 10px;
 }
-#videos #vidTable {
-  margin: auto;
+#videos .vid-grid {
+  display: grid;
+  gap: 1rem;
 }
-#videos #vidTable td {
-  padding: 10px;
-}
-#videos #vidTable .vidTitle {
+#videos .vid-grid .vid-title {
   background: #eee;
+  border-radius: 10px;
+  border: 1px solid #000;
+  line-height: 18px;
   margin: 5px auto;
+  min-width: 400px;
   padding: 2px 0;
   text-align: center;
-  border: 1px solid #000;
-  border-radius: 10px;
-  width: 400px;
-  line-height: 18px;
 }
-#videos #vidTable .vidTitle aside {
+#videos .vid-grid .vid-title aside {
   float: right;
 }
-#videos #vidTable .vidTitle aside img.enlarge {
+#videos .vid-grid .vid-title aside img.enlarge {
   max-height: 50px;
   border: 1px solid #000;
   margin: 0 2px;
   border-radius: 5px;
 }
-#videos #vidTable div.overlarge img {
+#videos .vid-grid div.overlarge img {
   border: 3px solid #00c;
   border-radius: 10px;
 }
-#videos #vidTable .vidTitle h3 {
-  margin: 20px 10px 0;
+#videos .vid-grid .vid-title h3 {
+  margin: 0 0.5rem;
   font-size: 300%;
   color: #55a;
   position: absolute;
@@ -747,10 +746,17 @@ fieldset .btn.btn-success:after {
     3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
     3px 0 2px #000, -3px 0 2px #000, 0 3px 2px #000, 0 -3px 2px #000;
 }
-#videos #vidTable .vidTitle p {
+#videos .vid-grid .vid-title p {
   text-align: left;
   margin-left: 10px;
   clear: right;
+}
+
+/* large (lg) */
+@media (min-width: 992px) {
+  #videos .vid-grid:not(.wedding-video) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* HIGHLIGHTS */

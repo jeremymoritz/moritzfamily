@@ -14,15 +14,14 @@ $(function () {
     preload = new Image(1, 1); // preload the overImage
     preload.src = overSrc;
 
-    $thisImage.hover(
-      function () {
+    $thisImage
+      .on('mouseenter', function () {
         overSrc = getPath(this) + getBasicName(this) + '_over.' + getExt(this); // must be declared again for buttons that change src from other functions
         $thisImage.attr('src', overSrc); // change to overSrc when mousing over
-      },
-      function () {
+      })
+      .on('mouseleave', function () {
         $thisImage.attr('src', $thisImage.attr('src').replace('_over', '')); // change back to oldSrc when mouse leaves
-      }
-    );
+      });
   });
 
   if ($('#quotes').length) {
@@ -70,8 +69,8 @@ $(function () {
     ); // create a new div with the image in it and append it as a sibling
     var bigImage = $('#' + bigId); // we are creating a jQuery reference to the div element even though we don't know its id
 
-    $thisImage.hover(
-      function () {
+    $thisImage
+      .on('mouseenter', function () {
         var offset = $thisImage.offset(); // get the offset (location on screen) of the current image
 
         bigImage
@@ -88,8 +87,8 @@ $(function () {
         if (modalLargePic) {
           modalLargePic.src = bigSrc;
         }
-      },
-      function () {
+      })
+      .on('mouseleave', function () {
         // on mouseout
         bigImage.slideUp(300, function () {
           bigImage.css('display', 'none'); // make sure it's gone
@@ -100,8 +99,7 @@ $(function () {
           // fade small image back up to 100% opacity
           $thisImage.stop(true); // stop animations (clear the queue = true)
         });
-      }
-    );
+      });
   });
 });
 
