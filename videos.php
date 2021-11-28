@@ -119,7 +119,8 @@ $vids .= "
 		<h1><?=$title;?></h1>
 		<section>
 			<hgroup>
-				<h2>Montage Videos of our Family over the Years</h2>
+				<h2>Moritz Montages</h2>
+				<h3 class="text-center">Montage Videos of our Family over the Years</h3>
 			</hgroup>
 			<p>(Video Editing by Jeremy, Christine, and David Moritz)</p>
 			<?=$vids;?>
