@@ -97,14 +97,14 @@ $header = "
     <link rel='shortcut icon' href='favicon.ico'>
     <link rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.css'>
     <link rel='stylesheet' href='/node_modules/bootstrap-icons/font/bootstrap-icons.css'>
-    <link rel='stylesheet' href='inc/mf.css'>
+    <link rel='stylesheet' href='inc/mf.css?v=" . date('Y-m-d', time()) . "'>
     <script
       crossorigin='anonymous'
       integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
       src='https://code.jquery.com/jquery-3.6.0.min.js'
     ></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js'></script>
-    <script src='inc/mf.js'></script>
+    <script src='inc/mf.js?v=" . date('Y-m-d', time()) . "'></script>
     $head_content
     $googleAnalytics
   </head>";

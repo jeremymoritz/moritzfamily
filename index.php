@@ -6,7 +6,7 @@ $selfies_path = '/img/family/selfies/600';
 $selfies = array();
 $selfies_dir = __DIR__ . $selfies_path;
 if (is_dir($selfies_dir)) {
-  $numberToRemoveDots = 2;
+  $numberToRemoveDots = 2; // remove dot directories "." and ".."
   /**
    * Yield array from items in selfies_dir in this form:
    * array('2021-05_moritz-selfie.jpg', '2020-12_moritz-selfie.jpg');
@@ -19,7 +19,7 @@ if (is_dir($selfies_dir)) {
 <?=$topnav;?>
 <?=$topper;?>
   <section class="main" id="index">
-    <h1>The Moritz Family</h1>
+    <h2 hidden>The Moritz Family</h2>
     <div class="px-3" id="logo">
       <img
         alt="The Moritz Family"
@@ -42,7 +42,7 @@ if (is_dir($selfies_dir)) {
         src="<?= $selfies_path ?>/<?= end($selfies) ?>"
       >
       <h3 id="cover-pic-caption" class="clearfix">
-        <?
+        <?php
           $date_str = explode('_', end($selfies))[0];
           $selfie_date = date_create($date_str . '-01');
 
