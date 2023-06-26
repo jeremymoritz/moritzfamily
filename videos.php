@@ -5,23 +5,25 @@ $title = "The Moritz Family - Our Videos";
 require_once('inc/mf.php');
 
 
-$videos = array( // VideoYear | YouTube ID | Song | Artist | Height
-  "2005|oVMapzrEkNc|Celebration|Kool &amp; the Gang|225",
-  "2006|9QJQ4g7MQEw|Somebody Like You|Keith Urban|225",
-  "2007|ApnfgkspU60|Accidentally in Love|Counting Crows|225",
-  "2008|Ddshtnct5LE|The Boys are Back|High School Musical 3: Senior Year|225",
-  "2009|_-6p7Lsd7Kg|What Makes You Beautiful|One Direction|225",
-  "2010|AXtg2lTG8ng|Dare You to Move|Switchfoot|225",
-  "2011|wtLDgSzLn9Y|We are Family|Chipmunks and Chipettes|225",
-  "2012|CnNj3Ed3c4k|Holding Out for a Hero|Bonnie Tyler|225",
-  "2013|AFtVpknr5xs|Everything is Awesome|Tegan and Sara|225",
-  "2014|jvdO4xsIcls|Let It Go|Demi Levato|225",
-  "2015|cip_E18SXc0|Uptown Funk|Mark Ronson|225",
-  "2016|CVE3MitHRtM|Shake It Off|Taylor Swift|225",
-  "2017|H6twFn4tmpY|Can't Stop the Feeling|Justin Timberlake|225",
-  "2018|XUQ9c_shJ7w|Good To Be Alive (Hallelujah)|Andy Grammer|225",
-  "2019|FAT1O-KLEDA|Happy|Pharrell Williams|225",
-  "2020|23NKC_PZbbc|Help|The Beatles|225",
+$videos = array( // VideoYear | YouTube ID | Song | Artist | Height(optional)
+  "2005|oVMapzrEkNc|Celebration|Kool &amp; the Gang",
+  "2006|9QJQ4g7MQEw|Somebody Like You|Keith Urban",
+  "2007|ApnfgkspU60|Accidentally in Love|Counting Crows",
+  "2008|Ddshtnct5LE|The Boys are Back|High School Musical 3: Senior Year",
+  "2009|_-6p7Lsd7Kg|What Makes You Beautiful|One Direction",
+  "2010|AXtg2lTG8ng|Dare You to Move|Switchfoot",
+  "2011|wtLDgSzLn9Y|We are Family|Chipmunks and Chipettes",
+  "2012|CnNj3Ed3c4k|Holding Out for a Hero|Bonnie Tyler",
+  "2013|AFtVpknr5xs|Everything is Awesome|Tegan and Sara",
+  "2014|jvdO4xsIcls|Let It Go|Demi Levato",
+  "2015|cip_E18SXc0|Uptown Funk|Mark Ronson",
+  "2016|CVE3MitHRtM|Shake It Off|Taylor Swift",
+  "2017|H6twFn4tmpY|Can't Stop the Feeling|Justin Timberlake",
+  "2018|XUQ9c_shJ7w|Good To Be Alive (Hallelujah)|Andy Grammer",
+  "2019|FAT1O-KLEDA|Happy|Pharrell Williams",
+  "2020|23NKC_PZbbc|Help|The Beatles",
+  "2021|Jixvj07UeDQ|Brand New Day|Demi Lovato",
+  "2022|M1GB6Zp4KX0|Happy Dance|MercyMe"
 );
 
 // $videosWithVimeoIds = array( // VideoYear | Vimeo ID (THIS IS NOT USED ANYMORE!!)
@@ -51,8 +53,11 @@ $vids = "
   <div class='mx-3 mx-md-4 vid-grid'>";
 
 foreach($videos as $video) {
-  // for some reason, ie9 is the only browser that seems to have a problem with video tag
-  list($yr, $videoId, $song, $artist, $vidHeight) = explode("|", $video);
+  $defaultVidHeight = 225;
+  list($yr, $videoId, $song, $artist, $vidHeight) = explode(
+    "|",
+    $video . "|$defaultVidHeight"
+  );
 
   $thumbSection = "";
   foreach($familyJSON as $familyGroup) { // 2 groups: Adults & Kids
