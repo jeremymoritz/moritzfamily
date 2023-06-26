@@ -514,82 +514,82 @@ fieldset .btn.btn-success:after {
   border-radius: 0px;
 }
 
-/* ABOUT */
-.about-page {
+/* FAMILY */
+.family-page {
   padding-bottom: 350px; /* needed for enlarging pics at bottom of screen */
 }
-#about {
+#family {
   background-color: #fff;
   min-height: 2800px;
   padding: 1rem 0.5rem 12rem;
 }
-#about .family-grid {
+#family .family-grid {
   display: grid;
   grid-gap: 1rem;
 }
-#about #large-pic {
+#family #large-pic {
   border-radius: 20px;
   box-shadow: 5px 5px 5px #666;
 }
 
 /* large (lg) */
 @media (min-width: 992px) {
-  #about .kids .family-grid {
+  #family .kids .family-grid {
     grid-template-columns: 3fr 2fr 2fr;
   }
-  #about .kids .family-grid .currentPic {
+  #family .kids .family-grid .currentPic {
     order: 2;
   }
-  #about .kids .family-grid .verbiage {
+  #family .kids .family-grid .verbiage {
     order: 3;
   }
-  #about .kids .family-grid .thumbs {
+  #family .kids .family-grid .thumbs {
     order: 1;
   }
 
-  #about .adults .family-grid {
+  #family .adults .family-grid {
     grid-template-columns: 2fr 1fr;
   }
-  #about .adults .family-grid .currentPic {
+  #family .adults .family-grid .currentPic {
     display: flex;
     flex-direction: column;
     order: 2;
   }
-  #about .adults .family-grid .currentPic img {
+  #family .adults .family-grid .currentPic img {
     order: 2;
   }
-  #about .adults .family-grid .thumbs {
+  #family .adults .family-grid .thumbs {
     order: 1;
   }
 }
 
-#about #familySection .thumbs div {
+#family #familySection .thumbs div {
   float: left;
   margin: 1px;
   font-size: 60%;
 }
-#about #familySection h2 {
+#family #familySection h2 {
   text-align: left;
 }
-#about #familySection h3 {
+#family #familySection h3 {
   font-size: 100%;
   margin-bottom: 10px;
 }
-#about #familySection h4 {
+#family #familySection h4 {
   font-size: 1rem;
 }
-#about #familySection img {
+#family #familySection img {
   border: 3px solid #00c;
   border-radius: 10px;
 }
-#about #familySection img.enlarge {
+#family #familySection img.enlarge {
   max-height: 80px;
 }
-#about .verbiage article {
+#family .verbiage article {
   font-size: 80%;
   text-align: left;
 }
-#about .verbiage article blockquote {
+#family .verbiage article blockquote {
   color: #c00;
   margin-bottom: 10px;
 }

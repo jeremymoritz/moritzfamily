@@ -31,7 +31,7 @@ $googleAnalytics = "
 $nav_links = [
   (object) [
     'display' => '<span class="d-md-none d-lg-inline">Our </span>Family',
-    'href' => 'about.php',
+    'href' => 'family.php',
     'title' => 'Our Family'
   ],
   (object) [
