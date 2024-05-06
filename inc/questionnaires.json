@@ -3,7 +3,7 @@
     {
       "qDate": "2012-05-18",
       "questions": [
-        {"rating": 1, "question": "What is your happiest memory?", "answer": "When i got to go to the store with Grandpa and he bought my Ariel doll."},
+        {"rating": 1, "question": "What is your happiest memory?", "answer": "When I got to go to the store with Grandpa and he bought my Ariel doll."},
         {"rating": 3, "question": "Why do you like being a kid?", "answer": "You're still in school, and you don't do all those adultish things like pay bills and have an account in the bank."},
         {"rating": 1, "question": "One word to describe you would be _______.", "answer": "Humble."},
         {"rating": 3, "question": "What advice would you give your parents?", "answer": "I would tell Daddy to work at the house like mommy does."},
@@ -92,7 +92,7 @@
         {"rating": 2, "question": "Can you name one thing that scares you?", "answer": "Personal financial crisis."},
         {"rating": 3, "question": "What do you want to be when you grow up?", "answer": "An editor for works of literature.  Literary editor?  Is that what they're called?  I need to look that up."},
         {"rating": 1, "question": "What's the most amazing thing you've ever heard?", "answer": "The song \"Amazing Grace\""},
-        {"rating": 3, "question": "What will be the hardest part about being a grown-up?", "answer": "Worrying constantly about the way I'm influencing my children's decisions and if I am doing parenting correctly.  Like it feels like i would be making it up as I went along."},
+        {"rating": 3, "question": "What will be the hardest part about being a grown-up?", "answer": "Worrying constantly about the way I'm influencing my children's decisions and if I am doing parenting correctly.  Like it feels like I would be making it up as I went along."},
         {"rating": 2, "question": "If you could make one new law, what would it be?", "answer": "I would make abortion illegal."},
         {"rating": 2, "question": "What is your favorite family tradition?", "answer": "We don't really have that many family traditions, but my favorite tradition is going over to Mimi's house on Christmas Eve.  That's always fun."},
         {"rating": 3, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Best thing about mom is she is very invested in her kids' lives.  The worst thing about mom is when she makes that face with all of her teeth showing and her eyes really big.  The best thing about dad is that he welcomes different opinions and does his best to answer questions.  And the worst thing about Dad is that he loves work too much."},
@@ -113,7 +113,7 @@
         {"rating": 2, "question": "How would you design a treehouse?", "answer": "I would build it out of hickory wood and it would have at least 16 windows adorned with iron siding and an iron door that can be locked from the inside.  It only has one key and it's very big and very ornate, and I'm the only one that has it.  On the inside, there would be a big TV streaming 'Once Upon a Song' non-stop.  And on the 2nd story, there would be beds and a really nice yellow rug."},
         {"rating": 2, "question": "If you were a teacher and could teach your students anything at all, what would you teach them?", "answer": "I would probably teach English.  I don't think there's any subject I would rather teach than English."},
         {"rating": 2, "question": "If you could time-travel, where and when would you go?", "answer": "I would probably go to England during the Victorian era."},
-        {"rating": 3, "question": "What makes you feel thankful?", "answer": "I'm thankful that I have a family that loves me and that i have the opportunity to get a good education and that i get to watch my siblings grow up and for my friends."},
+        {"rating": 3, "question": "What makes you feel thankful?", "answer": "I'm thankful that I have a family that loves me and that I have the opportunity to get a good education and that I get to watch my siblings grow up and for my friends."},
         {"rating": 1, "question": "If you had three wishes, what would they be?", "answer": "1) More wishes.  2) More books --- probably like the largest book collection in the world.  3) A place to put all my large book collection."},
         {"rating": 2, "question": "What is the hardest thing about being a teenager?", "answer": "Maybe having a lot of the same aspirations and goals as an adult but not being able to fulfill them because you're not an adult yet."},
         {"rating": 1, "question": "If you could have one superpower, what would it be and why?", "answer": "Invisibility - because i'd always want to sneak around."},
@@ -123,6 +123,26 @@
         {"rating": 2, "question": "What do you want to be when you grow up?", "answer": "Probably a court reporter or an editor."},
         {"rating": 3, "question": "What's a memory that makes you happy?", "answer": "Getting to see Biltmore Estate in North Carolina for my 16th birthday."},
         {"rating": 1, "question": "What advice would you give your parents?", "answer": "Don't be so crazy."}
+      ]
+    },
+    {
+      "qDate": "2023-09-03",
+      "questions": [
+        {"rating": 2, "question": "What's the hardest thing about being a young adult?", "answer": "Probably trying to figure out what my future is supposed to look like."},
+        {"rating": 3, "question": "What was the happiest event you experienced over the last year?", "answer": "Probably my grad party.  It was really fun and I got to see a lot of people I hadn't seen in a while and eat good food."},
+        {"rating": 2, "question": "What's the nicest thing a friend has done for you recently?", "answer": "One of my friends is booking a train so she can come to my birthday party!"},
+        {"rating": 2, "question": "Which four words describe you best?", "answer": "Mmm...I would say 'Diligent'.  Maybe 'Easy-going'?.  'Pushover'.  Final word is...'Spacey'."},
+        {"rating": 1, "question": "Can you name one thing that scares you?", "answer": "Roller coasters."},
+        {"rating": 3, "question": "What piece of advice would you give to each of your siblings?", "answer": "Tony: Don't worry so much.  Harmony: I have no idea.  Maybe don't get the salt and sugar ratios mixed up when you're baking.  Charity: learn your cardinal directions before dad teaches you how to drive.  Chase: play video games as much as possible because that could become your future career.  Symphony: Take as many pictures as you can because you're gonna be happy you have them when you're older."},
+        {"rating": 2, "question": "What would you most like to do for a career?", "answer": "Right now? Probably work in a library or as an editor at a publishing firm."},
+        {"rating": 1, "question": "What's the best movie or TV series you've ever watched?", "answer": "Best movie: Leap! (2016)  Best TV show: Downton Abbey"},
+        {"rating": 3, "question": "What are the five things you enjoy most about your life?", "answer": "#1: My family. #2: My job at the library. #3: My boyfriend who is cute and nice. #4: Getting to bake whenever I want to. #5: All the good books I've been reading."},
+        {"rating": 1, "question": "What are you most looking forward to about being a grown-up?", "answer": "Living in my own house with a room to myself."},
+        {"rating": 3, "question": "If you could make one new law, what would it be?", "answer": "One new law...a ban on price controls."},
+        {"rating": 1, "question": "What is your favorite family tradition?", "answer": "Christmas Eve dinner...actually Christmas dinner when it's just our immediate family and we get to pick whatever food we get to eat."},
+        {"rating": 3, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Best thing about mom is that she's very self-sacrificial and always putting other people first.  Worst thing about mom... I don't know... maybe she stresses too much about the little things.  Best thing about dad is that he's always trying to be the best version of himself.  Worst thing about dad is maybe he wants things very controlled so sometimes it makes things less fun because he adds too many rules."},
+        {"rating": 2, "question": "What's the funniest video you've seen online recently?", "answer": "I've seen some good ones lately. I guess the one about a 4-year-old saying 'My girl's so crazy she want me to drive to Chico.  Why you want me to go to Chico, babe?'"},
+        {"rating": 1, "question": "If you could have lunch with any celebrity, who would it be and why?", "answer": "Does it have to be alive?  (Yes) Okay, I would have lunch with Phoebe Bridgers (music artist) because she's a genius."}
       ]
     }
   ],
@@ -221,10 +241,10 @@
         {"rating": 2, "question": "What will be the hardest part about being a grown-up?", "answer": "I feel like it'll be probably like... like all the financial stuff after marriage."},
         {"rating": 2, "question": "If you could make one new law, what would it be?", "answer": "That you're not allowed to kill babies even if they're in a mother's body."},
         {"rating": 2, "question": "What is your favorite family tradition?", "answer": "We don't really have any traditions so I'd say the Moritz Happy Birthday song.  Oh wait!  I'd actually said it's the getting a super cool birthday present from Mimi and Grandpa when you turn 10 years old."},
-        {"rating": 3, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Best thing about mom is that she helps us a ton like even if we're stubborn and rude and stuff that she still helps us.  Like when I was like 8 years old, I was not being responsible at all and didn't get my homework done until like the last minute, but mom would still help me through all that.  And the worst thing?  Maybe that she has a shorter fuse when she doesn't get much sleep so she'll get mad at me for something that is not a big deal.  For you, dad, I'd say that you make all the money and stuff so that we can have a nice house and tasty food and stuff.  And the worst?  Umm... hmm... I can't really think of anything.  Well, I guess one thing is... it's not exactly the worst part... it's just like... it would be nice if you were home more, but you're not home as much cuz you work.  So i don't like that you're not home more, but because of what your not being home as much does, i guess I do like it kinda... indirectly."},
+        {"rating": 3, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Best thing about mom is that she helps us a ton like even if we're stubborn and rude and stuff that she still helps us.  Like when I was like 8 years old, I was not being responsible at all and didn't get my homework done until like the last minute, but mom would still help me through all that.  And the worst thing?  Maybe that she has a shorter fuse when she doesn't get much sleep so she'll get mad at me for something that is not a big deal.  For you, dad, I'd say that you make all the money and stuff so that we can have a nice house and tasty food and stuff.  And the worst?  Umm... hmm... I can't really think of anything.  Well, I guess one thing is... it's not exactly the worst part... it's just like... it would be nice if you were home more, but you're not home as much cuz you work.  So I don't like that you're not home more, but because of what your not being home as much does, I guess I do like it kinda... indirectly."},
         {"rating": 2, "question": "What's the funniest thing you've ever seen?", "answer": "Jim Gaffigan \"Four kids\" part of his Mr. Universe comedy special."},
         {"rating": 3, "question": "If you could be any cartoon character for a day, who would it be and why?", "answer": "Does it have to be a cartoon character from a movie or a TV show?  (Dad: what other cartoon characters are there?)  I'd be a cartoon character from Fortnite because that would be fun to play that and if you're a cartoon character on Fortnite, then you don't die.  There's like this little drone that comes and it like pixelates you and brings you back into the lobby."},
-        {"rating": 2, "question": "What would you do with $100?", "answer": "With $100?  I uh... I would donate it.  If I was just GIVEN $100, then I would donate it.  But if I EARNED it, then i would donate $10, and then would buy gifts or something, and then the rest I would just save for later.  So tithe, gift it, and save it for later."}
+        {"rating": 2, "question": "What would you do with $100?", "answer": "With $100?  I uh... I would donate it.  If I was just GIVEN $100, then I would donate it.  But if I EARNED it, then I would donate $10, and then would buy gifts or something, and then the rest I would just save for later.  So tithe, gift it, and save it for later."}
       ]
     },
     {
@@ -250,6 +270,26 @@
         {"rating": 3, "question": "What do you want to be when you grow up?", "answer": "A married software developer, with a wife and like four kids...and, um, I dunno a bunch more friends.  With a good social life. And also, um, a strong believer in God."},
         {"rating": 3, "question": "What's a memory that makes you happy?", "answer": "I have a whole lot of memories that make me happy.  But sometimes like right now, I'll have times where the one that I'm trying to think of is fogged up.  I guess one that I can remember right now was when I got baptized.  That was a good memory.  I remember when I was sitting in the tub and the woman was reading my testimony, and I remember that I had like these chills...and I felt kind of like scared and excited.  And I got to hug a bunch of people afterwards."},
         {"rating": 3, "question": "What advice would you give your parents?", "answer": "Hmm...keep up the good work."}
+      ]
+    },
+    {
+      "qDate": "2023-09-03",
+      "questions": [
+        {"rating": 3, "question": "What's the hardest thing about being an older teenager?", "answer": "I'd probably have to say looking back at all of the wasted time in my early teen and childhood years.  All the things I could've done, piano I could've played etc.  And now all that spare time is gone because i have work and all the rest."},
+        {"rating": 1, "question": "What was one of the happiest events you experienced over the last year?", "answer": "I'll say going to Branson.  That was our first full family vacation and that was super fun."},
+        {"rating": 1, "question": "What's the nicest thing a friend has done for you recently?", "answer": "This is more of a general thing but i feel like since the past months have been busy and stressful, i feel like Natalie has put up with a lot and I appreciate her immensely."},
+        {"rating": 2, "question": "Which four words describe you best?", "answer": "1. Improving ('cuz I'm always trying to become better than i was yesterday).  2. Extroverted (for sure...I'm like on the very extroverted side of the scale).  Hmm...I'm not gonna say 'Gamer' like i've said over the past years...I've officially graduated from the title of 'Gamer'... 3. Wild (I'm pretty adventurous). And...final one... 4. Logical."},
+        {"rating": 3, "question": "Can you name one thing that scares you?", "answer": "With every change, there's sacrifice, so I'm still working through the fear of losing close friendships with people I care about in exchange for other things and other friendships."},
+        {"rating": 3, "question": "What piece of advice would you give to each of your siblings?", "answer": "For Chase: find a productive hobby that you're really passionate about and then pursue that hobby.  For Charity: I'd say remember that you'll be friends with your siblings your whole life, so keep that in mind.  For Harmony: I'd say get a solid routine that you can follow so that you wake up the next morning and it's not 1pm (or some ungodly hour).  For Symphony: Symphony is like the perfect 5-year-old sister, to be honest... keep doing what you're doing.  5 stars.  And then for Angel: I guess I'd tell her to have some more patience with people."},
+        {"rating": 2, "question": "What would you most like to do for a career?", "answer": "Ooh.  Well, I've thought recently about how cool it would be to go into sales and be some super good salesman.  I don't know how realistic that is because I haven't done that at all, but I do think I'd be pretty darn good at it, and it would be something I'd enjoy."},
+        {"rating": 1, "question": "What's the best movie or TV series you've ever watched?", "answer": "Probably watching Prison Break with Dad and Angel.  It was like super impressive how realistic the whole thing was while at the same time having that unrealistically smart engineer while not having a lot of politics in there.  Just a really clever show."},
+        {"rating": 2, "question": "What are the five things you enjoy most about your life?", "answer": "I really like making friends and meeting new people.  It's fun to challenge myself to learn a new skill or to make a new friend.  I find that super engaging.  I love my whole family and like spending time with everybody and watching my siblings grow up.  I like exploring; going to new places and checking them out.  And I like to party."},
+        {"rating": 3, "question": "What are you most looking forward to about being a grown-up?", "answer": "Getting married and having kids.  Cuz as I've been growing up I've thought about the way I'd like to raise kids and what I'd do differently from my parents.  And the gift of childbirth and that miracle.  And also one day achieving financial freedom and doing stuff that I was unable to do as a kid."},
+        {"rating": 1, "question": "If you could make one new law, what would it be?", "answer": "I'm now officially king for the rest of time and I can make any decrees that I want and all must bow as i walk past them and they must throw their jackets down in puddles as I walk past them.  And i would use that power to say that no one with dementia is allowed to run for President."},
+        {"rating": 2, "question": "What is your favorite family tradition?", "answer": "As a kid, I thought that we never had family traditions.  Like if someone asked me I'd have no idea how to answer the question.  But now I'm like 'We have a ton'.  One of my favorites is having Thanksgiving with the family and saying what we're thankful for."},
+        {"rating": 3, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Best thing about mom: Do I have to pick just one thing?  I guess I love how genuine mom is.  She's such a genuine person.  And there's been a lot of parts of myself that I've modeled after her because I've seen how it glows off of her.  Worst thing about mom: she gets a little grumpy sometimes and just not in the mood for being happy.  Best thing about dad: this question is easier to answer because I brag about certain traits he has to my friends.  One thing that comes to mind right now is how focused he is on not just changing our actions but changing our values so that we will make those good decisions ourselves.  Worst thing about dad: this is something that i think i inherited from him and trying to fix in myself.  Sometimes we overplan things—especially socially—and overanalyze social situations, and that can take us out of the moment."},
+        {"rating": 1, "question": "What's the funniest video you've seen online recently?", "answer": "I saw this pretty funny video where this guy was like 'Dear God, please bless this food to the nourishment of our bodies' and then the camera pans to the food and it's underdone pizza, chips, soda, and junk food.  God's not gonna bless that!"},
+        {"rating": 2, "question": "If you could have lunch with any celebrity, who would it be and why?", "answer": "Maybe if I knew more celebrities, I'd have a better answer to the question...I'm only gonna talk about alive celebrities...I would want to see inside the mind of this guy named Alex Hormozi.  I saw a video of him talking about sales and he brings home like $200 million a year.  And I think he would have a lot of good things to pour into anybody."}
       ]
     }
   ],
@@ -376,6 +416,26 @@
         {"rating": 3, "question": "What's a memory that makes you happy?", "answer": "When everybody on the cruise ship could recognize me as 'The Dice Girl' from a magic show on the cruise."},
         {"rating": 3, "question": "What advice would you give your parents?", "answer": "Read my books.  They are good!"}
       ]
+    },
+    {
+      "qDate": "2023-09-03",
+      "questions": [
+        {"rating": 3, "question": "What's the hardest thing about being a teenager?", "answer": "Uh...hmm...man this is HARD...What kind of teenager do you mean?  Like MY age?  Uh...not being able to drive, but like I also hate driving.  Like I want to be able to drive, but I also do not want to drive."},
+        {"rating": 1, "question": "What was the happiest event you experienced over the last year?", "answer": "I liked traveling a lot in August to Wichita, Tulsa, Branson and then Wichita again."},
+        {"rating": 2, "question": "What's the nicest thing a friend has done for you recently?", "answer": "Lily came and watched the Barbie movie with me even though she'd already seen it."},
+        {"rating": 2, "question": "Which four words describe you best?", "answer": "All the things I'm thinking of just sound narcissistic...I don't like describing myself for that reason.  'Crafty'. 'Musicophile'. 'Imaginative'. And 'Friendly'."},
+        {"rating": 1, "question": "Can you name one thing that scares you?", "answer": "Flies."},
+        {"rating": 3, "question": "What piece of advice would you give to each of your siblings?", "answer": "Listen to learn.  Don't listen to speak."},
+        {"rating": 1, "question": "What would you most like to do for a career?", "answer": "I've thought about it, but nothing has piqued my interest quite yet."},
+        {"rating": 1, "question": "What's the best movie or TV series you've ever watched?", "answer": "I like Mean Girls.  It's really funny.  Not my usual kind of movie but it was just so good.  Right now, I really like Stranger Things.  I also really liked Gravity Falls."},
+        {"rating": 1, "question": "What are the five things you enjoy most about your life?", "answer": "I have pretty good friends.  I like drawing.  I enjoy being creative.  I like giving.  I enjoy experiencing creative works like movies, books, and music."},
+        {"rating": 2, "question": "What are you most looking forward to about being a grown-up?", "answer": "I'm really excited to decorate my own house or apartment."},
+        {"rating": 3, "question": "If you could make one new law, what would it be?", "answer": "Make abortion unquestionably illegal instead of just having states decide."},
+        {"rating": 3, "question": "What is your favorite family tradition?", "answer": "Back when I could eat gluten, it was when Mimi made rolls every Christmas and Thanksgiving.  Those things are so good.  But since I can't eat gluten...I like drawing on balloons every birthday.  I think it's fun."},
+        {"rating": 3, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Best: Mom is a very good chef. Worst: It's not her fault, but about once a month, she does get a little moody. I can't get away with nearly as much as usual during that time.  As for dad...best: he's a very straight-headed, logical person.  Worst: All of my friends—with me included—agree that he is a little scary."},
+        {"rating": 2, "question": "What's the funniest video you've seen online recently?", "answer": "I really like the one of the dude comparing white T-shirt prices from luxury brands... that was so funny!  The $450 white gucci T-shirt and the entry-level-gaming-PC-priced T-shirt from Prada!"},
+        {"rating": 2, "question": "If you could have lunch with any celebrity, who would it be and why?", "answer": "Jesus...and I feel like that answer is self-explanatory, but if they have to be walking...then talking with Toby Fox (the creator of Undertale) would be cool."}
+      ]
     }
   ],
   "charity": [
@@ -486,7 +546,7 @@
         {"rating": 3, "question": "What are the three best things about being you?", "answer": "That I have a great family that believes in Jesus; that we get to do fun stuff as a family; and that we get to go to church."},
         {"rating": 3, "question": "What do you like best--and what do you like least--about your dad?", "answer": "Best: that he likes to play with us a lot and that he's very nice.  And least is that he has to work a lot."},
         {"rating": 3, "question": "What do you like best--and what do you like least--about your mom?", "answer": "I like best that you give me hugs and kisses at nighttime; and I like least...well, there's not very many bad things you do. Sometimes you don't let us go out on Sunday."},
-        {"rating": 2, "question": "How would you design a treehouse?", "answer": "OOO!! I wish I had a treehouse! I would design it...do you mean like the shape? or decorations? (Mom: whatever you want to tell me.) Ok, well I would shape it like, just, walls and a roof that's escalated.  and i would like to put a carpet and a slide and curtains and lights and a BUNCH of pillows!"},
+        {"rating": 2, "question": "How would you design a treehouse?", "answer": "OOO!! I wish I had a treehouse! I would design it...do you mean like the shape? or decorations? (Mom: whatever you want to tell me.) Ok, well I would shape it like, just, walls and a roof that's escalated.  and I would like to put a carpet and a slide and curtains and lights and a BUNCH of pillows!"},
         {"rating": 2, "question": "If you were a teacher and could teach your students anything at all, what would you teach them?", "answer": "Hmm...SCIENCE! And I would teach them about God."},
         {"rating": 2, "question": "If you could time-travel, where and when would you go?", "answer": "Probably times when Jesus was around OR in the future, as long I was able to come back to the present."},
         {"rating": 1, "question": "What makes you feel thankful?", "answer": "That I have a nice home."},
@@ -500,6 +560,26 @@
         {"rating": 3, "question": "What do you want to be when you grow up?", "answer": "A doctor and a mother at the same time with about three kids.  Yeah."},
         {"rating": 3, "question": "What's a memory that makes you happy?", "answer": "Well, I don't really have any memories that I remember that I really liked, but I remember this one memory when Sarah broke a pole on her bed, and she said if she could go back in time, she'd go back in time and NOT be stupid."},
         {"rating": 2, "question": "What advice would you give your parents?", "answer": "Hmm...to remember to change Symphony's diaper.  I guess."}
+      ]
+    },
+    {
+      "qDate": "2023-09-03",
+      "questions": [
+        {"rating": 2, "question": "What's the hardest thing about being a teenager?", "answer": "Probably like hormones?  Cuz like things that are not really a big deal seem like a really big deal when you're a teenager...so that's annoying."},
+        {"rating": 2, "question": "What was the happiest event you experienced over the last year?", "answer": "Oh that's a hard question...maybe going to Crosspoints, honestly.  Because it's nice to have a change and I think I really like that church."},
+        {"rating": 1, "question": "What's the nicest thing a friend has done for you recently?", "answer": "Sarah took me to Main Event for no particular reason.  That was nice."},
+        {"rating": 3, "question": "Which four words describe you best?", "answer": "'Emotional'.  I don't know what the word for it is but like 'aware of other people's feelings'?  'Quiet', definitely.  I don't know the last one so... maybe 'Humble'."},
+        {"rating": 2, "question": "Can you name one thing that scares you?", "answer": "That scares me?  Just like...adult guys.  Of course not other people's dads but they just scare me.  I don't know."},
+        {"rating": 3, "question": "What piece of advice would you give to each of your siblings?", "answer": "I would tell Chase and Symphony to not take things personally.  So like if people insult them, they should know that they're probably dealing with something else because they feel bad about themselves.  For Harmony?  I don't know.  I feel like there's not much advice I can give her that she doesn't already know.  For Tony?  Maybe he could manage his pride a little?  He's doing fine but I'm not sure.  I don't know much about Tony.  And then for Angel?  I think she should not worry about what other people think."},
+        {"rating": 1, "question": "What would you most like to do for a career?", "answer": "Career?  I never thought about that.  There are a lot of options and I don't think I should decide on one thing.  There's gonna be many different doors I could choose and I don't think I should pick just one."},
+        {"rating": 1, "question": "What's the best movie or TV series you've ever watched?", "answer": "Bluey.  That's it.  Just Bluey."},
+        {"rating": 3, "question": "What are the five things you enjoy most about your life?", "answer": "I like living in a Christian household where we constantly talk about Jesus.  I like that I have good parents that teach me things that are not garbage.  I like that I have supportive siblings and a good neighborhood.  And I like that we go to a church that is nearby and where there's a lot of people that I know."},
+        {"rating": 2, "question": "What are you most looking forward to about being a grown-up?", "answer": "Hmm?  Probably just starting a family and being more independent."},
+        {"rating": 2, "question": "If you could make one new law, what would it be?", "answer": "That's really hard... I feel like all of the laws just make sense.  And they would've already added another one if there was a better one... so I just don't think there would be any more laws that I would add."},
+        {"rating": 1, "question": "What is your favorite family tradition?", "answer": "We don't have very many traditions...I think?  I do like going to our grandparents' house for Christmas though."},
+        {"rating": 3, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Best thing about mom: I like that she knows when I'm feeling sad and talks to me.  Worst thing?  Is that she can get a liiittle mad at times when she's had a rough day and sometimes takes it out on us...which everybody does, but ya know.  Best thing about dad: I like that he teaches us the important things.  And the worst thing?  Uhh...probably that he's a liiittle intimidating at times, as I've told him before."},
+        {"rating": 1, "question": "What's the funniest video you've seen online recently?", "answer": "A lot of the things I've seen online are not that funny...also I know that if I say one, people are gonna look it up...and I just find that weird; I don't know why."},
+        {"rating": 3, "question": "If you could have lunch with any celebrity, who would it be and why?", "answer": "I'm stealing this idea from Tony; but definitely Jesus.  If I have to choose one on earth?  Hmm... that is really hard...I mean there are so many celebrities on earth and a lot of them are not really good people.  But the first one that came to mind is Taylor Swift...so that I can make Angel jealous."}
       ]
     }
   ],
@@ -555,7 +635,7 @@
         {"rating": 1, "question": "What will be the hardest part about being a grown-up?", "answer": "About working."},
         {"rating": 3, "question": "If you could make one new law, what would it be?", "answer": "That you only make macaroni and... what was it called again?  Pasta bratwurst!"},
         {"rating": 3, "question": "What is your favorite family tradition?", "answer": "Family game night.  And staycation!  I LOVE staycation!  Cuz one time we did a staycation and I wanted to get Mario cereal!"},
-        {"rating": 3, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Mom: about that she gives me hugs and kisses and she helps me read a book and we can watch movies together.  Worst thing is that she gives me spankins.  And that she sometimes gets me in trouble.  And that's it.  Dad: About that we can play parks together and i can get better on it and that you give me hugs and kisses and we can play board games together.  And that I can watch you play Celeste.  And that's it.  And the worst thing is that you give me hand pinches and that you sometimes get me in trouble.  And that's it."},
+        {"rating": 3, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Mom: about that she gives me hugs and kisses and she helps me read a book and we can watch movies together.  Worst thing is that she gives me spankins.  And that she sometimes gets me in trouble.  And that's it.  Dad: About that we can play parks together and I can get better on it and that you give me hugs and kisses and we can play board games together.  And that I can watch you play Celeste.  And that's it.  And the worst thing is that you give me hand pinches and that you sometimes get me in trouble.  And that's it."},
         {"rating": 3, "question": "What's the funniest thing you've ever seen?", "answer": "Like on a video game or something?  That you do funny jokes on me like knock knock jokes.  It's super funny!"},
         {"rating": 2, "question": "If you could be any cartoon character for a day, who would it be and why?", "answer": "It's so hard!  Dad, dad, this is super hard.  I can't find out... the FLASH!  Is the Flash a cartoon character?"},
         {"rating": 3, "question": "What would you do with $100?", "answer": "This is really hard... tons of things are really expensive... Buy stuff at the... what's it called again?  TARGET!  Buy stuff at Target. (Dad: what would you buy there?)  Um... I would pay for really fun toys that were less money.  And I would buuuyyy... candy.  Dad, how much are cars?  (Dad: real cars?)  Yeah.  (Dad: they're about $10,000).  That's so much!  I would buy toy cars."}
@@ -567,10 +647,10 @@
         {"rating": 1, "question": "What do you look forward to when you wake up?", "answer": "Usually get breakfast?"},
         {"rating": 2, "question": "How do you show people you care?", "answer": "I don't... really do that."},
         {"rating": 1, "question": "What is something about you that you think I might not know?", "answer": "How there's some kid shows that I like to watch that we watched a long time ago... like Sheriff Kelly's Wild West and PJ Masks."},
-        {"rating": 2, "question": "What are the three best things about being you?", "answer": "1. I like how i like to talk about so many different games i watched or played. 2. Playing in my room. 3. Playing video games, watching video games, and watching videos."},
+        {"rating": 2, "question": "What are the three best things about being you?", "answer": "1. I like how I like to talk about so many different games I watched or played. 2. Playing in my room. 3. Playing video games, watching video games, and watching videos."},
         {"rating": 2, "question": "What do you like best--and what do you like least--about your dad?", "answer": "Best: I like how he gives me hugs and kisses and plays video games with me.  Least: About how he gives me extra chores."},
         {"rating": 2, "question": "What do you like best--and what do you like least--about your mom?", "answer": "Best: I like how she gives me hugs and kisses and gives me presents and things on my birthdays.  Least: She gives me extra chores."},
-        {"rating": 3, "question": "How would you design a treehouse?", "answer": "Umm... I dunno... hmmm... Well it would have a really good and pretty wide tree.  A ladder.  that goes up to like this wood that's in like a tree and there's this wood thing and there's like a ladder that you can climb up to that spot.  and in it there's like this main house thing with like these walls and windows and curtains and doors and things i can play with up there.  And it's painted with different colors to make it look beautiful and cool up there."},
+        {"rating": 3, "question": "How would you design a treehouse?", "answer": "Umm... I dunno... hmmm... Well it would have a really good and pretty wide tree.  A ladder.  that goes up to like this wood that's in like a tree and there's this wood thing and there's like a ladder that you can climb up to that spot.  and in it there's like this main house thing with like these walls and windows and curtains and doors and things I can play with up there.  And it's painted with different colors to make it look beautiful and cool up there."},
         {"rating": 1, "question": "If you were a teacher and could teach your students anything at all, what would you teach them?", "answer": "I don't know, math?"},
         {"rating": 3, "question": "If you could time-travel, where and when would you go?", "answer": "I would time travel to a place with time machines and a lot of cool things."},
         {"rating": 3, "question": "What makes you feel thankful?", "answer": "About how I have a house of really loving people who can let me make my own Christmas lists and birthday lists so that they'll know what I want for Christmases to get some really cool things... and birthdays."},
@@ -584,6 +664,27 @@
         {"rating": 1, "question": "What do you want to be when you grow up?", "answer": "Maybe a game creator?"},
         {"rating": 2, "question": "What's a memory that makes you happy?", "answer": "Probably the times when we went to Grandmary and Grandpa's house and Aunt Stacy and Uncle Clint's house to try out their swingsets.  It was really fun."},
         {"rating": 1, "question": "What advice would you give your parents?", "answer": "Don't give me as big extra chores."}
+      ]
+    },
+    {
+      "qDate": "2023-09-03",
+      "questions": [
+        {"rating": 1, "question": "What's the hardest thing about being a kid?", "answer": "Being made fun of."},
+        {"rating": 2, "question": "What was the happiest event you experienced over the last year?", "answer": "The family cruise."},
+        {"rating": 1, "question": "What's the nicest thing a friend has done for you recently?", "answer": "Hmm...give me presents."},
+        {"rating": 3, "question": "Which four words describe you best?", "answer": "Energetic, creative, deep-thinking, fun."},
+        {"rating": 1, "question": "Can you name one thing that scares you?", "answer": "Nightmares."},
+        {"rating": 3, "question": "What piece of advice would you give to each of your siblings?", "answer": "For Symphony: umm...get done with chores faster. Charity: That one's a little bit too hard. And then Harmony: Don't tease me as much.  And then for Tony, it would be: actually do chores instead of skip them.  For Angel, I don't see her very often and so I can't think of any."},
+        {"rating": 2, "question": "What would you most like to do for a career?", "answer": "Video game designer for Nintendo."},
+        {"rating": 1, "question": "What's the best movie or TV series you've ever watched?", "answer": "Pokemon Journeys"},
+        {"rating": 2, "question": "What are the five things you enjoy most about your life?", "answer": "Going on trips, spending time with my family, spending time with friends, playing video games, and summer."},
+        {"rating": 1, "question": "What are you most looking forward to about being a grown-up?", "answer": "Making video games."},
+        {"rating": 3, "question": "If you could make one new law, what would it be?", "answer": "If I could make one new law, it would be: Don't never lower taxes."},
+        {"rating": 2, "question": "What is your favorite family tradition?", "answer": "Staycation."},
+        {"rating": 3, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Best thing about mom: that she's pretty generous about birthdays. Worst thing: giving me more chores on Tuesday than any other days.  Best thing about dad: spending time with us.  Worst thing: not giving me unlimited screen time."},
+        {"rating": 1, "question": "What's the funniest video you've seen online recently?", "answer": "Terminal Montage: Something about Pokemon Legends Archeaus."},
+        {"rating": 2, "question": "What does dad do at his job?", "answer": "He makes glasses for people."},
+        {"rating": 3, "question": "If you could have lunch with any celebrity, who would it be and why?", "answer": "Joe Biden: to tell him to be a better President."}
       ]
     }
   ],
@@ -617,6 +718,27 @@
         {"rating": 2, "question": "What do you want to be when you grow up?", "answer": "Hmm...I yike OWYETTE!"},
         {"rating": 2, "question": "What's a memory that makes you happy?", "answer": "I yike CATBOY!"},
         {"rating": 2, "question": "What advice would you give your parents?", "answer": "HUGS!"}
+      ]
+    },
+    {
+      "qDate": "2023-09-03",
+      "questions": [
+        {"rating": 2, "question": "What's the hardest thing about being a kid?", "answer": "The HARDEST thing?  Weeelll... the hardest thing is to stop crying, usually."},
+        {"rating": 2, "question": "What was the happiest thing that happened over the last year?", "answer": "Spending time with Joshy when we all went to Fritzes."},
+        {"rating": 1, "question": "What's the nicest thing a friend has done for you recently?", "answer": "Scarlet playing with me yesterday."},
+        {"rating": 3, "question": "Which four words describe you best?", "answer": "'Viseoo', 'My First Carcassonne', 'Kind of talking with Scarlet!', and 'Nice playing with mom'."},
+        {"rating": 1, "question": "Can you name one thing that scares you?", "answer": "Ooh!  A scary game!"},
+        {"rating": 3, "question": "What piece of advice would you give to each of your siblings?", "answer": "I think they should do more of playing Pikmin 4 with Daddy.  And do less of getting too much sugar."},
+        {"rating": 2, "question": "What kind of job do you want to have when you grow up?", "answer": "I want to have a Walmart job like Mimi."},
+        {"rating": 1, "question": "What's the best movie or TV series you've ever watched?", "answer": "Wish Dragon?  And Sonic Prime.  Oh!  And me and Chase are finishing a series called Ninjago.  It's a Lego series."},
+        {"rating": 1, "question": "What are the five things you enjoy most about your life?", "answer": "I enjoy New City Church, Awana, being at my house, and playing with my siblings.  And going to a friend's house."},
+        {"rating": 2, "question": "What are you most looking forward to about being a grown-up?", "answer": "I'm looking forward to taking care of my kids.  I almost said taking care of my friends, but I meant kids."},
+        {"rating": 2, "question": "If you could make one new law, what would it be?", "answer": "One new law...it could be no being mean to other people."},
+        {"rating": 3, "question": "What is your favorite family tradition?", "answer": "Family tradition?  Ooh, birthdays!  The park!  A birthday park day!  That's what one of my friends had.  She is a very old friend.  I think she turned 5 now.  I forgot her name but she did have a birthday at a park."},
+        {"rating": 2, "question": "What is the best thing about mom?  Worst thing about mom?  Best thing about dad?  Worst thing about dad?", "answer": "Best thing about mom is her playing with me.  The worst thing is umm... I don't know.  The best thing about dad is playing Pikmin 4 with me.  Worst thing?  Umm...the worst thing is about you leaving on your trip."},
+        {"rating": 3, "question": "What's the funniest video you've seen online recently?", "answer": "I like Diana and Roma where they were painting a pumpkin and they painted it purple and orange and then they got into a Halloween room.  Because like Roma had a popsicle dripped on him.  Diana had a spider that came to her on her bed and Roma said it was his cute little pet.  And I was like 'That is not a real spider.'"},
+        {"rating": 3, "question": "What does dad do at his job?", "answer": "Shrugs... Never seen him.  Just write stuff?  And typing stuff?  That's all I know."},
+        {"rating": 1, "question": "If you could have lunch with any celebrity, who would it be and why?", "answer": "It would be Diana because she will turn famous eventually."}
       ]
     }
   ]
