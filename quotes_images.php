@@ -2,17 +2,22 @@
 $title = "Quotes from the Kids! Angel, Tony, Harmony, Charity, Chase, and Symphony";
 require_once('inc/mf.php');
 
+$startDate = apiGet('start_date', '2000-01-01');
+
 $sql = "SELECT " .
     "id, " .
     "date, " .
     "quote, " .
     "rating " .
   "FROM quo_quotes " .
+  "WHERE date >= :start_date_str " .
   // "WHERE rating > 1 " .
   "ORDER BY date ASC " .
   // "LIMIT 10 " .
   ";";
 $sth = $dbh->prepare($sql);
+$sth->bindParam(':start_date_str', $startDate, PDO::PARAM_STR);
+
 $sth->execute();
 
 $quotes = sthFetchObjects($sth);	//	fetch all of the quotes and put them in $quotes array of objects
