@@ -25,8 +25,10 @@ if($quotes) {
   $star = "<img src='img/singleredstar.gif' alt='*'>";	//	image of star
 
   $j = 0;	// count iterations
+
   foreach($quotes as $q) {
     $j++;
+
     if($j <= ($curPage - 1) * $numPerPage || $j > ($curPage * $numPerPage)) {
       continue;
     }
@@ -35,20 +37,24 @@ if($quotes) {
 
     $ages_arr = array();
     $pics_arr = array();
+
     foreach($jsonKids as $kid) {
       if(strstr($q->quote, $kid->name)) {
         $ages_arr[] = $kid->name . ': ' . compare_dates(strtotime($kid->birthday),strtotime($q->date));
         $pics_arr[] = "<img src='img/family/thumbs/" . strtolower($kid->name) . "-" . getAge($kid->birthday, strtotime($q->date)) . ".jpg' alt='{$kid->name} (" . getAge($kid->birthday, strtotime($q->date), 1) . ")' class='thumbs'>";
       }
     }
+
     $ages = '[' . implode(', ', $ages_arr) . ']';
     $pics = "<aside class='thumbs'>" . implode(' ', $pics_arr) . "</aside>";
 
       //	star corner shows number of star rating in top right corner
     $star_corner = "<div class='star_corner'>";
+
     for($i = 1; $i <= $q->rating; $i++) {
       $star_corner .= $star;
     }
+
     $star_corner .= "</div>";
 
     $quote_section .= "
@@ -66,9 +72,11 @@ if($quotes) {
 
   // embolden names when they speak
 $embolden_names = array("Jeremy","Daddy","Dad","Christine","Mommy","Mom","Angel","Tony","Harmony","Charity","Chase","Symphony","Davey","Mindy","Robbie","Grandpa","Mimi","Andrew","Grandmary","Stacy","Clint");
+
 foreach($embolden_names as $name) {
   $quote_section = preg_replace("/(<p>|<br>)(" . $name . ")/", '<p><strong>$2</strong>', $quote_section);
 }
+
 ?>
 
 
