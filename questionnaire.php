@@ -11,24 +11,25 @@ foreach($jsonKids as $kid) {
   $qDates = array();
   $allKidQuestionnaireYears = array();
 
-
   foreach($kidQuestionnaires as $kQ) {
     $kQYear = (string) date('Y', strtotime($kQ->qDate));
     $allKidQuestionnaireYears[] = $kQYear;
   }
-  if (!in_array($preferredQuestionnaireYear, $allKidQuestionnaireYears)) {
-    $preferredQuestionnaireYear = end($allKidQuestionnaireYears);
+
+  $kidPreferredYear = $preferredQuestionnaireYear; // Use the requested year for this kid
+  if (!in_array($kidPreferredYear, $allKidQuestionnaireYears)) {
+    $kidPreferredYear = end($allKidQuestionnaireYears); // Fall back to latest for THIS kid only
   }
 
   foreach($kidQuestionnaires as $kQ) {
     $kQYear = (string) date('Y', strtotime($kQ->qDate));
 
-    if ($kQYear !== $preferredQuestionnaireYear) {	//	if this isn't the requested year, then link to the requested one
-      // phpConsoleLog("$preferredQuestionnaireYear is not $kQYear");
+    if ($kQYear !== $kidPreferredYear) {	//	if this isn't the requested year, then link to the requested one
+      // phpConsoleLog("$kidPreferredYear is not $kQYear");
       $qDates[] = "<a href='?yr=$kQYear#$kid->name' class='btn btn-primary'>$kQYear</a>";
     }
 
-    if ($kQYear > $preferredQuestionnaireYear) {
+    if ($kQYear > $kidPreferredYear) {
       continue;
     }
 
@@ -44,7 +45,7 @@ foreach($jsonKids as $kid) {
   $tempAge = str_pad($curAge, 2, 0, STR_PAD_LEFT);	//	pad left with zeros to 2 places
   $srcFilename = $lowercaseKidName . "-" . $tempAge . ".jpg";
   $fullPicSrc = "img/family/$srcFilename";
-  $ageToShow = ltrim($curAge, 0) == 0 ? 0 : ltrim($curAge, 0);	//	trim leading zeros unless the baby is 0
+  $ageToShow = ltrim($curAge, 0) === "" ? "0" : ltrim($curAge, 0);	//	trim leading zeros unless the baby is 0
   $titleAlt = "$kid->name, age $ageToShow";
 
   $questionnaire = "
