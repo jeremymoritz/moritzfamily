@@ -22,6 +22,8 @@ $sth->execute();
 
 $quotes = sthFetchObjects($sth);	//	fetch all of the quotes and put them in $quotes array of objects
 
+$quote_section = '';  // Initialize the quote_section variable
+
 if($quotes) {
   //	pagination
   $numPerPage = apiGet('num', 20);	//	quotes per page (default 20) //	change this to 9999
@@ -71,15 +73,15 @@ if($quotes) {
         <div class='clear'></div>
       </section>\n";
   }
-
-  $quote_section .= $pagination;	//	end quotes section with another pagination
 }
 
   // embolden names when they speak
-$embolden_names = array("Jeremy","Daddy","Dad","Christine","Mommy","Mom","Angel","Tony","Harmony","Charity","Chase","Symphony","Davey","Mindy","Robbie","Grandpa","Mimi","Andrew","Grandmary","Stacy","Clint");
+if($quote_section) {
+  $embolden_names = array("Jeremy","Daddy","Dad","Christine","Mommy","Mom","Angel","Tony","Harmony","Charity","Chase","Symphony","Davey","Mindy","Robbie","Grandpa","Mimi","Andrew","Grandmary","Stacy","Clint");
 
-foreach($embolden_names as $name) {
-  $quote_section = preg_replace("/(<p>|<br>)(" . $name . ")/", '<p><strong>$2</strong>', $quote_section);
+  foreach($embolden_names as $name) {
+    $quote_section = preg_replace("/(<p>|<br>)(" . $name . ")/", '<p><strong>$2</strong>', $quote_section);
+  }
 }
 
 ?>
