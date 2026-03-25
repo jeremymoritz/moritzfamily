@@ -1,0 +1,475 @@
+{
+	"show": "Bye Bye Birdie",
+	"date": "2026-08-07",
+	"cast": [
+		{
+			"auditionId": 46,
+			"firstName": "Abby",
+			"lastName": "Wollberg",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 202,
+			"firstName": "Aidan",
+			"lastName": "Lindsey",
+			"roles": ["Freddie", "Fred"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 100,
+			"firstName": "Amber",
+			"lastName": "Affleck",
+			"roles": ["Doris MacAfee"],
+			"groups": ["Leads"]
+		},
+		{
+			"auditionId": 32,
+			"firstName": "Andrew",
+			"lastName": "Jenson",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 82,
+			"firstName": "Ann-Marie",
+			"lastName": "Kristensen",
+			"roles": ["Phyllis"],
+			"groups": ["Adults"]
+		},
+		{
+			"auditionId": 34,
+			"firstName": "Arianna",
+			"lastName": "Pavlovic",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 51,
+			"firstName": "Aubrey",
+			"lastName": "Beatty",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 79,
+			"firstName": "Ava",
+			"lastName": "Brown",
+			"roles": ["Ursula Merkle"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 173,
+			"firstName": "Ava",
+			"lastName": "Skinner",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 70,
+			"firstName": "Avelyn",
+			"lastName": "Francis",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 252,
+			"firstName": "Brad",
+			"lastName": "Dawdy",
+			"roles": ["Harry MacAfee"],
+			"groups": ["Leads"]
+		},
+		{
+			"auditionId": 238,
+			"firstName": "Brett",
+			"lastName": "Francis",
+			"roles": ["Dishwasher", "Quartet", "Policeman"],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"auditionId": 219,
+			"firstName": "Brodie",
+			"lastName": "Edmonds",
+			"roles": ["Quartet"],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"auditionId": 179,
+			"firstName": "Brooklyn",
+			"lastName": "Green",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 255,
+			"firstName": "Casey",
+			"lastName": "Huff",
+			"roles": ["First Reporter", "Man's Voice", "Mr. Johnson"],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"auditionId": 157,
+			"firstName": "Cecilia",
+			"lastName": "Bryant",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 158,
+			"firstName": "Chase",
+			"lastName": "Moritz",
+			"roles": ["Randolph MacAfee"],
+			"groups": ["Leads"]
+		},
+		{
+			"auditionId": 154,
+			"firstName": "Chloe",
+			"lastName": "Roth",
+			"roles": ["Margie"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 96,
+			"firstName": "Chris",
+			"lastName": "Aponte",
+			"roles": ["Quartet", "TV Crew (Stg Mgr)", "Fourth Voice"],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"auditionId": 201,
+			"firstName": "Chris",
+			"lastName": "Robbins",
+			"roles": ["Trainman", "Train Conductor"],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"auditionId": 244,
+			"firstName": "Christopher",
+			"lastName": "Morgan",
+			"roles": ["Albert Peterson"],
+			"groups": ["Leads"]
+		},
+		{
+			"auditionId": 121,
+			"firstName": "Collins",
+			"lastName": "Kenealy",
+			"roles": [],
+			"groups": ["Kids"]
+		},
+		{
+			"auditionId": 167,
+			"firstName": "Cole",
+			"lastName": "Herrig",
+			"roles": ["Conrad Birdie"],
+			"groups": ["Leads"]
+		},
+		{
+			"auditionId": 182,
+			"firstName": "Daniel",
+			"lastName": "Poorman",
+			"roles": ["Second Reporter (cameraman)"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 216,
+			"firstName": "David",
+			"lastName": "Stelting",
+			"roles": ["Charles Maude", "Quartet lead"],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"auditionId": 199,
+			"firstName": "Denise",
+			"lastName": "Weigand",
+			"roles": [],
+			"groups": ["Adults"]
+		},
+		{
+			"auditionId": 214,
+			"firstName": "Drew",
+			"lastName": "Jones",
+			"roles": ["Mayor"],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"auditionId": 242,
+			"firstName": "Elliott",
+			"lastName": "Stewart",
+			"roles": ["Mayor's Wife (Edna)", "Another Parent"],
+			"groups": ["Adults"]
+		},
+		{
+			"auditionId": 19,
+			"firstName": "Ellis",
+			"lastName": "Howard",
+			"roles": [],
+			"groups": ["Kids"]
+		},
+		{
+			"auditionId": 39,
+			"firstName": "Emma",
+			"lastName": "Briscoe",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 152,
+			"firstName": "Emma",
+			"lastName": "Owen",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 55,
+			"firstName": "Eva",
+			"lastName": "Jenkins",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 165,
+			"firstName": "Gillian",
+			"lastName": "Miller",
+			"roles": ["Kim MacAfee"],
+			"groups": ["Leads"]
+		},
+		{
+			"auditionId": 68,
+			"firstName": "Hadley",
+			"lastName": "Baker",
+			"roles": ["Alice"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 6,
+			"firstName": "Harper",
+			"lastName": "Hinton",
+			"roles": [],
+			"groups": ["Kids"]
+		},
+		{
+			"auditionId": 161,
+			"firstName": "Isaiah",
+			"lastName": "Grummon",
+			"roles": ["Harvey Johnson"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 54,
+			"firstName": "Jaydon",
+			"lastName": "Bruce",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 164,
+			"firstName": "Jillian",
+			"lastName": "Downing",
+			"roles": ["Deborah Sue"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 25,
+			"firstName": "Jordyn",
+			"lastName": "Wilson",
+			"roles": ["Nancy", "Sad Girl 1"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 92,
+			"firstName": "Kallyn",
+			"lastName": "Kubmeyer",
+			"roles": ["Third Reporter", "Another Voice"],
+			"groups": ["Adults"]
+		},
+		{
+			"auditionId": 257,
+			"firstName": "Kat",
+			"lastName": "Robbins",
+			"roles": ["Gloria", "Dance Captain"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 220,
+			"firstName": "Katelyn",
+			"lastName": "Hurd",
+			"roles": ["Additional Reporter"],
+			"groups": ["Adults"]
+		},
+		{
+			"auditionId": 45,
+			"firstName": "Kimberlynn",
+			"lastName": "Loebsack",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 197,
+			"firstName": "Kristi",
+			"lastName": "Hibschman",
+			"roles": ["Mae Peterson"],
+			"groups": ["Leads"]
+		},
+		{
+			"auditionId": 228,
+			"firstName": "Laci",
+			"lastName": "Olberding",
+			"roles": ["Lee"],
+			"groups": ["Adults"]
+		},
+		{
+			"auditionId": 256,
+			"firstName": "Laura",
+			"lastName": "Newland",
+			"roles": ["Rose Alvarez"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 91,
+			"firstName": "Lucas",
+			"lastName": "Ingle",
+			"roles": ["Hugo Peabody"],
+			"groups": ["Leads", "Teens"]
+		},
+		{
+			"auditionId": 95,
+			"firstName": "Liz",
+			"lastName": "Wollberg",
+			"roles": ["Mrs. Merkle"],
+			"groups": ["Adults"]
+		},
+		{
+			"auditionId": 75,
+			"firstName": "Lulu",
+			"lastName": "Swofford",
+			"roles": ["Dance Captain"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 89,
+			"firstName": "Mackenzi",
+			"lastName": "Mason",
+			"roles": ["Additional Reporter"],
+			"groups": ["Adults"]
+		},
+		{
+			"auditionId": 71,
+			"firstName": "Madilayna",
+			"lastName": "Boyer",
+			"roles": ["One Girl", "Girl's Voice"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 7,
+			"firstName": "Marlowe",
+			"lastName": "Sprenger",
+			"roles": ["Sad Girl 2"],
+			"groups": ["Kids"]
+		},
+		{
+			"auditionId": 50,
+			"firstName": "Matilda",
+			"lastName": "McCoy",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 218,
+			"firstName": "Melissa",
+			"lastName": "Wolfe",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 192,
+			"firstName": "Michael",
+			"lastName": "Gardner",
+			"roles": [],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"auditionId": 67,
+			"firstName": "Micah",
+			"lastName": "Smith",
+			"roles": ["Karl"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 14,
+			"firstName": "Molly",
+			"lastName": "Carrington",
+			"roles": [],
+			"groups": ["Kids"]
+		},
+		{
+			"auditionId": 84,
+			"firstName": "Rick",
+			"lastName": "Coyne",
+			"roles": ["TV Crew (Camera 1)"],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"auditionId": 178,
+			"firstName": "Riley",
+			"lastName": "McKinley",
+			"roles": ["Traveler", "Third Voice"],
+			"groups": ["Adults"]
+		},
+		{
+			"auditionId": 231,
+			"firstName": "Riley",
+			"lastName": "McConnell",
+			"roles": ["Helen"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 47,
+			"firstName": "Scarlette",
+			"lastName": "Bainum",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 126,
+			"firstName": "Stella",
+			"lastName": "Leftridge",
+			"roles": [],
+			"groups": ["Kids"]
+		},
+		{
+			"auditionId": 40,
+			"firstName": "Sydney",
+			"lastName": "Deering",
+			"roles": ["Suzie"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 200,
+			"firstName": "Thomas",
+			"lastName": "Yoder",
+			"roles": ["2nd Policeman", "TV Crew (Camera 2)"],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"auditionId": 64,
+			"firstName": "Violette",
+			"lastName": "Harman",
+			"roles": ["Penelope Ann"],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 53,
+			"firstName": "Vivian",
+			"lastName": "Hewins",
+			"roles": [],
+			"groups": ["Teens"]
+		},
+		{
+			"auditionId": 61,
+			"firstName": "Willa",
+			"lastName": "Priddy",
+			"roles": [],
+			"groups": ["Teens"]
+		}
+	]
+}
