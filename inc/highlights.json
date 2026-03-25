@@ -571,7 +571,7 @@
 	},
 	{
 		"year": 2016,
-		"event": "Chase creates his 25th level on Super Mario Maker",
+		"event": "Chase creates his 10th level on Super Mario Maker",
 		"significance": 1
 	},
 	{
@@ -1160,11 +1160,6 @@
 		"significance": 1
 	},
 	{
-		"year": 2023,
-		"event": "Harmony begins learning how to drive",
-		"significance": 2
-	},
-	{
 		"year": 2024,
 		"event": "Harmony starts her first job as a cashier at Hy-Vee",
 		"significance": 3
@@ -1206,7 +1201,7 @@
 	},
 	{
 		"year": 2024,
-		"event": "Harmony and Charity attend their first concert: Boy with Uke",
+		"event": "Harmony and Charity attend Charity's first concert: Boy with Uke",
 		"significance": 2
 	},
 	{
@@ -1272,6 +1267,96 @@
 	{
 		"year": 2024,
 		"event": "Code for Teens gets translated into Kyrgyz and published from a grant from the government of Kyrgyzstan",
+		"significance": 3
+	},
+	{
+		"year": 2025,
+		"event": "Harmony, Tony, and Katie Jones join SoulTeam Missions to serve in Ecuador on a three-week mission trip.",
+		"significance": 3
+	},
+	{
+		"year": 2025,
+		"event": "Harmony and Charity work at the Renaissance Festival",
+		"significance": 2
+	},
+	{
+		"year": 2025,
+		"event": "Harmony quits working at Hy-Vee",
+		"significance": 1
+	},
+	{
+		"year": 2025,
+		"event": "Tony marries Katie Jones, and they move into an apartment in Tulsa, Oklahoma",
+		"significance": 3
+	},
+	{
+		"year": 2025,
+		"event": "Symphony plays Young Cinderella and a town ensemble member in her musical Cinderella ",
+		"significance": 2
+	},
+	{
+		"year": 2025,
+		"event": "Charity attends Camp Siloam",
+		"significance": 1
+	},
+	{
+		"year": 2025,
+		"event": "Angel marries William Flickinger, and they move into a duplex in Lawrence, Kansas ",
+		"significance": 3
+	},
+	{
+		"year": 2025,
+		"event": "Tony and Uncle Davey compete against one another in a tournament of the National Australian Football League (AFL)",
+		"significance": 1
+	},
+	{
+		"year": 2025,
+		"event": "Jeremy starts a new job as a Senior Software Engineer for Meritas Digital",
+		"significance": 2
+	},
+	{
+		"year": 2025,
+		"event": "Christine and Jeremy discover they're pregnant again (sadly this ended in a miscarriage)",
+		"significance": 2
+	},
+	{
+		"year": 2025,
+		"event": "Chase and Jeremy beat the Heart with all 4 characters in Slay the Spire",
+		"significance": 2
+	},
+	{
+		"year": 2025,
+		"event": "Christine completes her 2-year Discipleship program at New City Church",
+		"significance": 2
+	},
+	{
+		"year": 2025,
+		"event": "Harmony gets her Driver's License",
+		"significance": 2
+	},
+	{
+		"year": 2025,
+		"event": "Harmony eats with a fork for the first time in 4 years (though does not intend to repeat this behavior)",
+		"significance": 3
+	},
+	{
+		"year": 2025,
+		"event": "Charity starts learning guitar",
+		"significance": 1
+	},
+	{
+		"year": 2025,
+		"event": "Charity gets braces while Hamony gets braces removed",
+		"significance": 1
+	},
+	{
+		"year": 2025,
+		"event": "The family purchases the first-ever Moritz pet: Marc Finciel (a betta fish)",
+		"significance": 3
+	},
+	{
+		"year": 2026,
+		"event": "Jeremy's brother Robbie and his wife Norie welcome their first daughter Marina into the world",
 		"significance": 3
 	}
 ]
