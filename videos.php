@@ -25,7 +25,8 @@ $videos = array( // VideoYear | YouTube ID | Song | Artist | Height(optional)
   "2021|Jixvj07UeDQ|Brand New Day|Demi Lovato",
   "2022|M1GB6Zp4KX0|Happy Dance|MercyMe",
   "2023|RcDyPnDr9lM|Girl Put Your Records On|Corinne Bailey Rae",
-  "2024|goDO9temIGg|Fired Up|Disney's Zombies"
+  "2024|goDO9temIGg|Fired Up|Disney's Zombies",
+  "2025|eseiITuiMA4|Golden|K-Pop Demon Hunters"
 );
 
 // $videosWithVimeoIds = array( // VideoYear | Vimeo ID (THIS IS NOT USED ANYMORE!!)

@@ -2,7 +2,7 @@ function renderCast(cast) {
   const gallery = document.querySelector('.gallery');
   gallery.innerHTML = cast
     .map(p => {
-      const id = String(p.auditionId).padStart(3, '0');
+      const audId = String(p.auditionId).padStart(3, '0');
       const name = [p.firstName, p.lastName].filter(Boolean).join(' ');
       const groupsFiltered = p.groups.filter(g => g !== 'Leads');
       const groupsLine = groupsFiltered.length
@@ -14,16 +14,18 @@ function renderCast(cast) {
 
       return `<li class="gallery-item">
         <div class="gallery-img">
-          <img src="img/2026/auditions/aud-${id}.jpg" alt="Audition Photo ${id}">
+          <img src="img/2026/auditions/aud-${audId}.jpg" alt="Audition Photo ${audId}">
         </div>
         <div class="card-text">
-          <input type="checkbox" id="reveal-${p.auditionId}" class="reveal-cb">
+          <input type="checkbox" id="reveal-${p.trackNumber}" class="reveal-cb">
           <div class="card-content">
-            <p class="gallery-name">${name}<small>${p.auditionId}</small></p>
+            <p class="gallery-name">${name}<small>${p.trackNumber}</small></p>
             ${groupsLine}
             ${rolesLine}
+            <p class="gallery-gender" hidden>${p.gender}</p>
+            <p class="gallery-height" hidden>${p.height} inches</p>
           </div>
-          <label for="reveal-${p.auditionId}" class="ellipsis-btn">&hellip;</label>
+          <label for="reveal-${p.trackNumber}" class="ellipsis-btn">&hellip;</label>
         </div>
       </li>`;
     })
@@ -44,22 +46,24 @@ function shuffle(arr) {
 fetch('bbb-cast.json')
   .then(r => r.json())
   .then(data => {
-    const fullCast = data.cast.slice();
-    let cast = data.cast.slice();
+    const fullCast = [...data.cast].sort(
+      (a, b) => a.trackNumber - b.trackNumber
+    );
+    let cast = fullCast.slice();
     renderCast(cast);
     document.querySelector('.shuffle-btn').addEventListener('click', () => {
       cast = shuffle(cast);
       renderCast(cast);
     });
     document.querySelector('.next-round-btn').addEventListener('click', () => {
-      const revealedIds = [...document.querySelectorAll('.reveal-cb:checked')].map(
-        cb => Number(cb.id.replace(/^reveal-/, '')),
-      );
+      const revealedIds = [
+        ...document.querySelectorAll('.reveal-cb:checked')
+      ].map(cb => Number(cb.id.replace(/^reveal-/, '')));
       if (revealedIds.length === 0) {
         cast = fullCast.slice();
       } else {
         const idSet = new Set(revealedIds);
-        cast = cast.filter(p => idSet.has(p.auditionId));
+        cast = cast.filter(p => idSet.has(p.trackNumber));
       }
       renderCast(cast);
     });

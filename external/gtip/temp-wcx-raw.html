@@ -1,0 +1,189 @@
+<style>
+  /* Use aileron font */
+  @import url('https://cdn.jsdelivr.net/npm/@fontsource/aileron@5.0.0/index.min.css');
+
+  p,
+  div,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  label,
+  input,
+  span,
+  textarea,
+  aside,
+  select,
+  option {
+    font-family: Aileron, Arial, sans-serif !important;
+  }
+
+  /* stuff getting stripped out */
+  .field-donationField .holds-amounts .field-area {
+    grid-template-columns: 1fr 1fr;
+  }
+  input[type='checkbox'] {
+    scale: 0.75 !important;
+  }
+  [data-field-name='registrants.anonymous'] input[type='checkbox'] {
+    scale: 0.65 !important;
+  }
+  .classCode-chevron {
+    transform: rotate(-45deg) translate(0, -3px);
+  }
+  .classCode-wrapper:has(.classCode-toggle:checked) .classCode-chevron {
+    transform: rotate(135deg) translate(3px, 0); /* doesn't work... gets stripped out */
+  }
+  .classCode-option--active::after,
+  .interval-toggle-dropdown-menu li[aria-selected="true"]::after {
+    content: '✓';
+  }
+
+  input[type='checkbox']:checked {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='%23003a5b' fill-rule='evenodd' d='M20 0a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4zm-.293 6.293a1 1 0 0 0-1.414 0L9 15.585l-3.293-3.292-.094-.083a1 1 0 0 0-1.32 1.497l4 4 .094.083a1 1 0 0 0 1.32-.083l10-10 .083-.094a1 1 0 0 0-.083-1.32'/%3E%3C/svg%3E") !important;
+  }
+  .campaign-form:not(.legacy-form) .list-radio li input[type='radio']:checked {
+    background-image: none !important;
+  }
+
+  @media (min-width: 640px) {
+  }
+  @media (min-width: 480px) {
+    .field-donationField .holds-amounts .field-area {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1024px) {
+  }
+</style>
+
+<script>
+  // Add secret checkboxes to helptips for state management
+  function addHelptipCheckboxes() {
+    document.querySelectorAll('.helptip').forEach(el => {
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.hidden = true;
+      checkbox.style.display = 'none';
+      checkbox.dataset.purpose = 'help-state';
+      el.appendChild(checkbox);
+    });
+  }
+
+  // Move holds-fee to be after amounts
+  function moveHoldsFee() {
+    const holdsFee = document.querySelector('.field-donationField .holds-fee');
+    const amounts = document.querySelector(
+      '.field-donationField .holds-amounts'
+    );
+
+    if (holdsFee && amounts)
+      amounts.insertAdjacentElement('afterend', holdsFee);
+  }
+
+  function changeApplePayButtonText() {
+    const applePayButton = document.querySelector('[type="donate"]');
+
+    if (applePayButton) applePayButton.type = 'plain';
+  }
+
+  // Dynamically update label for classCodeName radio options
+  function keepClassCodeNameLabelUpdated() {
+    const field = document.querySelector(
+      '[data-field-name="registrants.classCodeName"]'
+    );
+    const label = field.querySelector('label.must-show');
+    const radios = field.querySelectorAll('input[type="radio"]');
+
+    field.querySelector('.field-area').style.display = 'none';
+
+    const trigger = document.createElement('span');
+    trigger.className = 'classCode-trigger';
+
+    const triggerText = document.createElement('span');
+    triggerText.className = 'classCode-trigger-text';
+
+    const chevron = document.createElement('span');
+    chevron.className = 'classCode-chevron';
+
+    trigger.appendChild(triggerText);
+    trigger.appendChild(chevron);
+
+    const dropdown = document.createElement('ul');
+    dropdown.className = 'classCode-dropdown';
+
+    const toggleCheckbox = document.createElement('input');
+    toggleCheckbox.type = 'checkbox';
+    toggleCheckbox.className = 'classCode-toggle';
+
+    radios.forEach(radio => {
+      const optionText = radio.nextElementSibling.firstChild.textContent.trim();
+      const item = document.createElement('li');
+      item.className = 'classCode-option';
+      item.dataset.value = radio.value;
+      item.textContent = optionText;
+
+      item.addEventListener('click', () => {
+        radio.checked = true;
+        radio.dispatchEvent(new Event('change', { bubbles: true }));
+        toggleCheckbox.checked = false;
+      });
+
+      dropdown.appendChild(item);
+    });
+
+    const wrapper = document.createElement('span');
+    wrapper.className = 'classCode-wrapper';
+    wrapper.appendChild(toggleCheckbox);
+    wrapper.appendChild(trigger);
+    wrapper.appendChild(dropdown);
+
+    trigger.addEventListener('click', () => {
+      toggleCheckbox.checked = !toggleCheckbox.checked;
+    });
+
+    document.addEventListener('click', e => {
+      if (!wrapper.contains(e.target)) {
+        toggleCheckbox.checked = false;
+      }
+    });
+
+    function updateLabel() {
+      const checked = field.querySelector('input[type="radio"]:checked');
+      const optionText = checked
+        ? checked.nextElementSibling.firstChild.textContent.trim()
+        : '';
+      triggerText.textContent = optionText;
+
+      label.childNodes[0].textContent = 'Use my gift for ';
+
+      dropdown.querySelectorAll('.classCode-option').forEach(item => {
+        item.classList.toggle(
+          'classCode-option--active',
+          item.dataset.value === checked?.value
+        );
+      });
+    }
+
+    label.childNodes[0].textContent = 'Use my gift for ';
+    label.insertBefore(wrapper, label.childNodes[1]);
+
+    updateLabel();
+
+    radios.forEach(radio => {
+      radio.addEventListener('change', updateLabel);
+    });
+  }
+
+  setTimeout(() => {
+    addHelptipCheckboxes();
+    moveHoldsFee();
+    changeApplePayButtonText();
+    keepClassCodeNameLabelUpdated();
+  }, 100);
+</script>

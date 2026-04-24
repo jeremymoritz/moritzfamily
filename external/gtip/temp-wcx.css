@@ -1,0 +1,984 @@
+/** biome-ignore-all lint/style/noDescendingSpecificity: temporary selectors */
+/** biome-ignore-all lint/complexity/noImportantStyles: external styles required */
+
+/**
+ * Stripped by Webconnex on this file (among others): @import, @media,
+ * accent-color, appearance, background-image, background-position,
+ * background-repeat, background-size, content, font-family,
+ * grid-template-columns, scale, transform, transform-origin. Put only those in
+ * `wcx-jm-raw.html` `<style>`; keep the rest here.
+ */
+
+/* colors (i can't actually use these as they get stripped out) */
+:root {
+  --color-yl-blue: #003a5b;
+  --color-gray-600: oklch(44.6% 0.03 256.802);
+  --color-gray-500: oklch(55.1% 0.027 264.364);
+  --color-gray-400: oklch(70.7% 0.022 261.325);
+  --color-gray-300: oklch(87.2% 0.01 258.338);
+  --color-gray-200: oklch(92.8% 0.006 264.531);
+  --color-gray-50: oklch(98.5% 0.002 247.839);
+}
+.donation-field {
+  padding-bottom: 0;
+}
+.field-donationField
+  .donation-field
+  .holds-amounts
+  .field-area
+  :is(.suggest-amounts label span, .other-amount input) {
+  color: #003a5b !important; /* yl-blue */
+  border-color: oklch(92.8% 0.006 264.531) !important; /* gray-200 */
+}
+.field-donationField
+  .donation-field
+  .holds-amounts
+  .field-area
+  :is(
+    .suggest-amounts label span:hover,
+    .other-amount input:hover,
+    .other-amount input:focus
+  ) {
+  border-color: oklch(87.2% 0.01 258.338) !important; /* gray-300 */
+}
+.field-donationField
+  .donation-field
+  .holds-amounts
+  .field-area
+  .suggest-amounts
+  label:has(:checked)
+  span {
+  border-color: #003a5b !important; /* gray-200 */
+}
+.campaign-form:not(.legacy-form) .field-area input[type='checkbox'],
+input[type='checkbox'] {
+  min-width: 21px !important;
+  min-height: 21px !important;
+  max-width: 21px !important;
+  max-height: 21px !important;
+  width: 21px !important;
+  height: 21px !important;
+}
+input:is([type='text'], [type='email'], [type='tel']) {
+  font-size: 16px !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+input::placeholder,
+.field-donationField .holds-amounts .field-area .other-amount .currency-symbol {
+  color: oklch(70.7% 0.022 261.325) !important; /* gray-400 */
+}
+.field-donationField .donation-field .field-area.holds-fee {
+  margin-top: 0 !important;
+}
+.solid.line-break {
+  padding: 0.5rem 0;
+}
+label.must-show:has(> input[type='checkbox']),
+.recurring-details,
+.app-container label.must-show,
+.app-container label.must-show div {
+  color: oklch(44.6% 0.03 256.802) !important; /* gray-600 */
+}
+.field-donationField .donation-field .field-area.recurring-details {
+  margin-top: 0.25rem !important;
+}
+
+/* Donation interval: pill + dropdown (native radios in .holds-recurring). */
+.holds-recurring.sub-field > label,
+.holds-recurring .field-area.suggest-amounts {
+  border: 0 !important;
+  clip: rect(0, 0, 0, 0) !important;
+  display: block !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+/* Column flex parents stretch children full width; keep pills intrinsic-width. */
+.field-donationField .holds-recurring [role='radiogroup'] {
+  align-items: flex-start !important;
+}
+.field-donationField .wcx-interval-pills-ui {
+  align-items: center;
+  align-self: flex-start;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 0.375rem;
+  margin-bottom: 0.25rem;
+  max-width: 100%;
+  width: auto !important;
+}
+.field-donationField
+  .wcx-interval-pills-ui
+  > :is(.wcx-interval-pill-onetime, .wcx-interval-recurring-wrap) {
+  flex-basis: auto !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  max-width: fit-content !important;
+  min-width: 0 !important;
+  width: auto !important;
+}
+/* Webconnex: `.labels-hide label:not(.btn) { visibility: hidden }` on the step. */
+.labels-hide
+:is(
+  .wcx-interval-pills-ui label,
+  .wcx-mc-wrapper label,
+  [data-field-name='registrants.specialDesignationName'] .wcx-sd-toggle-label
+) {
+  height: auto !important;
+  visibility: visible !important;
+}
+.wcx-interval-pill-onetime,
+.wcx-interval-pill-recurring {
+  align-items: center;
+  border-radius: 999px !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  flex-basis: auto !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  gap: 0.25rem !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+  max-width: fit-content !important;
+  min-width: 50px !important;
+  padding: 0.25rem 1rem !important;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease !important;
+  white-space: nowrap !important;
+  width: auto !important;
+}
+.wcx-interval-pill-recurring::after {
+  border-color: currentColor;
+  border-style: solid;
+  border-width: 0 0 1.5px 1.5px;
+  height: 0.5rem;
+  margin-left: 0.25rem;
+  transition: transform 0.2s ease;
+  width: 0.5rem;
+}
+.wcx-interval-pill--active {
+  background-color: #91c83e !important;
+  border: 2px solid #91c83e !important;
+  color: #fff !important;
+}
+.wcx-interval-pill--inactive {
+  background-color: #fff !important;
+  border: 2px solid oklch(88% 0.005 260) !important;
+  color: oklch(44.6% 0.03 256.802) !important;
+}
+.wcx-interval-recurring-wrap {
+  display: inline-block;
+  position: relative;
+}
+.wcx-interval-mc-toggle {
+  display: none !important;
+}
+.wcx-interval-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid oklch(92.8% 0.006 264.531);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+  display: none;
+  left: 0;
+  list-style: none;
+  margin-top: 0.375rem;
+  min-width: 11rem;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+}
+.wcx-interval-recurring-wrap:has(.wcx-interval-mc-toggle:checked)
+  .wcx-interval-dropdown-menu {
+  align-items: stretch !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+}
+
+/* Reduce padding at top of form */
+.embed-container .form-step {
+  padding-top: 4px;
+}
+#registrants {
+  letter-spacing: -0.01em !important;
+}
+/* Input fields */
+.registrant-field input:not([type='radio']):not([type='checkbox']) {
+  margin-bottom: 0.25rem !important;
+  min-height: 2rem !important;
+  height: 2rem !important;
+}
+.field-donationField .holds-amounts .field-area {
+  display: grid !important;
+  gap: 0.25rem !important;
+}
+.field-donationField .holds-amounts .field-area fieldset,
+.embed-container .suggested-button,
+.suggest-amounts {
+  display: contents !important;
+}
+.field-donationField .holds-amounts .field-area .suggest-amounts label span {
+  background-color: #fff !important;
+}
+.field-donationField
+  .holds-amounts
+  .field-area
+  .suggest-amounts
+  label:has(:checked)
+  span {
+  background-color: #003a5b !important;
+  border-color: #003a5b !important;
+  color: #fff !important;
+}
+.field-donationField .holds-amounts .field-area .other-amount {
+  flex-basis: 25% !important;
+  margin-top: 0 !important;
+}
+.field-donationField .holds-amounts .field-area .other-amount .currency-symbol {
+  font-weight: bold !important;
+  top: 10px !important;
+}
+.field-donationField .holds-amounts .field-area .other-amount input {
+  border: 2px solid #c6c9cc !important;
+  font-weight: bold !important;
+  height: calc(100% - 2px) !important;
+  background-color: #fff !important;
+  text-align: center !important;
+}
+
+.recurring-details a {
+  color: #003a5b !important;
+  text-decoration: underline;
+  font-weight: bold !important;
+}
+.recurring-details a:hover {
+  color: #003a5b !important;
+  text-decoration: none;
+}
+/* Hide label for "Amount*" */
+.holds-amounts label.must-show {
+  display: none;
+}
+/* Make font size smaller for checkbox labels */
+.field-checkbox label.must-show.flex,
+.payment-method label.must-show {
+  font-size: 14px !important;
+}
+.billing .field-textHeading h1.text-center {
+  font-size: 20px !important;
+}
+
+/* DM styling */
+.help-info-toggle {
+  cursor: pointer;
+  margin-left: 0.25rem;
+  color: oklch(0.707 0.022 261.325);
+}
+:is(
+    [data-field-name='registrants.anonymous'],
+    [data-field-name='registrants.tribute']
+  )
+  .help-tip-container {
+  background-color: oklch(0.985 0.002 247.839);
+  border: 1px solid oklch(92.8% 0.006 264.531) !important;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-top: 0.25rem;
+  font-size: 14px !important;
+  line-height: 1.4;
+  color: oklch(0.551 0.027 264.364);
+}
+:is(
+    [data-field-name='registrants.anonymous'],
+    [data-field-name='registrants.tribute']
+  )
+  .help-tip-container
+  p {
+  margin: 0;
+}
+.honoree-name-wrapper {
+  gap: 0.5rem !important;
+  background-color: oklch(98.5% 0.002 247.839) !important;
+  border-color: oklch(92.8% 0.006 264.531) !important;
+  border-style: solid;
+  border-width: 0 1px 1px !important;
+  border-radius: 0 0 8px 8px !important;
+  margin-bottom: 8px;
+  padding: 8px 8px !important;
+}
+.honoree-name-wrapper
+  > :is(
+    [data-field-name='registrants.honoreeFirst'],
+    [data-field-name='registrants.honoreeLast']
+  ) {
+  flex-basis: 0% !important;
+  flex-grow: 1 !important;
+  flex-shrink: 1 !important;
+  min-width: 0 !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* "Additional options" toggle (injected in wcx-jm-raw.html) */
+.wcx-additional-options-toggle-label {
+  bottom: 0.5rem;
+  color: oklch(0.446 0.03 256.802) !important; /* gray-600 */
+  cursor: pointer;
+  display: block;
+  font-size: 14px !important;
+  height: auto !important;
+  position: relative;
+  visibility: visible !important;
+  text-decoration: none;
+}
+.wcx-additional-options-toggle-label::after {
+  margin-left: 0.5rem;
+  text-decoration: none !important;
+  display: inline-block;
+}
+.wcx-additional-options-toggle-label:hover {
+  text-decoration: underline;
+}
+.wcx-additional-options-toggle-label input[type='checkbox'] {
+  display: none;
+}
+body:has(#show-additional-options):not(:has(#show-additional-options:checked))
+  :is(
+    [data-field-name='registrants.specialDesignationName'],
+    [data-field-name='registrants.anonymous'],
+    [data-field-name='registrants.tribute'],
+    [data-field-name='registrants.tributeType'],
+    .honoree-name-wrapper,
+    [data-field-name='registrants.sponsoring']
+  ) {
+  display: none !important;
+}
+
+:is(
+    [data-field-name='registrants.classCodeName'],
+    [data-field-name='registrants.specialDesignationName']
+  )
+  * {
+  font-size: 14px !important;
+}
+/* Tribute Type (hide unless Tribute checkbox is checked) */
+[data-field-name='registrants.tribute']:has(input:not(:checked))
+  ~ [data-field-name='registrants.tributeType'] {
+  display: none;
+}
+/* Show Tribute Type when Tribute checkbox is checked */
+[data-field-name='registrants.tribute']:has(input:checked)
+  ~ [data-field-name='registrants.tributeType'] {
+  display: block;
+}
+/* Make clear button invisible */
+[data-field-name='registrants.tribute']:has(input:checked)
+  ~ [data-field-name='registrants.tributeType']
+  p:has(.btn.btn-primary) {
+  display: none;
+}
+[data-field-name='registrants.tributeType'] .list-radio {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 0 !important;
+}
+[data-field-name='registrants.tributeType'] .list-radio li {
+  flex-basis: 9rem !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  min-width: 0 !important;
+}
+[data-field-name='registrants.tributeType']
+  .list-radio
+  li
+  :is(label, label div) {
+  align-items: center !important;
+  font-size: 14px !important;
+}
+.campaign-form:not(.legacy-form) .list-radio li input[type='radio'] {
+  height: 18px !important;
+  max-width: 18px !important;
+  min-height: 18px !important;
+  min-width: 18px !important;
+  width: 18px !important;
+}
+.campaign-form:not(.legacy-form) .list-radio li input[type='radio']:checked {
+  background-color: #003a5b !important;
+  border: 2px solid #003a5b !important;
+  box-shadow: inset 0 0 0 2px #fff !important;
+}
+.keyboard-open .form-step-nav {
+  position: static !important;
+}
+.form-step-nav .field-digitalPayment {
+  margin-bottom: 0.25rem !important;
+}
+.form-step-nav :is(apple-pay-button, .gpay-button, button) {
+  min-height: 2.5rem !important;
+  height: 2.5rem !important;
+  border-radius: 0.5rem !important;
+}
+.form-step-nav :is(.gpay-button, button) {
+  padding: 0.75rem 0 !important;
+}
+.form-step-nav apple-pay-button {
+  padding: 0 !important;
+}
+.form-step-nav apple-pay-button:hover {
+  opacity: 0.72; /* approximate color of gpay button on hover */
+}
+.form-step-nav button.btn-primary {
+  background-color: #003a5b !important;
+  font-size: 0 !important;
+  padding: 0.5rem 1rem !important;
+  text-transform: capitalize !important;
+  transition: transform 0.2s ease-in-out !important;
+}
+.form-step-nav button.btn-primary::before {
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  top: 2px;
+}
+.form-step-nav button.btn-primary:hover {
+  background-color: #224a6b !important;
+}
+
+/* Class Code Radio CSS */
+[data-field-name='registrants.classCodeRadio'] .multipleChoice {
+  display: flex !important;
+  flex-direction: row !important;
+}
+[data-field-name='registrants.classCodeRadio'] .multipleChoice::before {
+  display: block;
+}
+[data-field-name='registrants.classCodeRadio'] .multipleChoice > label {
+  display: none !important;
+}
+[data-field-name='registrants.anonymous'],
+[data-field-name='registrants.tribute'] {
+  margin-bottom: 0.25rem !important;
+}
+:is(
+    [data-field-name='registrants.specialDesignationName'],
+    [data-field-name='registrants.anonymous'],
+    [data-field-name='registrants.tribute']
+  )
+  input[type='checkbox'] {
+  position: relative;
+}
+[data-field-name='registrants.specialDesignationName'] input[type='checkbox'] {
+  bottom: 2px;
+}
+[data-field-name='registrants.anonymous'] input[type='checkbox'] {
+  top: 2px;
+}
+[data-field-name='registrants.tribute'] input[type='checkbox'] {
+  top: 1px;
+}
+:is(
+    .field-checkbox[data-field-name='registrants.anonymous'] label.must-show,
+    .field-checkbox[data-field-name='registrants.tribute'] label.must-show
+  ),
+.honoree-name-wrapper input::placeholder {
+  font-size: 14px !important;
+}
+:is(
+    [data-field-name='registrants.anonymous'],
+    [data-field-name='registrants.tribute']
+  )
+  .field-area {
+  align-items: center !important;
+  border-color: oklch(92.8% 0.006 264.531) !important; /* gray-200 */
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 1px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 1rem !important;
+  justify-content: flex-start !important;
+}
+:is(
+    [data-field-name='registrants.anonymous'],
+    [data-field-name='registrants.tribute']
+  )
+  .field-area
+  label {
+  margin: 0 !important;
+  padding: 6px 8px !important;
+}
+:is(
+    [data-field-name='registrants.anonymous'],
+    [data-field-name='registrants.tribute']
+  )
+  .help-info-toggle {
+  position: relative;
+  top: 1px;
+  left: 4px;
+}
+[data-field-name='registrants.tributeType'],
+[data-field-name='registrants.honoreeFirst'],
+[data-field-name='registrants.honoreeLast'] {
+  background-color: oklch(98.5% 0.002 247.839) !important; /* gray-50 */
+  border-color: oklch(92.8% 0.006 264.531) !important; /* gray-200 */
+  border-style: solid;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+[data-field-name='registrants.tributeType'] {
+  border-width: 1px 1px 0 !important;
+  border-radius: 0.5rem 0.5rem 0 0 !important;
+  padding-top: 8px !important;
+}
+[data-field-name='registrants.tributeType'] .multipleChoice > label {
+  display: none !important;
+}
+[data-field-name='registrants.tributeType'] .must-show {
+  margin-bottom: 0 !important;
+}
+.field-subtotal {
+  order: 50; /* move to the end of the form */
+}
+.field-subtotal .holds-subtotal {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.5rem !important;
+  border-top: 1px solid oklch(92.8% 0.006 264.531) !important; /* gray-200 */
+}
+.field-subtotal .holds-subtotal * {
+  font-size: 1.125rem !important;
+  color: #003a5b !important;
+}
+.field-subtotal .holds-subtotal .label-like {
+  display: block !important;
+  font-weight: normal !important;
+  height: auto !important;
+  min-width: 4rem !important;
+  visibility: unset;
+  width: auto !important;
+}
+.field-subtotal .holds-subtotal .field-area div {
+  font-weight: bold !important;
+  text-align: right !important;
+}
+[hidden] {
+  display: none !important;
+}
+.field-donationField .donation-field > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* Shared custom dropdown for classCodeName + specialDesignationName */
+.wcx-mc-trigger {
+  align-items: center;
+  border-bottom: 1px solid #003a5b;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: bold;
+  gap: 0.5rem;
+  margin: 0;
+  position: relative;
+  color: #003a5b;
+}
+[data-field-name='registrants.classCodeName'] .wcx-mc-trigger {
+  top: 1px;
+}
+.wcx-mc-trigger-text {
+  color: #003a5b;
+  font-weight: bold;
+  padding-right: 0.325rem;
+}
+.wcx-mc-chevron {
+  border-color: transparent transparent #003a5b #003a5b;
+  border-style: solid;
+  border-width: 1px;
+  color: #003a5b;
+  display: inline-block;
+  flex-shrink: 0;
+  height: 8px;
+  margin-left: 2px;
+  transition: transform 0.2s ease;
+  width: 8px;
+}
+.wcx-mc-wrapper {
+  display: inline-block;
+  position: relative;
+}
+[data-field-name='registrants.classCodeName'] .wcx-mc-wrapper {
+  margin-left: 0.25rem;
+  position: relative;
+  top: 3px;
+}
+.wcx-mc-dropdown {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+  display: none;
+  left: 0;
+  list-style: none;
+  margin-top: 0.375rem;
+  min-width: 11rem;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+}
+.wcx-mc-option,
+.wcx-interval-dropdown-menu .wcx-interval-dropdown-option {
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.wcx-mc-option {
+  box-sizing: border-box;
+  color: oklch(44.6% 0.03 256.802); /* gray-600 */
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+}
+[data-field-name='registrants.classCodeName'] .wcx-mc-dropdown li:last-child {
+  display: none !important;
+}
+:is(.wcx-mc-dropdown, .wcx-interval-dropdown-menu) li {
+  box-sizing: border-box;
+  display: block !important;
+  flex-basis: auto !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+:is(
+    [data-field-name='registrants.classCodeName'],
+    [data-field-name='registrants.specialDesignationName']
+  )
+  .multipleChoice
+  .wcx-mc-dropdown
+  label.wcx-mc-option {
+  max-width: none !important;
+  width: 100% !important;
+}
+.wcx-mc-option:hover {
+  background-color: oklch(98.5% 0.002 247.839) !important; /* gray-50 */
+}
+.wcx-interval-dropdown-menu .wcx-interval-dropdown-option {
+  box-sizing: border-box;
+  color: oklch(44.6% 0.03 256.802); /* gray-600 */
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  min-width: 7rem;
+  width: 100%;
+}
+.wcx-interval-dropdown-menu .wcx-interval-dropdown-option:hover {
+  background-color: oklch(98.5% 0.002 247.839) !important; /* gray-50 */
+}
+.wcx-mc-option--active,
+.wcx-interval-dropdown-menu
+  .wcx-interval-dropdown-option[aria-selected='true'] {
+  background-color: oklch(96% 0.004 264.531) !important;
+  color: #003a5b !important;
+  font-weight: bold !important;
+  display: flex;
+  justify-content: space-between;
+}
+:is(
+    .wcx-mc-option--active,
+    .wcx-interval-dropdown-menu
+      .wcx-interval-dropdown-option[aria-selected='true']
+  )::after {
+  color: #003a5b;
+  font-size: 14px;
+  margin-left: 4px;
+}
+/* Open state driven by checkbox */
+.wcx-mc-toggle {
+  display: none !important;
+}
+.wcx-mc-wrapper:has(.wcx-mc-toggle:checked) .wcx-mc-dropdown {
+  align-items: stretch !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+}
+/* Helptips */
+.helptip .fa-question-circle {
+  display: none;
+}
+.holds-fee,
+[data-field-name='registrants.classCodeName'] .multipleChoice,
+[data-field-name='registrants.specialDesignationName'] .multipleChoice {
+  align-items: center;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+[data-field-name='registrants.specialDesignationName'] {
+  border-radius: 8px;
+  border: 1px solid oklch(92.8% 0.006 264.531); /* gray-200 */
+  margin-bottom: 4px;
+  padding: 0 8px !important;
+  position: relative;
+}
+[data-field-name='registrants.specialDesignationName'] .must-show {
+  margin-bottom: 4px !important;
+}
+.campaign-form:not(.legacy-form) .holds-fee label:not(button):not(.btn),
+[data-field-name='registrants.classCodeName'] .multipleChoice label,
+[data-field-name='registrants.specialDesignationName'] .multipleChoice label {
+  flex-basis: auto !important;
+  flex-grow: 0 !important;
+  max-width: inherit !important;
+  min-width: 0 !important;
+  width: auto !important;
+}
+.help-state-label {
+  color: oklch(70.7% 0.022 261.325) !important; /* gray-400 */
+  display: block;
+  flex-basis: auto !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  height: auto !important;
+  max-width: 0 !important;
+  min-width: 0 !important;
+  opacity: 1;
+  padding-left: 8px !important;
+  visibility: visible !important;
+  width: auto;
+}
+input[data-purpose='help-state'] {
+  /* hidden checkbox for toggling help tip */
+  display: none;
+}
+.holds-fee::after,
+[data-field-name='registrants.classCodeName']
+  .multipleChoice
+  .help-tip-container,
+[data-field-name='registrants.specialDesignationName']
+  .multipleChoice
+  .help-tip-container {
+  background-color: oklch(98.5% 0.002 247.839); /* gray-50 */
+  border-radius: 8px;
+  border: 1px solid oklch(92.8% 0.006 264.531); /* gray-200 */
+  color: oklch(55.1% 0.027 264.364); /* gray-500 */
+  display: none;
+  flex-basis: 100%;
+  font-size: 14px;
+  margin-top: 0.5rem;
+  order: 2; /* pushes it after all other flex children */
+  padding: 8px 12px;
+}
+:is(
+    [data-field-name='registrants.classCodeName'],
+    [data-field-name='registrants.specialDesignationName']
+  )
+  .multipleChoice
+  .help-tip-container {
+  margin-bottom: 0.5rem;
+  margin-top: 0 !important;
+  flex-direction: column;
+}
+[data-field-name='registrants.specialDesignationName']
+  .multipleChoice
+  .help-tip-container {
+  margin-left: -9px;
+  margin-top: 5px !important;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+}
+:is(
+    [data-field-name='registrants.classCodeName'],
+    [data-field-name='registrants.specialDesignationName']
+  )
+  .multipleChoice
+  .help-tip-container
+  :is(p, p b) {
+  font-size: 14px !important;
+}
+[data-field-name='registrants.classCodeName']
+  .multipleChoice
+  .help-tip-container
+  p
+  b {
+  font-weight: bold !important;
+  color: #003a5b !important;
+}
+[data-field-name='registrants.specialDesignationName']:has(
+    [data-purpose='help-state']:checked
+  ) {
+  margin-bottom: 4.25rem !important;
+}
+.holds-fee:has([data-purpose='help-state']:checked)::after,
+[data-field-name='registrants.classCodeName']
+  .multipleChoice:has([data-purpose='help-state']:checked)
+  .help-tip-container,
+[data-field-name='registrants.specialDesignationName']
+  .multipleChoice:has([data-purpose='help-state']:checked)
+  .help-tip-container {
+  display: flex;
+}
+:is(
+    [data-field-name='registrants.classCodeName'],
+    [data-field-name='registrants.specialDesignationName']
+  )
+  .help-state-label {
+  margin-left: -2rem !important;
+}
+/* Special Designation Options */
+[data-field-name='registrants.specialDesignationName'] .multipleChoice {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+[data-field-name='registrants.specialDesignationName']
+  .multipleChoice
+  .list-radio
+  label {
+  flex-basis: auto !important;
+  flex-grow: 0 !important;
+  max-width: inherit !important;
+  min-width: 0 !important;
+  width: auto !important;
+}
+[data-field-name='registrants.specialDesignationName']
+  .multipleChoice
+  .list-radio
+  :is(label input[type='radio'], li:has(input[disabled])) {
+  display: none !important;
+}
+
+/* Special designation: checkbox + label row; ministry row when checked (JS). */
+[data-field-name='registrants.specialDesignationName'] .wcx-sd-root {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 100%;
+}
+[data-field-name='registrants.specialDesignationName'] .wcx-sd-toggle-row {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  margin: 0;
+  max-width: 100%;
+  min-height: 21px;
+  min-width: 0;
+  padding: 0;
+}
+[data-field-name='registrants.specialDesignationName'] .wcx-sd-toggle-label {
+  color: oklch(44.6% 0.03 256.802); /* gray-600 */
+  cursor: pointer;
+  font-size: 14px !important;
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 0;
+  min-width: 0;
+  position: relative;
+  right: 2px;
+}
+[data-field-name='registrants.specialDesignationName']
+  .wcx-sd-root:has(.wcx-sd-toggle:checked)
+  .wcx-sd-toggle-label {
+  display: none !important;
+}
+[data-field-name='registrants.specialDesignationName'] .wcx-sd-on-row {
+  align-items: center;
+  display: inline-flex;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-height: 21px;
+  min-width: 0;
+}
+[data-field-name='registrants.specialDesignationName']
+  :is(.wcx-sd-ministry-prefix, .wcx-sd-on-row .wcx-mc-trigger) {
+  font-weight: normal;
+}
+[data-field-name='registrants.specialDesignationName']
+  .wcx-sd-root:not(:has(.wcx-sd-toggle:checked))
+  .wcx-sd-on-row {
+  display: none !important;
+}
+
+[data-field-name='registrants.sponsoring'] input::placeholder {
+  font-size: 14px !important;
+}
+[data-field-name='registrants.subtotal'],
+[data-field-name='registrants.subtotal2'] {
+  display: none !important;
+}
+
+/* Interval View: Start my gift */
+/* Hide all text in the outer span by making it invisible */
+.start-date-label {
+  color: transparent;
+  font-size: 0;
+  margin-right: 0 !important;
+  padding-right: 0.25rem !important;
+}
+/* Inject "Start my " before everything and "gift" after */
+.start-date-label::before,
+.start-date-label::after,
+.start-date-interval {
+  color: oklch(0.446 0.03 256.802) !important; /* gray-600 */
+  font-size: 14px;
+}
+
+/* Page 2 styles */
+.PhoneInputCountry {
+  height: 2rem !important;
+}
+.date-year,
+.date-month,
+.country,
+.state {
+  border-color: oklch(92.8% 0.006 264.531) !important; /* gray-200 */
+  border-style: solid !important;
+  border-width: 1px;
+  height: 2rem !important;
+  margin-bottom: 4px !important;
+  min-height: 2rem !important;
+  padding: 0.25rem 0.75rem !important;
+}
+.error:is(.date-year, .date-month, .country, .state) {
+  border-color: #e64545 !important; /* red */
+}
+.field-phone p {
+  color: oklch(44.6% 0.03 256.802) !important; /* gray-600 */
+}
+.captcha-disclaimer {
+  color: oklch(55.1% 0.027 264.364) !important; /* gray-500 */
+}
