@@ -441,14 +441,18 @@ body:has(#show-additional-options):not(:has(#show-additional-options:checked))
 .form-step-nav apple-pay-button:hover {
   opacity: 0.72; /* approximate color of gpay button on hover */
 }
-.form-step-nav button.btn-primary {
+.form-step button.btn-primary,
+.form-step button.btn-primary::before {
+  text-transform: capitalize !important;
+}
+.form-step-nav button.btn-primary,
+.wcx-edit-order .form-step button.btn-primary {
   background-color: #003a5b !important;
   font-size: 0 !important;
   padding: 0.5rem 1rem !important;
-  text-transform: capitalize !important;
   transition: transform 0.2s ease-in-out !important;
 }
-.form-step-nav button.btn-primary::before {
+.form-step button.btn-primary::before {
   color: white;
   font-size: 1rem;
   position: relative;
@@ -456,6 +460,12 @@ body:has(#show-additional-options):not(:has(#show-additional-options:checked))
 }
 .form-step-nav button.btn-primary:hover {
   background-color: #224a6b !important;
+}
+.wcx-edit-order .billing h2.text-center {
+  font-size: 0 !important;
+}
+.wcx-edit-order .billing h2::before {
+  font-size: 18px !important;
 }
 
 /* Class Code Radio CSS */
@@ -981,4 +991,7 @@ input[data-purpose='help-state'] {
 }
 .captcha-disclaimer {
   color: oklch(55.1% 0.027 264.364) !important; /* gray-500 */
+}
+img.ach-explain {
+  display: none; /* hide check image */
 }
