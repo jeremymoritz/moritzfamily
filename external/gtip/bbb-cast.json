@@ -3,7 +3,7 @@
 	"date": "2026-08-07",
 	"cast": [
 		{
-			"trackNumber": 64,
+			"trackNumber": 61,
 			"auditionId": 46,
 			"firstName": "Abby",
 			"lastName": "Wollberg",
@@ -13,7 +13,7 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 67,
+			"trackNumber": 64,
 			"auditionId": 202,
 			"firstName": "Aidan",
 			"lastName": "Lindsey",
@@ -43,17 +43,7 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 22,
-			"auditionId": 82,
-			"firstName": "Ann-Marie",
-			"lastName": "Kristensen",
-			"gender": "F",
-			"height": 62,
-			"roles": ["Phyllis", "Traveler", "Third Voice", "Dance Captain"],
-			"groups": ["Adults"]
-		},
-		{
-			"trackNumber": 65,
+			"trackNumber": 62,
 			"auditionId": 34,
 			"firstName": "Arianna",
 			"lastName": "Pavlovic",
@@ -63,7 +53,7 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 59,
+			"trackNumber": 57,
 			"auditionId": 51,
 			"firstName": "Aubrey",
 			"lastName": "Beatty",
@@ -83,7 +73,7 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 60,
+			"trackNumber": 58,
 			"auditionId": 173,
 			"firstName": "Ava",
 			"lastName": "Skinner",
@@ -113,7 +103,7 @@
 			"groups": ["Leads"]
 		},
 		{
-			"trackNumber": 30,
+			"trackNumber": 31,
 			"auditionId": 238,
 			"firstName": "Brett",
 			"lastName": "Francis",
@@ -121,16 +111,6 @@
 			"height": 72,
 			"roles": ["Dishwasher", "Quartet", "Policeman"],
 			"groups": ["Adults", "Shriners"]
-		},
-		{
-			"trackNumber": 69,
-			"auditionId": 193,
-			"firstName": "Gabriel",
-			"lastName": "Willmoth",
-			"gender": "M",
-			"height": 69,
-			"roles": ["Quartet"],
-			"groups": ["Teens", "Shriners"]
 		},
 		{
 			"trackNumber": 42,
@@ -143,7 +123,7 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 31,
+			"trackNumber": 32,
 			"auditionId": 255,
 			"firstName": "Casey",
 			"lastName": "Huff",
@@ -183,17 +163,17 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 27,
+			"trackNumber": 28,
 			"auditionId": 96,
 			"firstName": "Chris",
 			"lastName": "Aponte",
 			"gender": "M",
-			"height": 66,
+			"height": 67,
 			"roles": ["Quartet", "TV Crew (Stg Mgr)", "Fourth Voice"],
 			"groups": ["Adults", "Shriners"]
 		},
 		{
-			"trackNumber": 32,
+			"trackNumber": 33,
 			"auditionId": 201,
 			"firstName": "Chris",
 			"lastName": "Robbins",
@@ -213,16 +193,6 @@
 			"groups": ["Leads"]
 		},
 		{
-			"trackNumber": 12,
-			"auditionId": 121,
-			"firstName": "Collins",
-			"lastName": "Kenealy",
-			"gender": "F",
-			"height": 54,
-			"roles": [],
-			"groups": ["Kids"]
-		},
-		{
 			"trackNumber": 3,
 			"auditionId": 167,
 			"firstName": "Cole",
@@ -233,7 +203,17 @@
 			"groups": ["Leads"]
 		},
 		{
-			"trackNumber": 72,
+			"trackNumber": 12,
+			"auditionId": 121,
+			"firstName": "Collins",
+			"lastName": "Kenealy",
+			"gender": "F",
+			"height": 54,
+			"roles": [],
+			"groups": ["Kids"]
+		},
+		{
+			"trackNumber": 69,
 			"auditionId": 182,
 			"firstName": "Daniel",
 			"lastName": "Poorman",
@@ -243,7 +223,7 @@
 			"groups": ["Teens", "Shriners"]
 		},
 		{
-			"trackNumber": 33,
+			"trackNumber": 34,
 			"auditionId": 216,
 			"firstName": "David",
 			"lastName": "Stelting",
@@ -253,17 +233,7 @@
 			"groups": ["Adults", "Shriners"]
 		},
 		{
-			"trackNumber": 34,
-			"auditionId": 104,
-			"firstName": "Trenten",
-			"lastName": "Henderson",
-			"gender": "M",
-			"height": 76,
-			"roles": ["Mayor"],
-			"groups": ["Adults", "Shriners"]
-		},
-		{
-			"trackNumber": 23,
+			"trackNumber": 22,
 			"auditionId": 242,
 			"firstName": "Elliott",
 			"lastName": "Stewart",
@@ -313,6 +283,16 @@
 			"groups": ["Teens"]
 		},
 		{
+			"trackNumber": 66,
+			"auditionId": 193,
+			"firstName": "Gabriel",
+			"lastName": "Willmoth",
+			"gender": "M",
+			"height": 69,
+			"roles": ["Quartet"],
+			"groups": ["Teens", "Shriners"]
+		},
+		{
 			"trackNumber": 4,
 			"auditionId": 165,
 			"firstName": "Gillian",
@@ -323,7 +303,7 @@
 			"groups": ["Leads"]
 		},
 		{
-			"trackNumber": 66,
+			"trackNumber": 63,
 			"auditionId": 68,
 			"firstName": "Hadley",
 			"lastName": "Baker",
@@ -343,7 +323,7 @@
 			"groups": ["Kids"]
 		},
 		{
-			"trackNumber": 68,
+			"trackNumber": 65,
 			"auditionId": 161,
 			"firstName": "Isaiah",
 			"lastName": "Grummon",
@@ -353,7 +333,7 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 70,
+			"trackNumber": 67,
 			"auditionId": 54,
 			"firstName": "Jaydon",
 			"lastName": "Bruce",
@@ -383,7 +363,7 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 25,
+			"trackNumber": 26,
 			"auditionId": 92,
 			"firstName": "Kallyn",
 			"lastName": "Kubmeyer",
@@ -399,7 +379,7 @@
 			"lastName": "Hurd",
 			"gender": "F",
 			"height": 61,
-			"roles": ["Additional Reporter"],
+			"roles": ["Phyllis", "Additional Reporter"],
 			"groups": ["Adults"]
 		},
 		{
@@ -433,17 +413,7 @@
 			"groups": ["Leads"]
 		},
 		{
-			"trackNumber": 71,
-			"auditionId": 91,
-			"firstName": "Lucas",
-			"lastName": "Ingle",
-			"gender": "M",
-			"height": 70,
-			"roles": ["Hugo Peabody"],
-			"groups": ["Leads", "Teens"]
-		},
-		{
-			"trackNumber": 26,
+			"trackNumber": 27,
 			"auditionId": 95,
 			"firstName": "Liz",
 			"lastName": "Wollberg",
@@ -451,6 +421,16 @@
 			"height": 67,
 			"roles": ["Mrs. Merkle"],
 			"groups": ["Adults"]
+		},
+		{
+			"trackNumber": 68,
+			"auditionId": 91,
+			"firstName": "Lucas",
+			"lastName": "Ingle",
+			"gender": "M",
+			"height": 70,
+			"roles": ["Hugo Peabody"],
+			"groups": ["Leads", "Teens"]
 		},
 		{
 			"trackNumber": 51,
@@ -463,7 +443,7 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 24,
+			"trackNumber": 23,
 			"auditionId": 89,
 			"firstName": "Mackenzi",
 			"lastName": "Mason",
@@ -483,37 +463,17 @@
 			"groups": ["Kids"]
 		},
 		{
-			"trackNumber": 57,
-			"auditionId": 50,
-			"firstName": "Matilda",
-			"lastName": "McCoy",
-			"gender": "F",
-			"height": 64,
-			"roles": [],
-			"groups": ["Teens"]
-		},
-		{
-			"trackNumber": 58,
+			"trackNumber": 24,
 			"auditionId": 218,
 			"firstName": "Melissa",
 			"lastName": "Wolfe",
 			"gender": "F",
 			"height": 64,
-			"roles": ["Girl's Voice"],
-			"groups": ["Teens"]
+			"roles": ["Girl's Voice", "Dance Captain"],
+			"groups": ["Adults"]
 		},
 		{
-			"trackNumber": 29,
-			"auditionId": 192,
-			"firstName": "Michael",
-			"lastName": "Gardner",
-			"gender": "M",
-			"height": 69,
-			"roles": ["Lee", "TV Crew (Camera 1)"],
-			"groups": ["Adults", "Shriners"]
-		},
-		{
-			"trackNumber": 73,
+			"trackNumber": 70,
 			"auditionId": 67,
 			"firstName": "Micah",
 			"lastName": "Smith",
@@ -521,6 +481,16 @@
 			"height": 74,
 			"roles": ["Karl"],
 			"groups": ["Teens"]
+		},
+		{
+			"trackNumber": 30,
+			"auditionId": 192,
+			"firstName": "Michael",
+			"lastName": "Gardner",
+			"gender": "M",
+			"height": 69,
+			"roles": ["Lee", "TV Crew (Camera 1)"],
+			"groups": ["Adults", "Shriners"]
 		},
 		{
 			"trackNumber": 16,
@@ -533,17 +503,17 @@
 			"groups": ["Kids"]
 		},
 		{
-			"trackNumber": 62,
+			"trackNumber": 25,
 			"auditionId": 231,
 			"firstName": "Riley",
 			"lastName": "McConnell",
 			"gender": "F",
 			"height": 66,
-			"roles": ["Helen"],
-			"groups": ["Teens"]
+			"roles": ["Helen", "Traveler", "Third Voice"],
+			"groups": ["Adults"]
 		},
 		{
-			"trackNumber": 63,
+			"trackNumber": 60,
 			"auditionId": 47,
 			"firstName": "Scarlette",
 			"lastName": "Bainum",
@@ -573,13 +543,23 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 28,
+			"trackNumber": 29,
 			"auditionId": 200,
 			"firstName": "Thomas",
 			"lastName": "Yoder",
 			"gender": "M",
 			"height": 67,
 			"roles": ["2nd Policeman", "TV Crew (Camera 2)"],
+			"groups": ["Adults", "Shriners"]
+		},
+		{
+			"trackNumber": 35,
+			"auditionId": 104,
+			"firstName": "Trenten",
+			"lastName": "Henderson",
+			"gender": "M",
+			"height": 76,
+			"roles": ["Mayor"],
 			"groups": ["Adults", "Shriners"]
 		},
 		{
@@ -593,7 +573,7 @@
 			"groups": ["Teens"]
 		},
 		{
-			"trackNumber": 61,
+			"trackNumber": 59,
 			"auditionId": 53,
 			"firstName": "Vivian",
 			"lastName": "Hewins",
