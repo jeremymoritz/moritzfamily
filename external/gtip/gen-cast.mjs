@@ -60,9 +60,7 @@ for (const [first, last, role, groups, gender, height, track] of csv) {
   });
 }
 
-cast.sort((a, b) =>
-  a.firstName.localeCompare(b.firstName) || a.lastName.localeCompare(b.lastName)
-);
+cast.sort((a, b) => a.trackNumber - b.trackNumber);
 
 const data = { show: 'Bye Bye Birdie', date: '2026-08-07', cast };
 // Match existing formatting: tabs, roles/groups arrays inline.
